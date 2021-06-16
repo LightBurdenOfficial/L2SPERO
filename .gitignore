@@ -1,0 +1,4 @@
+gameserver/build/*
+gameserver/build/*.*
+.svn/*
+.svn/*.*
