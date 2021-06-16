@@ -1,3 +1,5 @@
+datapack/build/*
+datapack/build/*.*
 gameserver/build/*
 gameserver/build/*.*
 .svn/*
