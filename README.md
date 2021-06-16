@@ -6,6 +6,7 @@
 
 # Modificações
 * Anti-PHX Critical Error
+* Spawn Protection + Protection Teleport Effect
 
 https://l2.sperocoin.org
  
