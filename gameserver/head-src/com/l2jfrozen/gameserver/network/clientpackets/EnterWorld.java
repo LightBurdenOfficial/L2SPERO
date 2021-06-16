@@ -179,7 +179,10 @@ public class EnterWorld extends L2GameClientPacket
 		activeChar.sendPacket(new QuestList());
 		
 		if (Config.PLAYER_SPAWN_PROTECTION > 0)
+		{
 			activeChar.setProtection(true);
+			activeChar.startAbnormalEffect(L2Character.ABNORMAL_EFFECT_IMPRISIONING_2);
+		}
 		
 		activeChar.spawnMe(activeChar.getX(), activeChar.getY(), activeChar.getZ());
 		

@@ -15584,10 +15584,16 @@ public final class L2PcInstance extends L2PlayableInstance
 			sendMessage("The effect of Teleport Spawn Protection has been removed.");
 		
 		if (Config.PLAYER_SPAWN_PROTECTION > 0)
+		{
 			setProtection(false);
+			stopAbnormalEffect(L2Character.ABNORMAL_EFFECT_IMPRISIONING_2);
+		}
 		
 		if (Config.PLAYER_TELEPORT_PROTECTION > 0)
+		{
 			setTeleportProtection(false);
+			stopAbnormalEffect(L2Character.ABNORMAL_EFFECT_IMPRISIONING_2);
+		}
 	}
 	
 	/**
@@ -15623,6 +15629,7 @@ public final class L2PcInstance extends L2PlayableInstance
 		if ((Config.PLAYER_TELEPORT_PROTECTION > 0) && !isInOlympiadMode())
 		{
 			setTeleportProtection(true);
+			startAbnormalEffect(L2Character.ABNORMAL_EFFECT_IMPRISIONING_2);
 			sendMessage("The effects of Teleport Spawn Protection flow through you.");
 		}
 		
