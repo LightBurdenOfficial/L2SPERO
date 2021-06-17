@@ -190,6 +190,7 @@ public final class Config
 	public static int MINIMUN_UPDATE_TIME;
 	public static boolean BYPASS_VALIDATION;
 	
+	public static int AFK_TIMER;
 	public static boolean HIGH_RATE_SERVER_DROPS;
 	
 	public static boolean FORCE_COMPLETE_STATUS_UPDATE;
@@ -638,6 +639,7 @@ public final class Config
 			otherSettings.load(is);
 			is.close();
 			
+			AFK_TIMER = Integer.parseInt(otherSettings.getProperty("TimerAFK", "10"));
 			DEEPBLUE_DROP_RULES = Boolean.parseBoolean(otherSettings.getProperty("UseDeepBlueDropRules", "True"));
 			ALLOW_GUARDS = Boolean.valueOf(otherSettings.getProperty("AllowGuards", "False"));
 			EFFECT_CANCELING = Boolean.valueOf(otherSettings.getProperty("CancelLesserEffect", "True"));

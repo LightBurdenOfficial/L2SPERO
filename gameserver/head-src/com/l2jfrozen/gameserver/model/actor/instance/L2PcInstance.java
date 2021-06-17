@@ -19627,6 +19627,17 @@ public final class L2PcInstance extends L2PlayableInstance
 		return _currentPetSkill;
 	}
 	
+	private long _lastAction;
+	public boolean isAFK()
+	{
+		return _lastAction < System.currentTimeMillis();
+	}
+	
+	public void updateLastAction()
+	{
+		_lastAction = System.currentTimeMillis() + TimeUnit.MINUTES.toMillis(Config.AFK_TIMER);
+	}
+	
 	/**
 	 * Create a new SkillDat object and set the player _currentPetSkill.<br>
 	 * <br>

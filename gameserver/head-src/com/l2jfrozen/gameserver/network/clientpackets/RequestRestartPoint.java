@@ -232,6 +232,7 @@ public final class RequestRestartPoint extends L2GameClientPacket
 		if (activeChar == null)
 			return;
 		
+		activeChar.updateLastAction();
 		if (activeChar.isFakeDeath())
 		{
 			activeChar.stopFakeDeath(null);
