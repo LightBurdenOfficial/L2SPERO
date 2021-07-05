@@ -11935,6 +11935,12 @@ public final class L2PcInstance extends L2PlayableInstance
 			return;
 		}
 		
+		if (isAio() && !isGM() && !isInsideZone(L2Character.ZONE_PEACE))
+		{
+			sendPacket(ActionFailed.STATIC_PACKET);
+			return;
+		}
+		
 		if (skill == null)
 		{
 			abortCast();
@@ -14485,6 +14491,7 @@ public final class L2PcInstance extends L2PlayableInstance
 	 */
 	public void sendSkillList(final L2PcInstance player)
 	{
+		boolean isDisabled = false;
 		SkillList sl = new SkillList();
 		if (player != null)
 		{
@@ -14505,13 +14512,18 @@ public final class L2PcInstance extends L2PlayableInstance
 					continue;
 				}
 				
+				if (isAio() && !isGM() && !isInsideZone(L2Character.ZONE_PEACE))
+				{
+					isDisabled = true;
+				}
+				
 				if (s.isChance())
 				{
-					sl.addSkill(s.getId(), s.getLevel(), s.isChance());
+					sl.addSkill(s.getId(), s.getLevel(), s.isChance(), isDisabled);
 				}
 				else
 				{
-					sl.addSkill(s.getId(), s.getLevel(), s.isPassive());
+					sl.addSkill(s.getId(), s.getLevel(), s.isPassive(), isDisabled);
 				}
 			}
 		}

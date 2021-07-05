@@ -50,7 +50,7 @@ public class SkillList extends L2GameServerPacket
 		_skills = new Skill[] {};
 	}
 	
-	public void addSkill(final int id, final int level, final boolean passive)
+	public void addSkill(final int id, final int level, final boolean passive, boolean isDisabled)
 	{
 		final Skill sk = new Skill(id, level, passive);
 		if (_skills == null || _skills.length == 0)
