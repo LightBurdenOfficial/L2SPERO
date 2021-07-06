@@ -19,13 +19,17 @@
  */
 package com.l2jfrozen.gameserver.network.clientpackets;
 
+import java.util.Collection;
 import org.apache.log4j.Logger;
 
 import com.l2jfrozen.Config;
 import com.l2jfrozen.gameserver.model.Inventory;
+import com.l2jfrozen.gameserver.model.L2Character;
+import com.l2jfrozen.gameserver.model.L2Object;
 import com.l2jfrozen.gameserver.model.L2World;
 import com.l2jfrozen.gameserver.model.actor.instance.L2ItemInstance;
 import com.l2jfrozen.gameserver.model.actor.instance.L2PcInstance;
+import com.l2jfrozen.gameserver.model.actor.instance.L2WarehouseInstance;
 import com.l2jfrozen.gameserver.model.base.Race;
 import com.l2jfrozen.gameserver.network.SystemMessageId;
 import com.l2jfrozen.gameserver.network.serverpackets.EnchantResult;
@@ -118,10 +122,12 @@ public final class RequestEnchantItem extends L2GameClientPacket
 		_objectId = readD();
 	}
 	
+	@SuppressWarnings("null")
 	@Override
 	protected void runImpl()
 	{
 		final L2PcInstance activeChar = getClient().getActiveChar();
+		Collection<L2Character> knowns  = activeChar.getKnownList().getKnownCharactersInRadius(400);
 		if (activeChar == null || _objectId == 0)
 			return;
 		
@@ -138,6 +144,15 @@ public final class RequestEnchantItem extends L2GameClientPacket
 			activeChar.sendPacket(new SystemMessage(SystemMessageId.INAPPROPRIATE_ENCHANT_CONDITION));
 			activeChar.setActiveEnchantItem(null);
 			return;
+		}
+		
+		for (L2Object wh : knowns)
+		{
+			if (wh instanceof L2WarehouseInstance)
+			{
+				activeChar.sendMessage("You Cannot enchant near warehouse.");
+			    return;
+			}
 		}
 		
 		if (activeChar.isOnline() == 0)
