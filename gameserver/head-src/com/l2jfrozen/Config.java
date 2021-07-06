@@ -579,6 +579,10 @@ public final class Config
 	public static boolean ALLOW_AIO_USE_CM;
 	public static boolean ALLOW_AIO_IN_EVENTS;
 	public static boolean ANNOUNCE_CASTLE_LORDS;
+	public static boolean TVT_ALLOW_HEALER_CLASSES;
+	public static boolean CTF_ALLOW_HEALER_CLASSES;
+	public static String DISABLE_ID_CLASSES_STRING;
+	public static FastList<Integer> DISABLE_ID_CLASSES = new FastList<Integer>();
 	
 	/** Configuration to allow custom items to be given on character creation */
 	public static boolean CUSTOM_STARTER_ITEMS_ENABLED;
@@ -685,6 +689,15 @@ public final class Config
 			ALLOW_AIO_USE_CM = Boolean.parseBoolean(otherSettings.getProperty("AllowAioUseClassMaster", "False"));
 			ALLOW_AIO_IN_EVENTS = Boolean.parseBoolean(otherSettings.getProperty("AllowAioInEvents", "False"));
 			ANNOUNCE_CASTLE_LORDS = Boolean.parseBoolean(otherSettings.getProperty("AnnounceCastleLords", "False"));
+			TVT_ALLOW_HEALER_CLASSES = Boolean.parseBoolean(otherSettings.getProperty("TvTAllowedHealerClasses", "true"));
+			CTF_ALLOW_HEALER_CLASSES = Boolean.parseBoolean(otherSettings.getProperty("CtFAllowedHealerClasses", "true"));
+			DISABLE_ID_CLASSES_STRING = otherSettings.getProperty("DisableIdForClasses", "");
+			DISABLE_ID_CLASSES = new FastList<Integer>();
+			for (String class_id : DISABLE_ID_CLASSES_STRING.split(","))
+			{
+			if(!class_id.equals(""))
+			DISABLE_ID_CLASSES.add(Integer.parseInt(class_id));
+			}
 			if (ENABLE_AIO_SYSTEM) // create map if system is enabled
 			{
 				final String[] AioSkillsSplit = otherSettings.getProperty("AioSkills", "").split(";");
