@@ -25,6 +25,7 @@ import org.apache.log4j.Logger;
 import com.l2jfrozen.gameserver.model.L2World;
 import com.l2jfrozen.gameserver.model.actor.instance.L2PcInstance;
 import com.l2jfrozen.gameserver.network.serverpackets.GMViewCharacterInfo;
+import com.l2jfrozen.gameserver.network.serverpackets.GMViewHennaInfo;
 import com.l2jfrozen.gameserver.network.serverpackets.GMViewItemList;
 import com.l2jfrozen.gameserver.network.serverpackets.GMViewPledgeInfo;
 import com.l2jfrozen.gameserver.network.serverpackets.GMViewQuestList;
@@ -84,6 +85,7 @@ public final class RequestGMCommand extends L2GameClientPacket
 			case 5: // player inventory
 			{
 				sendPacket(new GMViewItemList(player));
+				sendPacket (new GMViewHennaInfo (player));
 				break;
 			}
 			case 6: // player warehouse
