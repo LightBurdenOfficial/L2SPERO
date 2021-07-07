@@ -75,6 +75,13 @@ public final class TradeRequest extends L2GameClientPacket
 			player.sendPacket(ActionFailed.STATIC_PACKET);
 			return;
 		}
+
+		if (partner.isInCombat() || player.isInCombat())
+        {
+	        player.sendPacket(new ActionFailed());
+    	    player.sendMessage("You cant trade in combat mode!");
+        	return;                                        
+        }
 		
 		if (partner.isAway())
 		{
