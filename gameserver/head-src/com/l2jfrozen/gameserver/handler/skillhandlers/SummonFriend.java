@@ -138,6 +138,12 @@ public class SummonFriend implements ISkillHandler
 						continue;
 					}
 					
+					if(targetChar.isAio())
+					{
+						activeChar.sendPacket(SystemMessage.sendString("You cannot summon Aio Buffers."));
+						return;
+					}
+					
 					if (targetChar._inEvent)
 					{
 						targetChar.sendMessage("You cannot use this skill in a Event.");

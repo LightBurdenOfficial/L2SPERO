@@ -14,6 +14,7 @@
 * Anti-PHX Warehouse(https://github.com/DigitalCoin1/L2SPERO/commit/b50fc6f55888b0a5c76e91f4235342d9a0ad9107)
 * Proibição de trades em modo de combate(https://github.com/DigitalCoin1/L2SPERO/commit/17d18d08cc4aee1f8c42186c10d03de8e3c19c22)
 * Habilidade de GM - Ver Dye de player(https://github.com/DigitalCoin1/L2SPERO/commit/636cd42b1a40359ceabaaead20825bbfab7dfc8c)
+* No mastery - no armor equipping(https://github.com/DigitalCoin1/L2SPERO/commit/6d7ac30312d4d19965080ffb584dbff628388b19)
 
 https://l2.sperocoin.org
  

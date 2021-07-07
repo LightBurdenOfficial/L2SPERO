@@ -90,6 +90,12 @@ public class Recall implements ISkillHandler
 				{
 					final L2PcInstance targetChar = (L2PcInstance) target;
 					
+					if(targetChar.isAio())
+					{
+						activeChar.sendPacket(SystemMessage.sendString("You cannot summon Aio Buffers."));
+						continue;
+					}
+					
 					if (targetChar.isFestivalParticipant())
 					{
 						targetChar.sendPacket(SystemMessage.sendString("You can't use escape skill in a festival."));
