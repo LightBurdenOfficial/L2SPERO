@@ -47,6 +47,7 @@ import com.l2jfrozen.gameserver.network.serverpackets.UserInfo;
 import com.l2jfrozen.gameserver.templates.L2Item;
 import com.l2jfrozen.gameserver.templates.L2Weapon;
 import com.l2jfrozen.gameserver.templates.L2WeaponType;
+import com.l2jfrozen.gameserver.templates.L2ArmorType;
 import com.l2jfrozen.gameserver.util.Util;
 
 public final class UseItem extends L2GameClientPacket
@@ -132,6 +133,32 @@ public final class UseItem extends L2GameClientPacket
 		if (activeChar.getActiveTradeList() != null)
 		{
 			activeChar.cancelActiveTrade();
+		}
+		
+		if (activeChar.getLevel() >= 40)
+		{
+			if (!(activeChar.getSkillLevel(227) >= 1) || !(activeChar.getSkillLevel(233) >= 1)
+				|| !(activeChar.getSkillLevel(236) >= 1) || !(activeChar.getSkillLevel(252) >= 1)
+				|| !(activeChar.getSkillLevel(258) >= 1) || !(activeChar.getSkillLevel(465) >= 1) &&
+				(item.getItem().getItemType() == L2ArmorType.LIGHT))
+			{
+				activeChar.sendMessage("You cannot wear this type of armor unless you have a mastery for it.");
+				return;
+			}
+			if (!(activeChar.getSkillLevel(231) >= 1) || !(activeChar.getSkillLevel(232) >= 1)
+				|| !(activeChar.getSkillLevel(253) >= 1) || !(activeChar.getSkillLevel(259) >= 1) &&
+				(item.getItem().getItemType() == L2ArmorType.HEAVY))
+			{
+				activeChar.sendMessage("You cannot wear this type of armor unless you have a mastery for it.");
+				return;
+			}
+			if (!(activeChar.getSkillLevel(234) >= 1) || !(activeChar.getSkillLevel(235) >= 1)
+				|| !(activeChar.getSkillLevel(251) >= 1) &&
+				(item.getItem().getItemType() == L2ArmorType.MAGIC))
+			{
+				activeChar.sendMessage("You cannot wear this type of armor unless you have a mastery for it.");
+				return;
+			}
 		}
 		
 		// NOTE: disabled due to deadlocks
