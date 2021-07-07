@@ -1520,6 +1520,17 @@ public abstract class Inventory extends ItemContainer
 					continue;
 				}
 				
+				// Check if that item already exists in OID map.
+				if(L2World.getInstance().findObject(inv.getInt("object_id")) != null)
+                {
+                    L2PcInstance player = (L2PcInstance) getOwner();
+                    player.sendMessage("We found a duplicate item in your inventory, we removed it!");
+                    LOGGER.warn("Item: "+ item.getObjectId() +" is duplicated - REMOVED!");
+                    L2World.getInstance().removeObject(item);
+                    player = null;
+                    continue;
+                }
+				
 				if (getOwner() instanceof L2PcInstance)
 				{
 					L2PcInstance player = (L2PcInstance) getOwner();
