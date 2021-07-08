@@ -31,6 +31,8 @@ import com.l2jfrozen.gameserver.network.serverpackets.SystemMessage;
 import com.l2jfrozen.gameserver.templates.L2NpcTemplate;
 import com.l2jfrozen.gameserver.thread.ThreadPoolManager;
 import com.l2jfrozen.util.random.Rnd;
+import com.l2jfrozen.gameserver.network.serverpackets.NpcHtmlMessage;
+
 
 /**
  * This class manages all RaidBoss. In a group mob, there are one master called RaidBoss and several slaves called Minions.
@@ -108,10 +110,29 @@ public final class L2RaidBossInstance extends L2MonsterInstance
 				for (final L2PcInstance member : player.getParty().getPartyMembers())
 				{
 					RaidBossPointsManager.addPoints(member, getNpcId(), (getLevel() / 2) + Rnd.get(-5, 5));
+						if (getNpcId() == 25325 && !member.isNoble() && member.isSubClassActive() && member.getLevel() >= 75 && member.isInsideRadius(getX(), getY(), getZ(), 1000, false, false))
+							{
+								member.setNoble(true);
+		
+								member.addItem("Quest", 7694, 1, member, true);
+								NpcHtmlMessage html = new NpcHtmlMessage(getObjectId());
+								html.setHtml("<html><body>Congratulations, you're now a noble!<br1>Open the Skills & Magic (ALT+K) to see your acquired abilities.</body></html>");
+								member.sendPacket(html);
+							}
 				}
 			}
 			else
 				RaidBossPointsManager.addPoints(player, getNpcId(), (getLevel() / 2) + Rnd.get(-5, 5));
+					if (getNpcId() == 25325 && !player.isNoble() && player.isSubClassActive() && player.getLevel() >= 75)
+						{
+							player.setNoble(true);
+			
+							player.addItem("Quest", 7694, 1, player, true);
+			
+							NpcHtmlMessage html = new NpcHtmlMessage(getObjectId());
+							html.setHtml("<html><body>Congratulations, you're now a noble!<br1>Open the Skills & Magic (ALT+K) to see your acquired abilities.</body></html>");
+							player.sendPacket(html);
+						}
 		}
 		
 		if (!getSpawn().is_customBossInstance())
