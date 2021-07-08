@@ -2345,6 +2345,7 @@ public final class Config
 	public static boolean SUBSTUCK_SKILLS;
 	public static boolean ALT_SERVER_NAME_ENABLED;
 	public static boolean ANNOUNCE_TO_ALL_SPAWN_RB;
+	public static boolean ANNOUNCE_RB_ON_DEAD;
 	public static boolean ANNOUNCE_TRY_BANNED_ACCOUNT;
 	public static String ALT_Server_Name;
 	public static boolean DONATOR_NAME_COLOR_ENABLED;
@@ -2489,6 +2490,7 @@ public final class Config
 			/** Server Name **/
 			ALT_SERVER_NAME_ENABLED = Boolean.parseBoolean(L2JFrozenSettings.getProperty("ServerNameEnabled", "false"));
 			ANNOUNCE_TO_ALL_SPAWN_RB = Boolean.parseBoolean(L2JFrozenSettings.getProperty("AnnounceToAllSpawnRb", "false"));
+			ANNOUNCE_RB_ON_DEAD = Boolean.parseBoolean(L2JFrozenSettings.getProperty("AnnounceRbOnDead", "False"));
 			ANNOUNCE_TRY_BANNED_ACCOUNT = Boolean.parseBoolean(L2JFrozenSettings.getProperty("AnnounceTryBannedAccount", "false"));
 			ALT_Server_Name = String.valueOf(L2JFrozenSettings.getProperty("ServerName"));
 			DIFFERENT_Z_CHANGE_OBJECT = Integer.parseInt(L2JFrozenSettings.getProperty("DifferentZchangeObject", "650"));

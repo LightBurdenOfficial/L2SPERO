@@ -241,6 +241,10 @@ public class RaidBossSpawnManager
 			if (Config.SAVE_RAIDBOSS_STATUS_INTO_DB)
 			{
 				updateDb();
+				if (Config.ANNOUNCE_RB_ON_DEAD)
+				{
+					Announcements.getInstance().announceToAll("RaidBoss : " + boss.getName() + " is dead now!");
+				}
 			}
 		}
 		else
