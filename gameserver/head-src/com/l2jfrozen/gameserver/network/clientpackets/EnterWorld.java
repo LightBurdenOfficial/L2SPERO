@@ -300,6 +300,15 @@ public class EnterWorld extends L2GameClientPacket
 		if (Config.CHECK_SKILLS_ON_ENTER && !Config.ALT_GAME_SKILL_LEARN)
 			activeChar.checkAllowedSkills();
 		
+		if (Config.ONLINE_PLAYERS_AT_STARTUP)
+		{
+			int PLAYERS_ONLINE = L2World.getInstance().getAllPlayers().size() + Config.PLAYERS_ONLINE_TRICK;
+			SystemMessage sm = new SystemMessage(SystemMessageId.S1_S2);
+			sm.addString("Players online: ");
+			sm.addNumber(PLAYERS_ONLINE);
+			sendPacket(sm);
+		}
+		
 		PetitionManager.getInstance().checkPetitionMessages(activeChar);
 		
 		// Send user info again .. just like the real client
