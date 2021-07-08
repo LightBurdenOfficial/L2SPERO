@@ -579,6 +579,7 @@ public final class Config
 	public static boolean ALLOW_AIO_USE_CM;
 	public static boolean ALLOW_AIO_IN_EVENTS;
 	public static boolean ANNOUNCE_CASTLE_LORDS;
+	public static boolean ANNOUNCE_HERO_LOGIN;
 	public static boolean TVT_ALLOW_HEALER_CLASSES;
 	public static boolean CTF_ALLOW_HEALER_CLASSES;
 	public static String DISABLE_ID_CLASSES_STRING;
@@ -689,6 +690,7 @@ public final class Config
 			ALLOW_AIO_USE_CM = Boolean.parseBoolean(otherSettings.getProperty("AllowAioUseClassMaster", "False"));
 			ALLOW_AIO_IN_EVENTS = Boolean.parseBoolean(otherSettings.getProperty("AllowAioInEvents", "False"));
 			ANNOUNCE_CASTLE_LORDS = Boolean.parseBoolean(otherSettings.getProperty("AnnounceCastleLords", "False"));
+			ANNOUNCE_HERO_LOGIN = Boolean.parseBoolean(otherSettings.getProperty("AnnounceHeroLogin", "False"));
 			TVT_ALLOW_HEALER_CLASSES = Boolean.parseBoolean(otherSettings.getProperty("TvTAllowedHealerClasses", "true"));
 			CTF_ALLOW_HEALER_CLASSES = Boolean.parseBoolean(otherSettings.getProperty("CtFAllowedHealerClasses", "true"));
 			DISABLE_ID_CLASSES_STRING = otherSettings.getProperty("DisableIdForClasses", "");
