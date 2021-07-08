@@ -301,6 +301,13 @@ public final class TradeRequest extends L2GameClientPacket
 		final SystemMessage sm = new SystemMessage(SystemMessageId.REQUEST_S1_FOR_TRADE);
 		sm.addString(partner.getName());
 		player.sendPacket(sm);
+		
+		if (player.isInParty() || partner.isInParty())
+		{
+			player.sendMessage("Cannot trade in party mode for security reasons");
+			partner.sendMessage("Cannot trade in party mode for security reasons");
+			return;
+		}
 	}
 	
 	@Override
