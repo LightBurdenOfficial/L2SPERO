@@ -785,6 +785,11 @@ public class L2Attackable extends L2NpcInstance
 									exp = (long) (exp * Config.DONATOR_XPSP_RATE);
 									sp = (int) (sp * Config.DONATOR_XPSP_RATE);
 								}
+								if (player.isVip() && Config.ALLOW_VIP_XPSP)
+								{
+									exp *= Config.VIP_XP;
+									sp *= Config.VIP_SP;
+								}
 							}
 							
 							// Distribute the Exp and SP between the L2PcInstance and its L2Summon

@@ -577,6 +577,13 @@ public final class Config
 	public static int AIO_TCOLOR;
 	public static boolean ALLOW_AIO_USE_GK;
 	public static boolean ALLOW_AIO_USE_CM;
+	public static boolean ALLOW_VIP_NCOLOR;
+	public static int VIP_NCOLOR;
+	public static boolean ALLOW_VIP_TCOLOR;
+	public static int VIP_TCOLOR;
+	public static boolean ALLOW_VIP_XPSP;
+	public static int VIP_XP;
+	public static int VIP_SP;
 	public static boolean ALLOW_AIO_IN_EVENTS;
 	public static boolean ANNOUNCE_CASTLE_LORDS;
 	public static boolean ANNOUNCE_HERO_LOGIN;
@@ -689,6 +696,13 @@ public final class Config
 			ALLOW_AIO_USE_GK = Boolean.parseBoolean(otherSettings.getProperty("AllowAioUseGk", "False"));
 			ALLOW_AIO_USE_CM = Boolean.parseBoolean(otherSettings.getProperty("AllowAioUseClassMaster", "False"));
 			ALLOW_AIO_IN_EVENTS = Boolean.parseBoolean(otherSettings.getProperty("AllowAioInEvents", "False"));
+			ALLOW_VIP_NCOLOR = Boolean.parseBoolean(otherSettings.getProperty("AllowVipNameColor", "True"));
+			VIP_NCOLOR = Integer.decode("0x" + otherSettings.getProperty("VipNameColor", "0088FF"));
+			ALLOW_VIP_TCOLOR = Boolean.parseBoolean(otherSettings.getProperty("AllowVipTitleColor", "True"));
+			VIP_TCOLOR = Integer.decode("0x" + otherSettings.getProperty("VipTitleColor", "0088FF"));
+			ALLOW_VIP_XPSP = Boolean.parseBoolean(otherSettings.getProperty("AllowVipMulXpSp", "True"));
+			VIP_XP = Integer.parseInt(otherSettings.getProperty("VipMulXp", "2"));
+			VIP_SP = Integer.parseInt(otherSettings.getProperty("VipMulSp", "2"));
 			ANNOUNCE_CASTLE_LORDS = Boolean.parseBoolean(otherSettings.getProperty("AnnounceCastleLords", "False"));
 			ANNOUNCE_HERO_LOGIN = Boolean.parseBoolean(otherSettings.getProperty("AnnounceHeroLogin", "False"));
 			TVT_ALLOW_HEALER_CLASSES = Boolean.parseBoolean(otherSettings.getProperty("TvTAllowedHealerClasses", "true"));

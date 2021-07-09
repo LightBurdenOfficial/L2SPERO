@@ -94,6 +94,7 @@ import com.l2jfrozen.gameserver.handler.admincommandhandlers.AdminTownWar;
 import com.l2jfrozen.gameserver.handler.admincommandhandlers.AdminTvTEngine;
 import com.l2jfrozen.gameserver.handler.admincommandhandlers.AdminUnblockIp;
 import com.l2jfrozen.gameserver.handler.admincommandhandlers.AdminVIPEngine;
+import com.l2jfrozen.gameserver.handler.admincommandhandlers.AdminVip;
 import com.l2jfrozen.gameserver.handler.admincommandhandlers.AdminWho;
 import com.l2jfrozen.gameserver.handler.admincommandhandlers.AdminZone;
 
@@ -187,6 +188,7 @@ public class AdminCommandHandler
 		registerAdminCommandHandler(new AdminNoble());
 		registerAdminCommandHandler(new AdminBuffs());
 		registerAdminCommandHandler(new AdminAio());
+		registerAdminCommandHandler(new AdminVip());
 		registerAdminCommandHandler(new AdminCharSupervision());
 		registerAdminCommandHandler(new AdminWho()); // L2OFF command
 		registerAdminCommandHandler(new AdminSendDonate());

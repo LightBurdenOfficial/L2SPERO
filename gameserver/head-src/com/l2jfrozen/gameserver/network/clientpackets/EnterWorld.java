@@ -106,9 +106,9 @@ public class EnterWorld extends L2GameClientPacket
 {
 	private static Logger LOGGER = Logger.getLogger(EnterWorld.class);
 	
-	private final SimpleDateFormat fmt = new SimpleDateFormat("H:mm.");
+	private final SimpleDateFormat fmt = new SimpleDateFormat("HH:mm.");
 	private long _daysleft;
-	SimpleDateFormat df = new SimpleDateFormat("dd MM yyyy");
+	SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy");
 	
 	public TaskPriority getPriority()
 	{
@@ -703,6 +703,15 @@ public class EnterWorld extends L2GameClientPacket
 		if (activeChar.isAio())
 			onEnterAio(activeChar);
 		
+		if(Config.ALLOW_VIP_NCOLOR && activeChar.isVip())
+			activeChar.getAppearance().setNameColor(Config.VIP_NCOLOR);
+
+		if(Config.ALLOW_VIP_TCOLOR && activeChar.isVip())
+			activeChar.getAppearance().setTitleColor(Config.VIP_TCOLOR);
+
+		if(activeChar.isVip())
+			onEnterVip(activeChar);
+		
 		activeChar.updateNameTitleColor();
 		
 		sendPacket(new UserInfo(activeChar));
@@ -784,6 +793,34 @@ public class EnterWorld extends L2GameClientPacket
 			
 			if (partner != null)
 				partner.sendMessage("Your partner has logged in");
+		}
+	}
+
+	private void onEnterVip(L2PcInstance activeChar)
+	{
+		long curDay = Calendar.getInstance().getTimeInMillis();
+		long endDay = activeChar.getVipEndTime();
+		
+		if(curDay > endDay)
+		{
+			activeChar.setVip(false);
+			activeChar.setVipEndTime(0);
+			activeChar.sendMessage("[Vip System]: Removed your Vip stats... period ends ");
+		}
+		else
+		{
+			Date dt = new Date(endDay);
+			_daysleft = (endDay - curDay) / 86400000;
+
+			if(_daysleft > 30)
+				activeChar.sendMessage("[Vip System]: Vip period ends in " + df.format(dt) + ". enjoy the Game");
+			else if(_daysleft > 0)
+				activeChar.sendMessage("[Vip System]: Left " + (int)_daysleft + " days for Vip period ends");
+			else if(_daysleft < 1)
+			{
+				long hour = (endDay - curDay) / 3600000;
+				activeChar.sendMessage("[Vip System]: Left " + (int)hour + " hours to Vip period ends");
+			}
 		}
 	}
 	
