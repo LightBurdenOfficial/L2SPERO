@@ -634,6 +634,10 @@ INSERT IGNORE INTO `admin_command_access_rights` VALUES
 ('admin_zone_check','2'),
 ('admin_zone_reload','2'),
 
+-- Section: SendDonate 
+('admin_senddonate','1'),
+('admin_givedonate','1'),
+
 -- Section: AIO
 ('admin_setaio','2'),
 ('admin_removeaio','2');

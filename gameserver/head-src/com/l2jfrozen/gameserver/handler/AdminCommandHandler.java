@@ -81,6 +81,7 @@ import com.l2jfrozen.gameserver.handler.admincommandhandlers.AdminRepairChar;
 import com.l2jfrozen.gameserver.handler.admincommandhandlers.AdminRes;
 import com.l2jfrozen.gameserver.handler.admincommandhandlers.AdminRideWyvern;
 import com.l2jfrozen.gameserver.handler.admincommandhandlers.AdminScript;
+import com.l2jfrozen.gameserver.handler.admincommandhandlers.AdminSendDonate;
 import com.l2jfrozen.gameserver.handler.admincommandhandlers.AdminShop;
 import com.l2jfrozen.gameserver.handler.admincommandhandlers.AdminShutdown;
 import com.l2jfrozen.gameserver.handler.admincommandhandlers.AdminSiege;
@@ -188,6 +189,7 @@ public class AdminCommandHandler
 		registerAdminCommandHandler(new AdminAio());
 		registerAdminCommandHandler(new AdminCharSupervision());
 		registerAdminCommandHandler(new AdminWho()); // L2OFF command
+		registerAdminCommandHandler(new AdminSendDonate());
 		// ATTENTION: adding new command handlers, you have to change the
 		// sql file containing the access levels rights
 		
