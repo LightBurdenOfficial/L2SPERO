@@ -39,6 +39,7 @@ import com.l2jfrozen.gameserver.handler.admincommandhandlers.AdminCache;
 import com.l2jfrozen.gameserver.handler.admincommandhandlers.AdminChangeAccessLevel;
 import com.l2jfrozen.gameserver.handler.admincommandhandlers.AdminCharSupervision;
 import com.l2jfrozen.gameserver.handler.admincommandhandlers.AdminChristmas;
+import com.l2jfrozen.gameserver.handler.admincommandhandlers.AdminClanFullByName;
 import com.l2jfrozen.gameserver.handler.admincommandhandlers.AdminCreateItem;
 import com.l2jfrozen.gameserver.handler.admincommandhandlers.AdminCursedWeapons;
 import com.l2jfrozen.gameserver.handler.admincommandhandlers.AdminDMEngine;
@@ -192,6 +193,7 @@ public class AdminCommandHandler
 		registerAdminCommandHandler(new AdminCharSupervision());
 		registerAdminCommandHandler(new AdminWho()); // L2OFF command
 		registerAdminCommandHandler(new AdminSendDonate());
+		registerAdminCommandHandler(new AdminClanFullByName());
 		// ATTENTION: adding new command handlers, you have to change the
 		// sql file containing the access levels rights
 		
