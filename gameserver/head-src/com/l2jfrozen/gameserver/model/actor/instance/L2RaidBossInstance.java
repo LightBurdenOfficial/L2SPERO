@@ -21,6 +21,7 @@
 package com.l2jfrozen.gameserver.model.actor.instance;
 
 import com.l2jfrozen.Config;
+import com.l2jfrozen.gameserver.model.entity.Announcements;
 import com.l2jfrozen.gameserver.managers.RaidBossPointsManager;
 import com.l2jfrozen.gameserver.managers.RaidBossSpawnManager;
 import com.l2jfrozen.gameserver.model.L2Character;
@@ -102,11 +103,24 @@ public final class L2RaidBossInstance extends L2MonsterInstance
 		
 		if (player != null)
 		{
+			if (getNpcId() == Config.IdBoss)
+			{
+			
+				com.l2jfrozen.gameserver.model.entity.event.BossEvent.unspawnEventBoss2();
+				Announcements.getInstance().gameAnnounceToAll("Boss was killed Congratulations "+player);
+			}
+			
 			SystemMessage msg = new SystemMessage(SystemMessageId.RAID_WAS_SUCCESSFUL);
 			broadcastPacket(msg);
 			msg = null;
 			if (player.getParty() != null)
 			{
+				if (getNpcId() == Config.IdBoss)
+				{
+					com.l2jfrozen.gameserver.model.entity.event.BossEvent.unspawnEventBoss2();
+					Announcements.getInstance().gameAnnounceToAll("Boss was killed Congratulations "+player);
+				}
+				
 				for (final L2PcInstance member : player.getParty().getPartyMembers())
 				{
 					RaidBossPointsManager.addPoints(member, getNpcId(), (getLevel() / 2) + Rnd.get(-5, 5));

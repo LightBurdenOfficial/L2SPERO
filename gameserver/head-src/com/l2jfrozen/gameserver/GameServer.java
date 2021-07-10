@@ -581,6 +581,14 @@ public class GameServer
 		if ((Config.OFFLINE_TRADE_ENABLE || Config.OFFLINE_CRAFT_ENABLE) && Config.RESTORE_OFFLINERS)
 			OfflineTradeTable.restoreOfflineTraders();
 		
+		Util.printSection("Event Manager");
+			if(Config.EVENT_BY_TIME_OF_DAY)
+				InitialBossEvent.getInstance().StartCalculationOfNextEventTime();
+			else
+				LOGGER.info("# Auto Boss Event Disabled #");
+		
+			System.gc();
+		
 		Util.printSection("Protection");
 		
 		if (Config.CHECK_SKILLS_ON_ENTER)
