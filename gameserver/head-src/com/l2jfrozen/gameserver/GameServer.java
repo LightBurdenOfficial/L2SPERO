@@ -122,6 +122,7 @@ import com.l2jfrozen.gameserver.model.PartyMatchWaitingList;
 import com.l2jfrozen.gameserver.model.entity.Announcements;
 import com.l2jfrozen.gameserver.model.entity.Hero;
 import com.l2jfrozen.gameserver.model.entity.MonsterRace;
+import com.l2jfrozen.gameserver.model.entity.event.TriviaEventManager;
 import com.l2jfrozen.gameserver.model.entity.event.manager.EventManager;
 import com.l2jfrozen.gameserver.model.entity.olympiad.Olympiad;
 import com.l2jfrozen.gameserver.model.entity.sevensigns.SevenSigns;
@@ -418,6 +419,8 @@ public class GameServer
 		Util.printSection("Olympiad System");
 		Olympiad.getInstance();
 		Hero.getInstance();
+		
+		TriviaEventManager.getInstance();
 		
 		Util.printSection("Access Levels");
 		AccessLevels.getInstance();

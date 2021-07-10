@@ -38,6 +38,7 @@ import com.l2jfrozen.gameserver.model.L2Object;
 import com.l2jfrozen.gameserver.model.L2World;
 import com.l2jfrozen.gameserver.model.actor.instance.L2PcInstance;
 import com.l2jfrozen.gameserver.model.actor.instance.L2PcInstance.PunishLevel;
+import com.l2jfrozen.gameserver.model.entity.event.Trivia;
 import com.l2jfrozen.gameserver.network.SystemChatChannelId;
 import com.l2jfrozen.gameserver.network.SystemMessageId;
 import com.l2jfrozen.gameserver.network.serverpackets.CreatureSay;
@@ -279,6 +280,25 @@ public final class Say2 extends L2GameClientPacket
 		{
 			case TELL:
 				final L2PcInstance receiver = L2World.getInstance().getPlayer(_target);
+				
+				if(_target.equalsIgnoreCase("trivia"))
+				{
+					if(Trivia.isInactive())
+					{
+						activeChar.sendMessage("Trivia event is not currently running.");
+						return;
+					}
+					else if(!Trivia.isAnswering() || Trivia.isCorrect() || Trivia.isRewarding())
+					{
+						activeChar.sendMessage("You cannot answer now.");
+						return;
+					}
+					else
+					{
+						Trivia.handleAnswer(_text,activeChar);
+						return;
+					}
+				}
 				
 				if (receiver == null)
 				{

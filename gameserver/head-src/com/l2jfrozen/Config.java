@@ -2299,6 +2299,42 @@ public final class Config
 	}
 	
 	// ============================================================
+	public static ArrayList<String>TRIVIA_INTERVAL = new ArrayList<String>();
+	public static int TRIVIA_ANSWER_TIME;
+	public static boolean TRIVIA_ENABLED;
+	public static int TRIVIA_TO_ASK;
+	
+	//============================================================
+	
+	public static void loadTriviaConfig()
+	{
+	final String EVENT_TRIVIA = FService.EVENT_TRIVIA_FILE;
+	
+		try
+		{
+			Properties TriviaSettings = new Properties();
+			InputStream is = new FileInputStream(new File(EVENT_TRIVIA));
+			TriviaSettings.load(is);
+			is.close();
+		
+			String [] times=TriviaSettings.getProperty("TriviaInterval", "22:00,22:15,:22:30").split(",");
+			TRIVIA_INTERVAL = new ArrayList<String>();
+			for(String t:times)
+				TRIVIA_INTERVAL.add(t);
+			TRIVIA_ANSWER_TIME = Integer.parseInt(TriviaSettings.getProperty("TriviaAnswerTime", "30"));
+			TRIVIA_ENABLED = Boolean.parseBoolean(TriviaSettings.getProperty("TriviaEnabled", "true"));
+			TRIVIA_TO_ASK = Integer.parseInt(TriviaSettings.getProperty("TriviaAsk", "1"));
+		
+		
+		}
+		 catch(Exception e)
+		 {
+			 e.printStackTrace();
+			 throw new Error("Failed to Load " + EVENT_TRIVIA + " File.");
+		 }
+	 }
+	
+	//============================================================
 	public static String CTF_EVEN_TEAMS;
 	public static boolean CTF_ALLOW_INTERFERENCE;
 	public static boolean CTF_ALLOW_POTIONS;
@@ -4583,6 +4619,7 @@ public final class Config
 			loadTVTConfig();
 			loadTWConfig();
 			loadIRCConfig();
+			loadTriviaConfig();
 			
 			// Protect
 			loadFloodConfig();

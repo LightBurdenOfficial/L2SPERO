@@ -175,6 +175,7 @@
 				<include name="chatfilter.txt" />
 				<include name="questionwords.txt" />
 				<include name="key.cfg" />
+				<include name="*.xml" />
 				<!-- include name="banned_ip.cfg" / -->
 			</fileset>
 		</copy>
