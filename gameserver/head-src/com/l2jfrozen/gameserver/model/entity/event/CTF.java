@@ -1987,11 +1987,11 @@ public class CTF implements EventTask
 		{
 			final NpcHtmlMessage adminReply = new NpcHtmlMessage(5);
 			
-			final TextBuilder replyMSG = new TextBuilder("<html><title>" + _eventName + "</title><body>");
-			replyMSG.append("<center><img src=\"L2UI_CH3.herotower_deco\" width=256 height=32></center><br1>");
-			replyMSG.append("<center><font color=\"3366CC\">Current event:</font></center><br1>");
-			replyMSG.append("<center>Name:&nbsp;<font color=\"00FF00\">" + _eventName + "</font></center><br1>");
-			replyMSG.append("<center>Description:&nbsp;<font color=\"00FF00\">" + _eventDesc + "</font></center><br><br>");
+			final TextBuilder replyMSG = new TextBuilder("<html><title>CTF</title><body>");
+			replyMSG.append("<center><br><img src=\"L2UI_CH3.onscrmsg_pattern01_2\" width=300 height=32></center><br1>");
+			replyMSG.append("<center><font color=\"LEVEL\">Current event:</font></center><br1>");
+			replyMSG.append("<center>Name: &nbsp;<font color=\"0066CC\">" + _eventName + "</font></center><br1>");
+			replyMSG.append("<center>Description:&nbsp;<font color=\"0066CC\">" + _eventDesc + "</font></center><br>");
 			
 			if (!_started && !_joining)
 				replyMSG.append("<center>Wait till the admin/gm start the participation.</center>");
@@ -1999,14 +1999,14 @@ public class CTF implements EventTask
 			{
 				if (!_started)
 				{
-					replyMSG.append("Currently participated: <font color=\"00FF00\">" + _playersShuffle.size() + ".</font><br>");
-					replyMSG.append("Max players: <font color=\"00FF00\">" + _maxPlayers + "</font><br><br>");
-					replyMSG.append("<font color=\"FFFF00\">You can't participate to this event.</font><br>");
+					replyMSG.append("Currently participated: <font color=\"0066CC\">" + _playersShuffle.size() + ".</font><br>");
+					replyMSG.append("Max players: <font color=\"0066CC\">" + _maxPlayers + "</font><br>");
+					replyMSG.append("<font color=\"0066CC\">You can't participate to this event.</font><br>");
 				}
 			}
 			else if (eventPlayer.isCursedWeaponEquiped() && !Config.CTF_JOIN_CURSED)
 			{
-				replyMSG.append("<font color=\"FFFF00\">You can't participate to this event with a cursed Weapon.</font><br>");
+				replyMSG.append("<font color=\"0066CC\">You can't participate to this event with a cursed Weapon.</font><br>");
 			}
 			else if (!_started && _joining && eventPlayer.getLevel() >= _minlvl && eventPlayer.getLevel() <= _maxlvl)
 			{
@@ -2015,21 +2015,22 @@ public class CTF implements EventTask
 					if (_players.contains(eventPlayer) || _playersShuffle.contains(eventPlayer) || checkShufflePlayers(eventPlayer))
 					{
 						if (Config.CTF_EVEN_TEAMS.equals("NO") || Config.CTF_EVEN_TEAMS.equals("BALANCE"))
-							replyMSG.append("You participated already in team <font color=\"LEVEL\">" + eventPlayer._teamNameCTF + "</font><br><br>");
+							replyMSG.append("You participated already in team <font color=\"0066CC\">" + eventPlayer._teamNameCTF + "</font><br><br>");
 						else if (Config.CTF_EVEN_TEAMS.equals("SHUFFLE"))
-							replyMSG.append("<center><font color=\"3366CC\">You participated already!</font></center><br><br>");
+							replyMSG.append("<center><font color=\"0066CC\">You participated already!.</font></center><br>");
 						
-						replyMSG.append("<center>Joined Players: <font color=\"00FF00\">" + _playersShuffle.size() + "</font></center><br>");
+						replyMSG.append("<center>Joined Players: <font color=\"0066CC\">" + _playersShuffle.size() + "</font></center><br>");
 						
-						replyMSG.append("<center><font color=\"3366CC\">Wait till event start or remove your participation!</font><center>");
-						replyMSG.append("<center><button value=\"Remove\" action=\"bypass -h npc_" + objectId + "_ctf_player_leave\" width=85 height=21 back=\"L2UI_ch3.Btn1_normalOn\" fore=\"L2UI_ch3.Btn1_normal\"></center>");
+						replyMSG.append("<center><button value=\"Remove\" action=\"bypass -h npc_" + objectId+ "_ctf_player_leave\" width=140 height=21 back=\"L2UI_ch3.msnbutton_over\" fore=\"L2UI_ch3.msnbutton\"></center>");
+						replyMSG.append("<center><img src=\"L2UI_CH3.onscrmsg_pattern01_1\" width=300 height=32></center><br1>");
+						replyMSG.append("<center><font color=\"111111\">by SPEROCOIN</font></center>");
 					}
 					else
 					{
-						replyMSG.append("<center><font color=\"3366CC\">You want to participate in the event?</font></center><br>");
-						replyMSG.append("<center><td width=\"200\">Min lvl: <font color=\"00FF00\">" + _minlvl + "</font></center></td><br>");
-						replyMSG.append("<center><td width=\"200\">Max lvl: <font color=\"00FF00\">" + _maxlvl + "</font></center></td><br><br>");
-						replyMSG.append("<center><font color=\"3366CC\">Teams:</font></center><br>");
+						replyMSG.append("<center><font color=\"LEVEL\">You want to participate in the event?</font></center><br>");
+						replyMSG.append("<center><td width=\"200\">Min. level: <font color=\"0066CC\">" + _minlvl + "</font></center></td><br>");
+						replyMSG.append("<center><td width=\"200\">Max. level: <font color=\"0066CC\">" + _maxlvl + "</font></center></td><br>");
+						replyMSG.append("<center><font color=\"LEVEL\">Teams: </font></center>");
 						
 						if (Config.CTF_EVEN_TEAMS.equals("NO") || Config.CTF_EVEN_TEAMS.equals("BALANCE"))
 						{
@@ -2037,8 +2038,8 @@ public class CTF implements EventTask
 							
 							for (final String team : _teams)
 							{
-								replyMSG.append("<tr><td width=\"100\"><font color=\"LEVEL\">" + team + "</font>&nbsp;(" + teamPlayersCount(team) + " joined)</td>");
-								replyMSG.append("<center><td width=\"60\"><button value=\"Join\" action=\"bypass -h npc_" + objectId + "_ctf_player_join " + team + "\" width=85 height=21 back=\"L2UI_ch3.Btn1_normalOn\" fore=\"L2UI_ch3.Btn1_normal\"></center></td></tr>");
+								replyMSG.append("<tr><td width=\"100\"><font color=\"0066CC\">" + team + "</font>&nbsp;(" + teamPlayersCount(team) + " joined.)</td>");
+								replyMSG.append("<center><td width=\"60\"><button value=\"Join\" action=\"bypass -h npc_" + objectId + "_ctf_player_join " + team + "\" width=140 height=21 back=\"L2UI_ch3.msnbutton_over\" fore=\"L2UI_ch3.msnbutton\"></center></td></tr>");
 							}
 							replyMSG.append("</table></center>");
 						}
@@ -2047,14 +2048,15 @@ public class CTF implements EventTask
 							replyMSG.append("<center>");
 							
 							for (final String team : _teams)
-								replyMSG.append("<tr><td width=\"100\"><font color=\"LEVEL\">" + team + "</font> &nbsp;</td>");
+								replyMSG.append("<tr><td width=\"100\"><font color=\"0066CC\">" + team + "</font> &nbsp;</td>");
 							
 							replyMSG.append("</center><br>");
 							
-							replyMSG.append("<center><button value=\"Join Event\" action=\"bypass -h npc_" + objectId + "_ctf_player_join eventShuffle\" width=85 height=21 back=\"L2UI_ch3.Btn1_normalOn\" fore=\"L2UI_ch3.Btn1_normal\"></center>");
-							replyMSG.append("<center><font color=\"3366CC\">Teams will be reandomly generated!</font></center><br>");
-							replyMSG.append("<center>Joined Players:</font> <font color=\"LEVEL\">" + _playersShuffle.size() + "</center></font><br>");
+							replyMSG.append("<center><button value=\"Join Event\" action=\"bypass -h npc_" + objectId + "_ctf_player_join eventShuffle\" width=140 height=21 back=\"L2UI_ch3.msnbutton_over\" fore=\"L2UI_ch3.msnbutton\"></center>");
+							replyMSG.append("<center><font color=\"0066CC\">Teams will be reandomly generated!</font></center><br>");
+							replyMSG.append("<center>Joined Players: </font><font color=\"0066CC\">" + _playersShuffle.size() + "</center></font><br>");
 							replyMSG.append("<center>Reward: <font color=\"LEVEL\">" + _rewardAmount + " " + ItemTable.getInstance().getTemplate(_rewardId).getName() + "</center></font>");
+							replyMSG.append("<center><img src=\"L2UI_CH3.onscrmsg_pattern01_1\" width=300 height=32></center>");
 						}
 					}
 				}
@@ -2064,10 +2066,12 @@ public class CTF implements EventTask
 				replyMSG.append("<center>" + _eventName + " match is in progress.</center>");
 			else if (eventPlayer.getLevel() < _minlvl || eventPlayer.getLevel() > _maxlvl)
 			{
-				replyMSG.append("Your lvl: <font color=\"00FF00\">" + eventPlayer.getLevel() + "</font><br>");
-				replyMSG.append("Min lvl: <font color=\"00FF00\">" + _minlvl + "</font><br>");
-				replyMSG.append("Max lvl: <font color=\"00FF00\">" + _maxlvl + "</font><br><br>");
-				replyMSG.append("<font color=\"FFFF00\">You can't participate to this event.</font><br>");
+				replyMSG.append("<center>Your level: <font color=\"0066CC\">" + eventPlayer.getLevel() + "</font><br>");
+				replyMSG.append("<center>Min. level: <font color=\"0066CC\">" + _minlvl + "</font><br>");
+				replyMSG.append("<center>Max. level: <font color=\"0066CC\">" + _maxlvl + "</font><br><br>");
+				replyMSG.append("<center><font color=\"0066CC\">You can't participate to this event.</font><br>");
+				replyMSG.append("<center><img src=\"L2UI_CH3.onscrmsg_pattern01_1\" width=256 height=32></center><br1>");
+				replyMSG.append("<center><font color=\"111111\">by SPEROCOIN</font></center>");
 			}
 			
 			replyMSG.append("</body></html>");

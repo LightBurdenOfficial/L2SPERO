@@ -1759,12 +1759,11 @@ public class DM implements EventTask
 		{
 			final NpcHtmlMessage adminReply = new NpcHtmlMessage(5);
 			
-			final TextBuilder replyMSG = new TextBuilder("<html><title>" + _eventName + "</title><body>");
-			replyMSG.append("<center><img src=\"L2UI_CH3.herotower_deco\" width=256 height=32></center><br1>");
-			replyMSG.append("<center><font color=\"3366CC\">Current event:</font></center><br1>");
-			replyMSG.append("<center>Name:&nbsp;<font color=\"00FF00\">" + _eventName + "</font></center><br1>");
-			replyMSG.append("<center>Description:&nbsp;<font color=\"00FF00\">" + _eventDesc + "</font></center><br><br>");
-			replyMSG.append("<center>Event Type:&nbsp;<font color=\"00FF00\"> Full Buff Event!!! </font></center><br><br>");
+			final TextBuilder replyMSG = new TextBuilder("<html><title>DM</title><body>");
+			replyMSG.append("<center><br><img src=\"L2UI_CH3.onscrmsg_pattern01_2\" width=300 height=32></center><br1>");
+			replyMSG.append("<center><font color=\"LEVEL\">Current event:</font></center><br1>");
+			replyMSG.append("<center>Name: &nbsp;<font color=\"0066CC\">" + _eventName + "</font></center><br1>");
+			replyMSG.append("<center>Description:&nbsp;<font color=\"0066CC\">" + _eventDesc + "</font></center><br>");
 			
 			// final Vector<L2PcInstance> players = getPlayers();
 			synchronized (_players)
@@ -1776,14 +1775,14 @@ public class DM implements EventTask
 				{
 					if (!_started)
 					{
-						replyMSG.append("Currently participated: <font color=\"00FF00\">" + _players.size() + ".</font><br>");
-						replyMSG.append("Max players: <font color=\"00FF00\">" + _maxPlayers + "</font><br><br>");
-						replyMSG.append("<font color=\"FFFF00\">You can't participate to this event.</font><br>");
+						replyMSG.append("Currently participated: <font color=\"0066CC\">" + _players.size() + ".</font><br>");
+						replyMSG.append("Max players: <font color=\"0066CC\">" + _maxPlayers + "</font><br>");
+						replyMSG.append("<font color=\"0066CC\">You can't participate to this event.</font><br>");
 					}
 				}
 				else if (eventPlayer.isCursedWeaponEquiped() && !Config.DM_JOIN_CURSED)
 				{
-					replyMSG.append("<font color=\"FFFF00\">You can't participate to this event with a cursed Weapon.</font><br>");
+					replyMSG.append("<font color=\"0066CC\">You can't participate to this event with a cursed Weapon.</font><br>");
 				}
 				else if (!_started && _joining && eventPlayer.getLevel() >= _minlvl && eventPlayer.getLevel() <= _maxlvl)
 				{
@@ -1791,20 +1790,21 @@ public class DM implements EventTask
 					{
 						replyMSG.append("<center><font color=\"3366CC\">You participated already!</font></center><br><br>");
 						
-						replyMSG.append("<center>Joined Players: <font color=\"00FF00\">" + _players.size() + "</font></center><br>");
-						replyMSG.append("<table border=\"0\"><tr>");
-						replyMSG.append("<td width=\"200\">Wait till event start or</td>");
-						replyMSG.append("<td width=\"60\"><center><button value=\"remove\" action=\"bypass -h npc_" + objectId + "_dmevent_player_leave\" width=50 height=15 back=\"sek.cbui94\" fore=\"sek.cbui92\"></center></td>");
-						replyMSG.append("<td width=\"100\">your participation!</td>");
-						replyMSG.append("</tr></table>");
+						replyMSG.append("<center>Joined Players: <font color=\"0066CC\">" + _players.size() + "</font></center><br>");
+						
+						replyMSG.append("<center><button value=\"Remove\" action=\"bypass -h npc_" + objectId+ "_dmevent_player_leave\" width=140 height=21 back=\"L2UI_ch3.msnbutton_over\" fore=\"L2UI_ch3.msnbutton\"></center>");
+						replyMSG.append("<center><img src=\"L2UI_CH3.onscrmsg_pattern01_1\" width=300 height=32></center><br1>");
+						replyMSG.append("<center><font color=\"111111\">by SPEROCOIN</font></center>");
 					}
 					else
 					{
-						replyMSG.append("<center>Joined Players: <font color=\"00FF00\">" + _players.size() + "</font></center><br>");
-						replyMSG.append("<center><font color=\"3366CC\">You want to participate in the event?</font></center><br>");
-						replyMSG.append("<center><td width=\"200\">Min lvl: <font color=\"00FF00\">" + _minlvl + "</font></center></td><br>");
-						replyMSG.append("<center><td width=\"200\">Max lvl: <font color=\"00FF00\">" + _maxlvl + "</font></center></td><br><br>");
-						replyMSG.append("<center><button value=\"Join\" action=\"bypass -h npc_" + objectId + "_dmevent_player_join\" width=50 height=15 back=\"sek.cbui94\" fore=\"sek.cbui92\"></center><br>");
+						replyMSG.append("<center><font color=\"LEVEL\">You want to participate in the event?</font></center><br>");
+						replyMSG.append("<center><td width=\"200\">Min. level: <font color=\"0066CC\">" + _minlvl + "</font></center></td><br>");
+						replyMSG.append("<center><td width=\"200\">Max. level: <font color=\"0066CC\">" + _maxlvl + "</font></center></td><br>");
+						replyMSG.append("<center><button value=\"Join Event\" action=\"bypass -h npc_" + objectId + "_dmevent_player_join\" width=140 height=21 back=\"L2UI_ch3.msnbutton_over\" fore=\"L2UI_ch3.msnbutton\"></center>");
+						replyMSG.append("<center>Joined Players: <font color=\"0066CC\">" + _players.size() + "</font></center><br>");
+						replyMSG.append("<center>Reward: <font color=\"LEVEL\">" + _rewardAmount + " " + ItemTable.getInstance().getTemplate(_rewardId).getName()+ "</center></font>");
+						replyMSG.append("<center><img src=\"L2UI_CH3.onscrmsg_pattern01_1\" width=300 height=32></center>");
 						
 					}
 				}
@@ -1812,10 +1812,12 @@ public class DM implements EventTask
 					replyMSG.append("<center>" + _eventName + " match is in progress.</center>");
 				else if (eventPlayer.getLevel() < _minlvl || eventPlayer.getLevel() > _maxlvl)
 				{
-					replyMSG.append("Your lvl: <font color=\"00FF00\">" + eventPlayer.getLevel() + "</font><br>");
-					replyMSG.append("Min lvl: <font color=\"00FF00\">" + _minlvl + "</font><br>");
-					replyMSG.append("Max lvl: <font color=\"00FF00\">" + _maxlvl + "</font><br><br>");
-					replyMSG.append("<font color=\"FFFF00\">You can't participate to this event.</font><br>");
+					replyMSG.append("<center>Your level: <font color=\"0066CC\">" + eventPlayer.getLevel() + "</font><br>");
+					replyMSG.append("<center>Min. level: <font color=\"0066CC\">" + _minlvl + "</font><br>");
+					replyMSG.append("<center>Max. level: <font color=\"0066CC\">" + _maxlvl + "</font><br><br>");
+					replyMSG.append("<center><font color=\"0066CC\">You can't participate to this event.</font><br>");
+					replyMSG.append("<center><img src=\"L2UI_CH3.onscrmsg_pattern01_1\" width=300 height=32></center><br1>");
+					replyMSG.append("<center><font color=\"111111\">by SPEROCOIN</font></center>");
 				}
 				
 			}
