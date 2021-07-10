@@ -72,6 +72,7 @@ public final class Config
 	public static boolean MASTERACCESS_TITLE_COLOR_ENABLED;
 	public static int MASTERACCESS_NAME_COLOR;
 	public static int MASTERACCESS_TITLE_COLOR;
+	public static boolean ALLOW_TOP_VIEW;
 	
 	// ============================================================
 	public static void loadAccessConfig()
@@ -2476,6 +2477,7 @@ public final class Config
 			is.close();
 			
 			/** Custom Tables **/
+			ALLOW_TOP_VIEW = Boolean.valueOf(L2JFrozenSettings.getProperty("AllowTopView", "false"));
 			CUSTOM_SPAWNLIST_TABLE = Boolean.valueOf(L2JFrozenSettings.getProperty("CustomSpawnlistTable", "True"));
 			SAVE_GMSPAWN_ON_CUSTOM = Boolean.valueOf(L2JFrozenSettings.getProperty("SaveGmSpawnOnCustom", "True"));
 			DELETE_GMSPAWN_ON_CUSTOM = Boolean.valueOf(L2JFrozenSettings.getProperty("DeleteGmSpawnOnCustom", "True"));

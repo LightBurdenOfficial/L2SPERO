@@ -40,6 +40,7 @@ import com.l2jfrozen.gameserver.handler.voicedcommandhandlers.TvTCmd;
 import com.l2jfrozen.gameserver.handler.voicedcommandhandlers.VersionCmd;
 import com.l2jfrozen.gameserver.handler.voicedcommandhandlers.Voting;
 import com.l2jfrozen.gameserver.handler.voicedcommandhandlers.Wedding;
+import com.l2jfrozen.gameserver.handler.voicedcommandhandlers.Top;
 
 /**
  * This class ...
@@ -119,6 +120,11 @@ public class VoicedCommandHandler
 		if (Config.OFFLINE_TRADE_ENABLE && Config.OFFLINE_COMMAND2)
 		{
 			registerVoicedCommandHandler(new OfflineShop());
+		}
+		
+		if (Config.ALLOW_TOP_VIEW)
+		{
+		registerVoicedCommandHandler(new Top());
 		}
 		
 		LOGGER.info("VoicedCommandHandler: Loaded " + _datatable.size() + " handlers.");
