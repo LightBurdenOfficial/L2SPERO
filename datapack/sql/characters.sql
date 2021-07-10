@@ -85,6 +85,8 @@ CREATE TABLE IF NOT EXISTS characters (
   first_log INT DEFAULT 1,
   aio decimal(1,0) NOT NULL DEFAULT 0,
   aio_end decimal(20,0) NOT NULL DEFAULT 0,
+  vip decimal(1,0) NOT NULL DEFAULT 0,
+  vip_end decimal(20,0) NOT NULL DEFAULT 0,
   PRIMARY KEY  (obj_Id),
   KEY `clanid` (`clanid`)
 ) ;
