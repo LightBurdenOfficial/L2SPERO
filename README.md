@@ -31,8 +31,7 @@
 * [ADMIN] /senddonate e /givedonate - Abre menu de donate(https://github.com/DigitalCoin1/L2SPERO/commit/123897188eedb8edf76210718fb5c57f8c01c313)
 * [ADMIN] /setvip + nome do player + tempo em dias e /removevip + nome do player- Determina status vip por tempo determinado em dias.(https://github.com/DigitalCoin1/L2SPERO/commit/dc66375da614cebb5a3f44354d4f377dcc72b73b)
 * [ADMIN] /clanfull + nome do clan - Concede 30000000 de reputação + level 8 + todas as skills de clan)(https://github.com/DigitalCoin1/L2SPERO/commit/6030ece258911ad40775cd4c7dc672cdafd5452c)
-
-
+* [PLAYER] .top - Lista dos top10 PVP/PK(https://github.com/DigitalCoin1/L2SPERO/commit/0c0e43bee92323c8b5d2b42b2705f97c120f0b17)
 
 https://l2.sperocoin.org
  
