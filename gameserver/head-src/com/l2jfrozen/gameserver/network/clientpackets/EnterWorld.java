@@ -860,7 +860,7 @@ public class EnterWorld extends L2GameClientPacket
 	private void loadTutorial(final L2PcInstance player)
 	{
 		final QuestState qs = player.getQuestState("255_Tutorial");
-		if (qs != null)
+		if ((qs != null) && (Config.SHOW_TUTORIAL))
 			qs.getQuest().notifyEvent("UC", null, player);
 	}
 	

@@ -2419,6 +2419,7 @@ public final class Config
 	public static boolean ALLOW_DETAILED_STATS_VIEW;
 	public static boolean ALLOW_ONLINE_VIEW;
 	public static boolean WELCOME_HTM;
+	public static boolean SHOW_TUTORIAL;
 	public static String ALLOWED_SKILLS;
 	public static FastList<Integer> ALLOWED_SKILLS_LIST = new FastList<>();
 	public static boolean PROTECTOR_PLAYER_PK;
@@ -2541,6 +2542,9 @@ public final class Config
 			
 			/** Welcome Htm **/
 			WELCOME_HTM = Boolean.parseBoolean(L2JFrozenSettings.getProperty("WelcomeHtm", "False"));
+			
+			/** Show Tutorial **/
+			SHOW_TUTORIAL = Boolean.parseBoolean(L2JFrozenSettings.getProperty("ShowTutorial", "True"));
 			
 			/** Server Name **/
 			ALT_SERVER_NAME_ENABLED = Boolean.parseBoolean(L2JFrozenSettings.getProperty("ServerNameEnabled", "false"));
