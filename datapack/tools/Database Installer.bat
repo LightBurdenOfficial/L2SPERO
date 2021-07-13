@@ -4,20 +4,20 @@ REM ###############################################
 REM ## Configurate Database Connections please!  ##
 REM ###############################################
 REM Please, type here you dir to mysql directory \bin. Example : C:\Program Files\MySQL\MySQL Server 5.1\bin
-set mysqlBinPath=C:\Program Files\MySQL\MySQL Server 5.1\bin
+set mysqlBinPath=C:\wamp64\bin\mysql\mysql5.7.31\bin
 
 set DateT=%date%
 
 REM Configurate database connection loginserver
 set lsuser=root
-set lspass=root
-set lsdb=loginserver_beta
+set lspass=
+set lsdb=l2loginserver
 set lshost=localhost
 
 REM Configurate database connection Gameserver
 set gsuser=root
-set gspass=root
-set gsdb=gameserver_beta
+set gspass=
+set gsdb=l2gameserver
 set gshost=localhost
 REM ############################################
 
