@@ -22,3 +22,19 @@ CREATE TABLE `custom_armor` (
   `item_skill_lvl` decimal(11,0) NOT NULL default '0',
   PRIMARY KEY  (`item_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- ----------------------------
+-- Records of Titanium Armor
+-- ----------------------------
+INSERT INTO `custom_armor` VALUES ('9860', 'Titanium Helm', 'head', 'true', 'none', '1110', 's', '0', '-1', '55', '0', '0', '3580000', '179', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('9861', 'Titanium Plate Armor', 'fullarmor', 'true', 'none', '1110', 's', '0', '-1', '55', '0', '0', '3580000', '179', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('9862', 'Titanium Gauntlet - Heavy Armor', 'gloves', 'true', 'none', '1110', 's', '0', '-1', '55', '0', '0', '3580000', '179', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('9863', 'Titanium Solleret - Heavy Armor', 'feet', 'true', 'none', '1110', 's', '0', '-1', '55', '0', '0', '3580000', '179', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('9864', 'Titanium Solleret - Heavy Armor', 'fullarmor', 'true', 'none', '1110', 's', '0', '-1', '55', '0', '0', '3580000', '179', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('9865', 'Titanium Brigandine', 'gloves', 'true', 'none', '1110', 's', '0', '-1', '55', '0', '0', '3580000', '179', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('9866', 'Titanium Leather Gloves - Light Armor', 'feet', 'true', 'none', '1110', 's', '0', '-1', '55', '0', '0', '3580000', '179', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('9867', 'Titanium Doublet - FullArmor Robe', 'fullarmor', 'true', 'none', '1110', 's', '0', '-1', '55', '0', '0', '3580000', '179', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('9868', 'Titanium Silk Gloves - Robe', 'gloves', 'true', 'none', '1110', 's', '0', '-1', '55', '0', '0', '3580000', '179', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('9869', 'Titanium Sandals - Robe', 'feet', 'true', 'none', '1110', 's', '0', '-1', '55', '0', '0', '3580000', '179', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('9870', 'Titanium Helm - Light', 'head', 'true', 'none', '1110', 's', '0', '-1', '55', '0', '0', '3580000', '179', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('9880', 'Titanium Helm - Robe', 'head', 'true', 'none', '1110', 's', '0', '-1', '55', '0', '0', '3580000', '179', 'true', 'true', 'true', 'true', '0', '0');

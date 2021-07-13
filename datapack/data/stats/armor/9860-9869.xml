@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='utf-8'?>
+<list>
+<item id='9860' name="Titanium Helm - Heavy">
+  <for>
+    <add val='75' order='0x10' stat='pDef'/>
+    <enchant val='0' order='0x0C' stat='pDef'/>
+  </for>
+</item>
+<item id='9870' name="Titanium Helm - Light">
+  <for>
+    <add val='75' order='0x10' stat='pDef'/>
+    <enchant val='0' order='0x0C' stat='pDef'/>
+  </for>
+</item>
+<item id='9880' name="Titanium Helm - Robe">
+  <for>
+    <add val='75' order='0x10' stat='pDef'/>
+    <enchant val='0' order='0x0C' stat='pDef'/>
+  </for>
+</item>
+<item id='9861' name="Titanium Plate Armor - Heavy">
+  <for>
+    <add val='400' order='0x10' stat='pDef'/> 
+    <enchant val='0' order='0x0C' stat='pDef'/> 
+</for>
+</item>
+<item id='9862' name="Titanium Gloves Heavy - Heavy">
+  <for>
+    <add val='75' order='0x10' stat='pDef'/>
+    <enchant val='0' order='0x0C' stat='pDef'/>
+</for>
+</item>
+<item id='9863' name="Titanium Boots Heavvy - Heavy">
+  <for>
+    <add val='75' order='0x10' stat='pDef'/>
+    <enchant val='0' order='0x0C' stat='pDef'/>
+</for>
+</item>
+<item id='9864' name="Titanium Leather Armor - Light">
+  <for>
+	<add val='325' order='0x10' stat='pDef'/> 
+    <enchant val='0' order='0x0C' stat='pDef'/>
+</for>
+</item>
+<item id='9865' name="Titanium Leather Gloves - Light">
+  <for>
+    <add val='75' order='0x10' stat='pDef'/>
+    <enchant val='0' order='0x0C' stat='pDef'/>
+</for>
+</item>
+<item id='9866' name="Titanium Leater Boots - Light">
+  <for>
+    <add val='75' order='0x10' stat='pDef'/>
+    <enchant val='0' order='0x0C' stat='pDef'/>
+</for>
+</item>
+<item id='9867' name="Titanium Robe - Robe">
+  <for>
+	<add val='285' order='0x10' stat='pDef'/> 
+	<add val='866' order='0x60' stat='maxMp'/> 
+    <enchant val='0' order='0x0C' stat='pDef'/>
+</for>
+</item>
+<item id='9868' name="Titanium Gloves - Robe">
+  <for>
+    <add val='75' order='0x10' stat='pDef'/>
+    <enchant val='0' order='0x0C' stat='pDef'/>
+</for>
+</item>
+<item id='9869' name="Titanium Boots - Robe">
+  <for>
+    <add val='75' order='0x10' stat='pDef'/>
+    <enchant val='0' order='0x0C' stat='pDef'/>
+</for>
+</item>
+</list>
