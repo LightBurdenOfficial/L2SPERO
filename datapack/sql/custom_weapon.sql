@@ -46,3 +46,7 @@ CREATE TABLE `custom_weapon` (
 -- 
 -- Dumping data for table `weapon`
 -- 
+-- ----------------------------
+-- Records of Dark Knight
+-- ----------------------------
+INSERT INTO `custom_weapon` VALUES ('9782', 'SHIELD DK', 'lhand', 'true', '1', '0', '0', 's', '0', '0', 'none', '0', '0.00000', '-8', '290', '20', '0', '0', '0', '-1', '3760000', '188', 'true', 'true', 'true', 'true', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');

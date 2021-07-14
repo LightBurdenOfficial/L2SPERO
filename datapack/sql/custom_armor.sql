@@ -38,3 +38,21 @@ INSERT INTO `custom_armor` VALUES ('9868', 'Titanium Silk Gloves - Robe', 'glove
 INSERT INTO `custom_armor` VALUES ('9869', 'Titanium Sandals - Robe', 'feet', 'true', 'none', '1110', 's', '0', '-1', '55', '0', '0', '3580000', '179', 'true', 'true', 'true', 'true', '0', '0');
 INSERT INTO `custom_armor` VALUES ('9870', 'Titanium Helm - Light', 'head', 'true', 'none', '1110', 's', '0', '-1', '55', '0', '0', '3580000', '179', 'true', 'true', 'true', 'true', '0', '0');
 INSERT INTO `custom_armor` VALUES ('9880', 'Titanium Helm - Robe', 'head', 'true', 'none', '1110', 's', '0', '-1', '55', '0', '0', '3580000', '179', 'true', 'true', 'true', 'true', '0', '0');
+-- ----------------------------
+-- Records of Dark Knight
+-- ----------------------------
+INSERT INTO `custom_armor` VALUES ('25812', 'Dark Knight Helmet', 'head', 'true', 'heavy', '1000', 's', '0', '-1', '75', '0', '0', '5370000', '0', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('25800', 'Dark Knight Breastplate', 'chest', 'true', 'heavy', '1000', 's', '0', '-1', '250', '0', '0', '14300000', '0', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('25801', 'Dark Knight Gaiters', 'legs', 'true', 'heavy', '1000', 's', '0', '-1', '150', '0', '0', '8960000', '0', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('25802', 'Dark Knight Gauntlets', 'gloves', 'true', 'heavy', '1000', 's', '0', '-1', '75', '0', '0', '3580000', '0', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('25803', 'Dark Knight Boots', 'feet', 'true', 'heavy', '1000', 's', '0', '-1', '75', '0', '0', '3580000', '0', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('25813', 'Dark Knight Leather Helmet', 'head', 'true', 'light', '1000', 's', '0', '-1', '75', '0', '0', '5370000', '0', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('25804', 'Dark Knight Leather Armor', 'chest', 'true', 'light', '1000', 's', '0', '-1', '200', '0', '0', '14300000', '0', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('25805', 'Dark Knight Leather Pants', 'legs', 'true', 'light', '1000', 's', '0', '-1', '125', '0', '0', '8960000', '0', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('25806', 'Dark Knight Leather Gloves', 'gloves', 'true', 'light', '1000', 's', '0', '-1', '75', '0', '0', '3580000', '0', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('25807', 'Dark Knight Leather Boots', 'feet', 'true', 'light', '1000', 's', '0', '-1', '75', '0', '0', '3580000', '0', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('25814', 'Dark Knight Circlet', 'head', 'true', 'magic', '1000', 's', '0', '-1', '75', '0', '0', '5370000', '0', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('25808', 'Dark Knight Robe', 'chest', 'true', 'magic', '1000', 's', '0', '-1', '180', '0', '257', '14300000', '0', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('25809', 'Dark Knight Stockings', 'legs', 'true', 'magic', '1000', 's', '0', '-1', '100', '0', '0', '8960000', '0', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('25810', 'Dark Knight Gloves', 'gloves', 'true', 'magic', '1000', 's', '0', '-1', '75', '0', '0', '3580000', '0', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('25811', 'Dark Knight Robe Boots', 'feet', 'true', 'magic', '1000', 's', '0', '-1', '75', '0', '0', '3580000', '0', 'true', 'true', 'true', 'true', '0', '0');
