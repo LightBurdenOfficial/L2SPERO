@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<item id='95000' name="Dynasty Ring">
+  <for>
+  <add val='50' order='0x10' stat='mDef'/>
+  <enchant val='0' order='0x0C' stat='mDef'/>
+</for>
+</item>
+<item id='95001' name="Dynasty Necklace">
+  <for>
+  <add val='150' order='0x10' stat='mDef'/>
+  <enchant val='0' order='0x0C' stat='mDef'/>
+</for>
+</item>
+<item id='95002' name="Dynasty Earring">
+  <for>
+  <add val='100' order='0x10' stat='mDef'/>
+  <enchant val='0' order='0x0C' stat='mDef'/>
+</for>
+</item>
+</list>

@@ -132,3 +132,9 @@ INSERT INTO `custom_armor` VALUES ('9552', 'TATTOO AIOX', 'underwear', 'true', '
 INSERT INTO `custom_armor` VALUES ('11044', 'Titanium Necklace', 'neck', 'true', 'none', '150', 's', '0', '-1', '0', '91', '0', '4940000', '247', 'true', 'true', 'true', 'true', '5306', '1');
 INSERT INTO `custom_armor` VALUES ('11045', 'Titanium Earring', 'rear,lear', 'true', 'none', '150', 's', '0', '-1', '0', '68', '0', '3700000', '185', 'true', 'true', 'true', 'true', '5307', '1');
 INSERT INTO `custom_armor` VALUES ('11046', 'Titanium Ring', 'rfinger,lfinger', 'true', 'none', '150', 's', '0', '-1', '0', '46', '0', '2470000', '123', 'true', 'true', 'true', 'true', '5308', '1');
+-- ----------------------------
+-- Records of Dynasty Jewels
+-- ----------------------------
+INSERT INTO `custom_armor` VALUES ('95000', 'Dynasty Ring', 'rfinger,lfinger', 'true', 'none', '150', 's', '0', '-1', '0', '46', '0', '2470000', '123', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('95001', 'Dynasty Necklace', 'neck', 'true', 'none', '150', 's', '0', '-1', '0', '91', '0', '4940000', '247', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('95002', 'Dynasty Earring', 'rear,lear', 'true', 'none', '150', 's', '0', '-1', '0', '68', '0', '3700000', '185', 'true', 'true', 'true', 'true', '0', '0');
