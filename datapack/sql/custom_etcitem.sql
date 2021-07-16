@@ -23,3 +23,7 @@ CREATE TABLE `custom_etcitem` (
   PRIMARY KEY  (`item_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
+-- ----------------------------
+-- Records of SperoCoin
+-- ----------------------------
+INSERT INTO `custom_etcitem` VALUES (15003, 'SperoCoin', 'false', 'none', 0, 'asset', 'none', -1, 1, 0, 'true', 'true', 'true', 'true', 'adena', 'none');
