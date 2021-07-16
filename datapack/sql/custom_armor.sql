@@ -74,3 +74,39 @@ INSERT INTO `custom_armor` VALUES ('9944', 'Dynasty Armor Pants', 'legs', 'false
 INSERT INTO `custom_armor` VALUES ('9945', 'Dynasty Armor Cap', 'head', 'false', 'none', 0, 's', 0, -1, 89, 0, 0, 0, 0, 'true', 'false', 'false', 'true', 0, 0);
 INSERT INTO `custom_armor` VALUES ('9946', 'Dynasty Armor Mittens', 'gloves', 'false', 'none', 0, 's', 0, -1, 59, 0, 0, 0, 0, 'true', 'false', 'false', 'true', 0, 0);
 INSERT INTO `custom_armor` VALUES ('9947', 'Dynasty Armor Slippers', 'feet', 'false', 'none', 0, 's', 0, -1, 59, 0, 0, 0, 0, 'true', 'false', 'false', 'true', 0, 0);
+-- ----------------------------
+-- Records of Vesper
+-- ----------------------------
+INSERT INTO `custom_armor` VALUES ('9316', 'Vesper Helmet', 'head', 'true', 'heavy', '530', 's', '0', '-1', '101', '0', '0', '17500000', '840', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('9317', 'Vesper Breastplate', 'chest', 'true', 'heavy', '7520', 's', '0', '-1', '250', '0', '0', '46668000', '2240', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('9318', 'Vesper Gaiters', 'legs', 'true', 'heavy', '3170', 's', '0', '-1', '156', '0', '0', '29168000', '1400', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('9319', 'Vesper Gauntlet', 'gloves', 'true', 'heavy', '510', 's', '0', '-1', '68', '0', '0', '11667000', '560', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('9320', 'Vesper Boots', 'feet', 'true', 'heavy', '1070', 's', '0', '-1', '68', '0', '0', '11667000', '560', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('9321', 'Vesper Leather Helmet', 'head', 'true', 'light', '530', 's', '0', '-1', '101', '0', '0', '17500000', '840', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('9322', 'Vesper Leather Breastplate', 'chest', 'true', 'light', '4140', 's', '0', '-1', '187', '0', '0', '35000000', '1680', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('9323', 'Vesper Leather Leggings', 'legs', 'true', 'light', '1320', 's', '0', '-1', '117', '0', '0', '21876000', '1050', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('9324', 'Vesper Leather Gloves', 'gloves', 'true', 'light', '510', 's', '0', '-1', '68', '0', '0', '11667000', '560', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('9325', 'Vesper Leather Boots ', 'feet', 'true', 'light', '1070', 's', '0', '-1', '68', '0', '0', '11667000', '560', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('9326', 'Vesper Circlet', 'head', 'true', 'magic', '530', 's', '0', '-1', '101', '0', '0', '17500000', '840', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('9327', 'Vesper Tunic', 'chest', 'true', 'magic', '1750', 's', '0', '-1', '125', '0', '637', '35000000', '1680', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('9328', 'Vesper Stockings', 'legs', 'true', 'magic', '850', 's', '0', '-1', '78', '0', '415', '21876000', '1050', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('9329', 'Vesper Gloves', 'gloves', 'true', 'magic', '510', 's', '0', '-1', '68', '0', '0', '11667000', '560', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('9330', 'Vesper Shoes', 'feet', 'true', 'magic', '510', 's', '0', '-1', '68', '0', '0', '11667000', '560', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('9332', 'Vesper Noble Helmet', 'head', 'true', 'heavy', '530', 's', '0', '-1', '101', '0', '0', '17500000', '840', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('9333', 'Vesper Noble Breastplate', 'chest', 'true', 'heavy', '7520', 's', '0', '-1', '250', '0', '0', '46668000', '2240', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('9334', 'Vesper Noble Gaiters', 'legs', 'true', 'heavy', '3170', 's', '0', '-1', '156', '0', '0', '29168000', '1400', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('9335', 'Vesper Noble Gauntlet', 'gloves', 'true', 'heavy', '510', 's', '0', '-1', '68', '0', '0', '11667000', '560', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('9336', 'Vesper Noble Boots', 'feet', 'true', 'heavy', '1070', 's', '0', '-1', '68', '0', '0', '11667000', '560', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('9337', 'Vesper Noble Leather Helmet', 'head', 'true', 'light', '530', 's', '0', '-1', '101', '0', '0', '17500000', '840', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('9338', 'Vesper Noble Leather Breastplate', 'chest', 'true', 'light', '4140', 's', '0', '-1', '187', '0', '0', '35000000', '1680', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('9339', 'Vesper Noble Leather Leggings', 'legs', 'true', 'light', '1320', 's', '0', '-1', '117', '0', '0', '21876000', '1050', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('9340', 'Vesper Noble Leather Gloves', 'gloves', 'true', 'light', '510', 's', '0', '-1', '68', '0', '0', '11667000', '560', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('9341', 'Vesper Noble Leather Boots ', 'feet', 'true', 'light', '1070', 's', '0', '-1', '68', '0', '0', '11667000', '560', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('9342', 'Vesper Noble Circlet', 'head', 'true', 'magic', '530', 's', '0', '-1', '101', '0', '0', '17500000', '840', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('9343', 'Vesper Noble Tunic', 'chest', 'true', 'magic', '1750', 's', '0', '-1', '125', '0', '637', '35000000', '1680', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('9344', 'Vesper Noble Stockings', 'legs', 'true', 'magic', '850', 's', '0', '-1', '78', '0', '415', '21876000', '1050', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('9345', 'Vesper Noble Gloves', 'gloves', 'true', 'magic', '510', 's', '0', '-1', '68', '0', '0', '11667000', '560', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('9346', 'Vesper Noble Shoes', 'feet', 'true', 'magic', '510', 's', '0', '-1', '68', '0', '0', '11667000', '560', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('9351', 'Vesper Necklace', 'neck', 'true', 'none', '150', 's', '0', '-1', '0', '125', '50', '15192000', '729', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('9352', 'Vesper Earring', 'rear,lear', 'true', 'none', '150', 's', '0', '-1', '0', '94', '37', '11394000', '547', 'true', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('9353', 'Vesper Ring', 'rfinger,lfinger', 'true', 'none', '150', 's', '0', '-1', '0', '62', '25', '7596000', '365', 'true', 'true', 'true', 'true', '0', '0');

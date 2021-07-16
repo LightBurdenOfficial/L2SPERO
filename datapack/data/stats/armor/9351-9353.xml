@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- CREATED -->
+<!-- BY SMALLZ -->
+<!-- 2014 -->
+<list>
+	<item id="9351" name="Vesper Necklace">
+		<for>
+			<add order="0x10" stat="mDef" val="125" />
+			<add order="0x40" stat="maxMp" val="50" />
+			<enchant order="0x0C" stat="mDef" val="0" />
+		</for>
+	</item>
+	<item id="9352" name="Vesper Earring">
+		<for>
+			<add order="0x10" stat="mDef" val="94" />
+			<add order="0x40" stat="maxMp" val="37" />
+			<enchant order="0x0C" stat="mDef" val="0" />
+		</for>
+	</item>
+	<item id="9353" name="Vesper Ring">
+		<for>
+			<add order="0x10" stat="mDef" val="62" />
+			<add order="0x40" stat="maxMp" val="25" />
+			<enchant order="0x0C" stat="mDef" val="0" />
+		</for>
+	</item>	
+</list>	
+<!-- CREATED -->
+<!-- BY SMALLZ -->
+<!-- 2014 -->

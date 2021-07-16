@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- CREATED -->
+<!-- BY SMALLZ -->
+<!-- 2014 -->
+<list>
+	<skill id="512" levels="1" name="Heavy Set">
+		<set name="magicLvl" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x40" stat="pDef" val="70">
+				<using kind="Heavy" />
+			</add>
+			<add order="0x40" stat="regMp" val="32">
+				<and>
+					<player resting="true" />
+					<player moving="false" />
+				</and>
+			</add>
+		</for>
+	</skill>
+	<skill id="513" levels="1" name="Light Set">
+		<set name="magicLvl" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x40" stat="rEvas" val="2">
+				<using kind="Light" />
+			</add>
+			<add order="0x40" stat="mDef" val="39">
+				<using kind="Light" />
+			</add>
+		</for>
+	</skill>
+	<skill id="514" levels="1" name="Magic Set">
+		<set name="magicLvl" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x40" stat="pDef" val="45">
+				<using kind="Magic" />
+			</add>
+			<mul order="0x30" stat="maxLoad" val="1.3" />
+		</for>
+	</skill>
+</list>
+<!-- CREATED -->
+<!-- BY SMALLZ -->
+<!-- 2014 -->

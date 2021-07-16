@@ -54,3 +54,8 @@ INSERT INTO `custom_weapon` VALUES ('9782', 'SHIELD DK', 'lhand', 'true', '1', '
 -- Records of Dynasty
 -- ----------------------------
 INSERT INTO `custom_weapon` VALUES ('9948', 'Dynasty Shield', 'lhand', 'true', '0', '0', '0', 's', '0', '0', 'none', '0', '0.00000', '0', '0', '0', '0', '0', '0', '-1', '48800000', '2440', 'true', 'true', 'true', 'true', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');
+-- ----------------------------
+-- Records of Vesper
+-- ----------------------------
+INSERT INTO `custom_weapon` VALUES ('9331', 'Vesper Shield', 'lhand', 'true', '1130', '0', '0', 's', '0', '0', 'none', '0', '0.00000', '-8', '371', '20', '0', '0', '0', '-1', '12250000', '578', 'true', 'true', 'true', 'true', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');
+INSERT INTO `custom_weapon` VALUES ('9347', 'Vesper Shield', 'lhand', 'true', '1130', '0', '0', 's', '0', '0', 'none', '0', '0.00000', '-8', '371', '20', '0', '0', '0', '-1', '12250000', '578', 'true', 'true', 'true', 'true', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0');
