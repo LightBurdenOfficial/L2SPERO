@@ -42,6 +42,7 @@
 
 # CUSTONS
 ## ITENS
+* SPEROCOIN(https://github.com/DigitalCoin1/L2SPERO/commit/942108e3e96bc36b788f6e0eee67dee05fb898f5)
 * Tattoo's(https://github.com/DigitalCoin1/L2SPERO/commit/a56c049a91695fd9de15db4515ba6e4ba26c0b72)
 
 ## ARMADURAS
