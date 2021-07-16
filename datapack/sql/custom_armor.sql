@@ -56,3 +56,21 @@ INSERT INTO `custom_armor` VALUES ('25808', 'Dark Knight Robe', 'chest', 'true',
 INSERT INTO `custom_armor` VALUES ('25809', 'Dark Knight Stockings', 'legs', 'true', 'magic', '1000', 's', '0', '-1', '100', '0', '0', '8960000', '0', 'true', 'true', 'true', 'true', '0', '0');
 INSERT INTO `custom_armor` VALUES ('25810', 'Dark Knight Gloves', 'gloves', 'true', 'magic', '1000', 's', '0', '-1', '75', '0', '0', '3580000', '0', 'true', 'true', 'true', 'true', '0', '0');
 INSERT INTO `custom_armor` VALUES ('25811', 'Dark Knight Robe Boots', 'feet', 'true', 'magic', '1000', 's', '0', '-1', '75', '0', '0', '3580000', '0', 'true', 'true', 'true', 'true', '0', '0');
+-- ----------------------------
+-- Records of Dynasty
+-- ----------------------------
+INSERT INTO `custom_armor` VALUES ('9933', 'Dynasty Armor Plate', 'chest', 'false', 'heavy', 0, 's', 0, -1, 219, 0, 0, 0, 0, 'true', 'false', 'false', 'true', 0, 0);
+INSERT INTO `custom_armor` VALUES ('9934', 'Dynasty Armor Gaiters', 'legs', 'false', 'heavy', 0, 's', 0, -1, 137, 0, 0, 0, 0, 'true', 'false', 'false', 'true', 0, 0);
+INSERT INTO `custom_armor` VALUES ('9935', 'Dynasty Armor Helm', 'head', 'false', 'none', 0, 's', 0, -1, 89, 0, 0, 0, 0, 'true', 'false', 'false', 'true', 0, 0);
+INSERT INTO `custom_armor` VALUES ('9936', 'Dynasty Armor Gloves', 'gloves', 'false', 'none', 0, 's', 0, -1, 59, 0, 0, 0, 0, 'true', 'false', 'false', 'true', 0, 0);
+INSERT INTO `custom_armor` VALUES ('9937', 'Dynasty Armor Boots', 'feet', 'false', 'none', 0, 's', 0, -1, 59, 0, 0, 0, 0, 'true', 'false', 'false', 'true', 0, 0);
+INSERT INTO `custom_armor` VALUES ('9938', 'Dynasty Armor Leather', 'chest', 'false', 'light', 0, 's', 0, -1, 219, 0, 0, 0, 0, 'true', 'false', 'false', 'true', 0, 0);
+INSERT INTO `custom_armor` VALUES ('9939', 'Dynasty Armor Leather Pants', 'legs', 'false', 'light', 0, 's', 0, -1, 137, 0, 0, 0, 0, 'true', 'false', 'false', 'true', 0, 0);
+INSERT INTO `custom_armor` VALUES ('9940', 'Dynasty Armor Leather Helm', 'head', 'false', 'none', 0, 's', 0, -1, 89, 0, 0, 0, 0, 'true', 'false', 'false', 'true', 0, 0);
+INSERT INTO `custom_armor` VALUES ('9941', 'Dynasty Armor Leather Gloves', 'gloves', 'false', 'none', 0, 's', 0, -1, 59, 0, 0, 0, 0, 'true', 'false', 'false', 'true', 0, 0);
+INSERT INTO `custom_armor` VALUES ('9942', 'Dynasty Armor Leather Shoes', 'feet', 'false', 'none', 0, 's', 0, -1, 59, 0, 0, 0, 0, 'true', 'false', 'false', 'true', 0, 0);
+INSERT INTO `custom_armor` VALUES ('9943', 'Dynasty Armor Robe', 'chest', 'false', 'magic', 0, 's', 0, -1, 219, 0, 257, 0, 0, 'true', 'false', 'false', 'true', 0, 0);
+INSERT INTO `custom_armor` VALUES ('9944', 'Dynasty Armor Pants', 'legs', 'false', 'magic', 0, 's', 0, -1, 137, 0, 0, 0, 0, 'true', 'false', 'false', 'true', 0, 0);
+INSERT INTO `custom_armor` VALUES ('9945', 'Dynasty Armor Cap', 'head', 'false', 'none', 0, 's', 0, -1, 89, 0, 0, 0, 0, 'true', 'false', 'false', 'true', 0, 0);
+INSERT INTO `custom_armor` VALUES ('9946', 'Dynasty Armor Mittens', 'gloves', 'false', 'none', 0, 's', 0, -1, 59, 0, 0, 0, 0, 'true', 'false', 'false', 'true', 0, 0);
+INSERT INTO `custom_armor` VALUES ('9947', 'Dynasty Armor Slippers', 'feet', 'false', 'none', 0, 's', 0, -1, 59, 0, 0, 0, 0, 'true', 'false', 'false', 'true', 0, 0);

@@ -22,3 +22,9 @@ CREATE TABLE custom_armorsets (
 INSERT INTO `custom_armorsets` VALUES ('150', '25800', '25801', '25812', '25802', '25803', '8300', '1', '1', '3623');
 INSERT INTO `custom_armorsets` VALUES ('151', '25804', '25805', '25813', '25806', '25807', '8302', '1', '1', '3624');
 INSERT INTO `custom_armorsets` VALUES ('104', '25808', '25809', '25814', '25810', '25811', '8303', '1', '1', '3625');
+-- ----------------------------
+-- Records of Dynasty
+-- ----------------------------
+INSERT INTO `custom_armorsets` VALUES ('100', '9933', '9934', '9935', '9936', '9937', '6300', '9948', '6301', '3623');
+INSERT INTO `custom_armorsets` VALUES ('101', '9938', '9939', '9940', '9941', '9942', '6302', '1', '6301', '3624');
+INSERT INTO `custom_armorsets` VALUES ('102', '9943', '9944', '9945', '9946', '9947', '6303', '9948', '6301', '3625');
