@@ -1,5 +1,6 @@
-| ------------------- TITANIUM ------------------- |
-| ID  |  Item  |
+# Armaduras Titanium
+
+| *ID*  |  *Item*  |
 | ------------------- | ------------------- |
 | 9860  |  Titanium Helm |
 | 9861  |  Titanium Plate Armor |
