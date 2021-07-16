@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<!-- S-Grade Weapons -->
+
+<list>
+
+  <!-- Majestic Heavy Armor -->
+  <item id="1">
+    <ingredient id="57" count="100000"/>
+    <production id="9540" count="1"/>
+  </item>
+
+
+  <!-- Majestic Heavy Armor -->
+  <item id="2">
+    <ingredient id="57" count="100000"/>
+    <production id="9541" count="1"/>
+  </item>
+
+
+  <!-- Majestic Heavy Armor -->
+  <item id="3">
+    <ingredient id="57" count="100000"/>
+    <production id="9542" count="1"/>
+  </item>
+
+
+  <!-- Majestic Heavy Armor -->
+  <item id="4">
+    <ingredient id="57" count="100000"/>
+    <production id="9543" count="1"/>
+  </item>
+
+
+  <!-- Majestic Heavy Armor -->
+  <item id="5">
+    <ingredient id="57" count="100000"/>
+    <production id="9544" count="1"/>
+  </item>
+
+
+  <!-- Majestic Heavy Armor -->
+  <item id="6">
+    <ingredient id="57" count="100000"/>
+    <production id="9545" count="1"/>
+  </item>
+
+
+  <!-- Majestic Heavy Armor -->
+  <item id="7">
+    <ingredient id="57" count="100000"/>
+    <production id="9546" count="1"/>
+  </item>
+
+
+  <!-- Majestic Heavy Armor -->
+  <item id="8">
+    <ingredient id="57" count="100000"/>
+    <production id="9547" count="1"/>
+  </item>
+
+
+  <!-- Majestic Heavy Armor -->
+  <item id="9">
+    <ingredient id="57" count="100000"/>
+    <production id="9548" count="1"/>
+  </item>
+
+
+  <!-- Majestic Heavy Armor -->
+  <item id="10">
+    <ingredient id="57" count="100000"/>
+    <production id="9549" count="1"/>
+  </item>
+
+
+  <!-- Majestic Heavy Armor -->
+  <item id="11">
+    <ingredient id="57" count="100000"/>
+    <production id="9550" count="1"/>
+  </item>
+
+
+  <!-- Majestic Heavy Armor -->
+  <item id="12">
+    <ingredient id="57" count="100000"/>
+    <production id="9551" count="1"/>
+  </item>
+
+
+  <!-- Majestic Heavy Armor -->
+  <item id="13">
+    <ingredient id="57" count="100000"/>
+    <production id="9552" count="1"/>
+  </item>
+
+
+</list>

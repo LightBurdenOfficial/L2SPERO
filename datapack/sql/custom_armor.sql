@@ -110,3 +110,19 @@ INSERT INTO `custom_armor` VALUES ('9346', 'Vesper Noble Shoes', 'feet', 'true',
 INSERT INTO `custom_armor` VALUES ('9351', 'Vesper Necklace', 'neck', 'true', 'none', '150', 's', '0', '-1', '0', '125', '50', '15192000', '729', 'true', 'true', 'true', 'true', '0', '0');
 INSERT INTO `custom_armor` VALUES ('9352', 'Vesper Earring', 'rear,lear', 'true', 'none', '150', 's', '0', '-1', '0', '94', '37', '11394000', '547', 'true', 'true', 'true', 'true', '0', '0');
 INSERT INTO `custom_armor` VALUES ('9353', 'Vesper Ring', 'rfinger,lfinger', 'true', 'none', '150', 's', '0', '-1', '0', '62', '25', '7596000', '365', 'true', 'true', 'true', 'true', '0', '0');
+-- ----------------------------
+-- Records of Tattoo's
+-- ----------------------------
+INSERT INTO `custom_armor` VALUES ('9540', 'Tattoo of Fight Lv.1', 'underwear', 'true', 'none', '0', 'none', '0', '-1', '139', '0', '0', '0', '0', 'false', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('9541', 'Tattoo of Fight Lv.2', 'underwear', 'true', 'none', '0', 'none', '0', '-1', '139', '0', '0', '0', '0', 'false', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('9542', 'Tattoo of Fight Lv.3', 'underwear', 'true', 'none', '0', 'none', '0', '-1', '139', '0', '0', '0', '0', 'false', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('9543', 'Tattoo of Fight Lv.4', 'underwear', 'true', 'none', '0', 'none', '0', '-1', '139', '0', '0', '0', '0', 'false', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('9544', 'Tattoo of Fight Lv.5', 'underwear', 'true', 'none', '0', 'none', '0', '-1', '139', '0', '0', '0', '0', 'false', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('9545', 'Tattoo of Fight - Gm Power', 'underwear', 'true', 'none', '0', 'none', '0', '-1', '139', '0', '0', '0', '0', 'false', 'true', 'true', 'true', '0', '0');
+INSERT INTO `custom_armor` VALUES ('9546', 'Tattoo of Mage Lv.1', 'underwear', 'true', 'none', '0', 'none', '0', '-1', '139', '0', '0', '0', '0', 'false', 'true', 'true', 'true', '9996', '1');
+INSERT INTO `custom_armor` VALUES ('9547', 'Tattoo of Mage Lv.2', 'underwear', 'true', 'none', '0', 'none', '0', '-1', '139', '0', '0', '0', '0', 'false', 'true', 'true', 'true', '9996', '2');
+INSERT INTO `custom_armor` VALUES ('9548', 'Tattoo of Mage Lv.3', 'underwear', 'true', 'none', '0', 'none', '0', '-1', '139', '0', '0', '0', '0', 'false', 'true', 'true', 'true', '9996', '3');
+INSERT INTO `custom_armor` VALUES ('9549', 'Tattoo of Mage Lv.4', 'underwear', 'true', 'none', '0', 'none', '0', '-1', '139', '0', '0', '0', '0', 'false', 'true', 'true', 'true', '9996', '4');
+INSERT INTO `custom_armor` VALUES ('9550', 'Tattoo of Mage Lv.5', 'underwear', 'true', 'none', '0', 'none', '0', '-1', '139', '0', '0', '0', '0', 'false', 'true', 'true', 'true', '9996', '5');
+INSERT INTO `custom_armor` VALUES ('9551', 'Tattoo of Mage - Gm Power', 'underwear', 'true', 'none', '0', 'none', '0', '-1', '139', '0', '0', '0', '0', 'false', 'true', 'true', 'true', '9996', '6');
+INSERT INTO `custom_armor` VALUES ('9552', 'TATTOO AIOX', 'underwear', 'true', 'none', '0', 'none', '0', '-1', '139', '0', '0', '0', '0', 'false', 'true', 'true', 'true', '0', '0');
