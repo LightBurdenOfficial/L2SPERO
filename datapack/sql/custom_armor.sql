@@ -126,3 +126,9 @@ INSERT INTO `custom_armor` VALUES ('9549', 'Tattoo of Mage Lv.4', 'underwear', '
 INSERT INTO `custom_armor` VALUES ('9550', 'Tattoo of Mage Lv.5', 'underwear', 'true', 'none', '0', 'none', '0', '-1', '139', '0', '0', '0', '0', 'false', 'true', 'true', 'true', '9996', '5');
 INSERT INTO `custom_armor` VALUES ('9551', 'Tattoo of Mage - Gm Power', 'underwear', 'true', 'none', '0', 'none', '0', '-1', '139', '0', '0', '0', '0', 'false', 'true', 'true', 'true', '9996', '6');
 INSERT INTO `custom_armor` VALUES ('9552', 'TATTOO AIOX', 'underwear', 'true', 'none', '0', 'none', '0', '-1', '139', '0', '0', '0', '0', 'false', 'true', 'true', 'true', '0', '0');
+-- ----------------------------
+-- Records of Titanium Jewels
+-- ----------------------------
+INSERT INTO `custom_armor` VALUES ('11044', 'Titanium Necklace', 'neck', 'true', 'none', '150', 's', '0', '-1', '0', '91', '0', '4940000', '247', 'true', 'true', 'true', 'true', '5306', '1');
+INSERT INTO `custom_armor` VALUES ('11045', 'Titanium Earring', 'rear,lear', 'true', 'none', '150', 's', '0', '-1', '0', '68', '0', '3700000', '185', 'true', 'true', 'true', 'true', '5307', '1');
+INSERT INTO `custom_armor` VALUES ('11046', 'Titanium Ring', 'rfinger,lfinger', 'true', 'none', '150', 's', '0', '-1', '0', '46', '0', '2470000', '123', 'true', 'true', 'true', 'true', '5308', '1');

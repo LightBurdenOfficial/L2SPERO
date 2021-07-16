@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+<skill id="5306" levels="1" name="Titanium Necklace">
+<!--
+Description(s):
+      Increases resistance to darkness attacks, MaxHP, P. Atk., M. Atk., magic critical attack rate and critical attack damage. Decreases skill re-use time. Reflects some of the physical damage received back upon the enemy (does not include damage from skill or range attacks).
+-->
+  <set name="power" val="0.0"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="castRange" val="-1"/>
+  <set name="effectRange" val="-1"/>
+  <for>
+    <add val='200' order='0x40' stat='maxHp'/>
+    <mul val='1.04' order='0x30' stat='pAtk'/>
+    <mul val='1.04' order='0x30' stat='mAtk'/>
+    <mul val='1.08' order='0x30' stat='mCritRate'/>
+	<mul val='1.15' order='0x30' stat='cAtk'/>
+	<add val='60' order='0x40' stat='darkRes'/>
+    <add val='70' order='0x40' stat='sleepRes'/>
+    <mul val='0.90' order='0x30' stat='mReuse'/>
+    <mul val='0.90' order='0x30' stat='atkReuse'/>
+    <add val='7' order='0x40' stat="reflectDam"/>
+  </for>
+</skill>
+<skill id="5307" levels="1" name="Titanium Earring">
+<!--
+Description(s):
+      Increases resistance to bleed, shock, debuff attacks, and improves the effectiveness of HP recovery magic. Decreases skill MP consumption and restores HP by using some of the damage inflicted upon the enemy (does not include damage from skill or range attacks).
+-->
+  <set name="power" val="0.0"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="castRange" val="-1"/>
+  <set name="effectRange" val="-1"/>
+  <for>
+    <add val='60' order='0x40' stat='bleedRes'/>
+    <mul val='1.08' order='0x30' stat='gainHp'/>
+    <add val='4' order='0x40' stat='absorbDam'/>
+    <add val='50' order='0x40' stat='stunRes'/>
+    <add val='50' order='0x40' stat='derangementRes'/>
+    <mul val='0.92' order='0x30' stat='MpConsumeRate'/>
+	<add val='60' order='0x40' stat='debuffRes'/>
+   </for>
+</skill>
+<skill id="5308" levels="1" name="Titanium Ring">
+<!--
+Description(s):
+      Increases resistance to poison/hold attacks and critical attack damage. Also increases Accuracy, Atk. Spd. and Casting Spd.
+-->
+  <set name="power" val="0.0"/>
+  <set name="target" val="TARGET_SELF"/>
+  <set name="skillType" val="BUFF"/>
+  <set name="operateType" val="OP_PASSIVE"/>
+  <set name="castRange" val="-1"/>
+  <set name="effectRange" val="-1"/>
+  <for>
+    <add val='60' order='0x40' stat='poisonRes'/>
+    <add val='3' order='0x40' stat='accCombat'/>
+    <mul val='1.09' order='0x30' stat='cAtk'/>
+    <add val='70' order='0x40' stat='rootRes'/>
+    <mul val='1.06' order='0x30' stat='pAtkSpd'/>
+    <mul val='1.06' order='0x30' stat='mAtkSpd'/>
+  </for>
+</skill>
+</list>
