@@ -211,7 +211,7 @@ public final class L2ItemInstance extends L2Object
 	public static final int MODIFIED = 2;
 	
 	/** The _last change. */
-	private int _lastChange = 2; // 1 ??, 2 modified, 3 removed
+	private int _lastChange = 3; // 1 ??, 2 modified, 3 removed
 	
 	/** The _exists in db. */
 	private boolean _existsInDb; // if a record exists in DB.
