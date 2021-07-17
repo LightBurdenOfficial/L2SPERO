@@ -1731,6 +1731,17 @@ public abstract class L2Character extends L2Object implements ISkillsHolder
 			return;
 		}
 		
+		if (this instanceof L2PcInstance)
+		{
+			L2PcInstance player = (L2PcInstance) this;
+				if (player.getTarget() != null && player.getTarget() == player)
+					if (skill.getSkillType() == SkillType.CHARGEDAM)
+				    {
+						player.sendMessage("message");
+				    	return;
+				    }	
+		}
+		
 		// Check if the skill is psychical and if the L2Character is not psychical_muted
 		if (!skill.isMagic() && isPsychicalMuted() && !skill.isPotion())
 		{
