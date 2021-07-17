@@ -13142,14 +13142,7 @@ public final class L2PcInstance extends L2PlayableInstance
 	 */
 	public void rechargeAutoSoulShot(final boolean physical, final boolean magic, final boolean summon, final int atkTime)
 	{
-		ThreadPoolManager.getInstance().scheduleGeneral(new Runnable()
-		{
-			@Override
-			public void run()
-			{
-				rechargeAutoSoulShot(physical, magic, summon);
-			}
-		}, atkTime);
+		rechargeAutoSoulShot(physical, magic, summon);
 	}
 	
 	/** The _task warn user take break. */
