@@ -80,7 +80,6 @@ public class VarkaKetraAlly extends Quest implements Runnable
 		
 		for (final int mob : mobs)
 		{
-			addEventId(mob, Quest.QuestEventType.ON_KILL);
 			addEventId(mob, Quest.QuestEventType.ON_ATTACK);
 		}
 	}
