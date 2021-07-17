@@ -273,7 +273,7 @@ public final class L2PcInstance extends L2PlayableInstance
 	private static final String ADD_SKILL_SAVE = "INSERT INTO character_skills_save (char_obj_id,skill_id,skill_level,effect_count,effect_cur_time,reuse_delay,systime,restore_type,class_index,buff_index) VALUES (?,?,?,?,?,?,?,?,?,?)";
 	
 	/** The Constant RESTORE_SKILL_SAVE. */
-	private static final String RESTORE_SKILL_SAVE = "SELECT skill_id,skill_level,effect_count,effect_cur_time, reuse_delay FROM character_skills_save WHERE char_obj_id=? AND class_index=? AND restore_type=? ORDER BY buff_index ASC";
+	private static final String RESTORE_SKILL_SAVE = "SELECT skill_id,skill_level,effect_count,effect_cur_time, reuse_delay, systime FROM character_skills_save WHERE char_obj_id=? AND class_index=? AND restore_type=? ORDER BY buff_index ASC";
 	
 	/** The Constant DELETE_SKILL_SAVE. */
 	private static final String DELETE_SKILL_SAVE = "DELETE FROM character_skills_save WHERE char_obj_id=? AND class_index=?";
@@ -11245,6 +11245,8 @@ public final class L2PcInstance extends L2PlayableInstance
 				final int effectCurTime = rset.getInt("effect_cur_time");
 				final long reuseDelay = rset.getLong("reuse_delay");
 				
+				final long systime = rset.getLong("systime");
+				
 				// Just incase the admin minipulated this table incorrectly :x
 				if (skillId == -1 || effectCount == -1 || effectCurTime == -1 || reuseDelay < 0)
 				{
@@ -11269,18 +11271,20 @@ public final class L2PcInstance extends L2PlayableInstance
 					}
 				}
 				
-				if (reuseDelay > 10)
-				{
-					final L2Skill skill = SkillTable.getInstance().getInfo(skillId, skillLvl);
-					
-					if (skill == null)
-						continue;
-					
-					disableSkill(skill, reuseDelay);
-					addTimeStamp(new TimeStamp(skill, reuseDelay));
-				}
-				
+				final long remainingTime = systime - System.currentTimeMillis();
+					if (remainingTime > 10)
+					{
+						final L2Skill skill = SkillTable.getInstance().getInfo(skillId, skillLvl);
+									
+						if (skill == null)
+							continue;
+							
+						disableSkill(skill, remainingTime);
+						addTimeStamp(new TimeStamp(skill, reuseDelay, systime));
+					}
+								
 			}
+			
 			DatabaseUtils.close(rset);
 			DatabaseUtils.close(statement);
 			rset = null;
@@ -11301,18 +11305,20 @@ public final class L2PcInstance extends L2PlayableInstance
 				final int skillLvl = rset.getInt("skill_level");
 				final long reuseDelay = rset.getLong("reuse_delay");
 				
-				if (reuseDelay <= 0)
-				{
-					continue;
-				}
+				final long systime = rset.getLong("systime");
 				
-				final L2Skill skill = SkillTable.getInstance().getInfo(skillId, skillLvl);
-				
-				if (skill == null)
-					continue;
-				
-				disableSkill(skill, reuseDelay);
-				addTimeStamp(new TimeStamp(skill, reuseDelay));
+				final long remainingTime = systime - System.currentTimeMillis();
+					if (remainingTime > 0)
+					{
+						final L2Skill skill = SkillTable.getInstance().getInfo(skillId, skillLvl);
+									
+						if (skill == null)
+							continue;
+									
+						disableSkill(skill, remainingTime);
+						addTimeStamp(new TimeStamp(skill, reuseDelay, systime));
+					}
+								
 			}
 			DatabaseUtils.close(rset);
 			DatabaseUtils.close(statement);
@@ -17829,7 +17835,7 @@ public final class L2PcInstance extends L2PlayableInstance
 	 */
 	private void addTimeStamp(final TimeStamp T)
 	{
-		ReuseTimeStamps.put(T.getSkill().getId(), T);
+		ReuseTimeStamps.put(T.getSkill().getReuseHashCode(), T);
 	}
 	
 	/**
