@@ -41,27 +41,27 @@
 
 
 # CUSTONS
-## ITENS (custom_items.md)
+## [ITENS](https://github.com/DigitalCoin1/L2SPERO/blob/main/custom_items.md)
 * SPEROCOIN(https://github.com/DigitalCoin1/L2SPERO/commit/942108e3e96bc36b788f6e0eee67dee05fb898f5)
 * Tattoo's(https://github.com/DigitalCoin1/L2SPERO/commit/a56c049a91695fd9de15db4515ba6e4ba26c0b72)
 
-## ARMADURAS (custom_armors.md)
+## [ARMADURAS](https://github.com/DigitalCoin1/L2SPERO/blob/main/custom_armors.md)
 * Titanium(https://github.com/DigitalCoin1/L2SPERO/commit/0253f90f7e8379a8422b7ebc6366a5a5dcaf38af)
 * Dark Knight(https://github.com/DigitalCoin1/L2SPERO/commit/d053f43cade15a288a0dc9c21f9e25a4c30d1869)
 * Dynasty(https://github.com/DigitalCoin1/L2SPERO/commit/d7f149f1e34ce203ee74d15a851f259f50253c57)
 * Vesper(https://github.com/DigitalCoin1/L2SPERO/commit/eef03e3221e3bf5507ae6ef2c9c0b696c70e4a45)
 
-## ARMAS (custom_weapons.md)
+## [ARMAS](https://github.com/DigitalCoin1/L2SPERO/blob/main/custom_weapons.md)
 * Epic(https://github.com/DigitalCoin1/L2SPERO/commit/d9a2241a42ab205b0316445b8536e58b559c2b08)
 * Dynasty(https://github.com/DigitalCoin1/L2SPERO/commit/f16411a1025a73815d470b16d30ae36982a8ffd3)
 * Vesper(https://github.com/DigitalCoin1/L2SPERO/commit/6514e5bb4af5c57a0990faf5fa2704960332dc56)
 
-## JÓIAS (custom_jewels.md)
+## [JÓIAS](https://github.com/DigitalCoin1/L2SPERO/blob/main/custom_jewels.md)
 * Titanium(https://github.com/DigitalCoin1/L2SPERO/commit/8075d8c4dda103e87eaae8e4b2228a55bf9568d2)
 * Dynasty(https://github.com/DigitalCoin1/L2SPERO/commit/0612fdc6fa06de9819a019c5d35f7aa411b87250)
 * Vesper(https://github.com/DigitalCoin1/L2SPERO/commit/eef03e3221e3bf5507ae6ef2c9c0b696c70e4a45)
 
-## ESCUDOS (custom_weapons.md)
+## [ESCUDOS](https://github.com/DigitalCoin1/L2SPERO/blob/main/custom_weapons.md)
 * Titanium(https://github.com/DigitalCoin1/L2SPERO/commit/0253f90f7e8379a8422b7ebc6366a5a5dcaf38af)
 * Dark Knight(https://github.com/DigitalCoin1/L2SPERO/commit/d053f43cade15a288a0dc9c21f9e25a4c30d1869)
 * Dynasty(https://github.com/DigitalCoin1/L2SPERO/commit/d7f149f1e34ce203ee74d15a851f259f50253c57)
