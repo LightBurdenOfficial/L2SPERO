@@ -80,3 +80,21 @@
 | 9344  |  Vesper Noble Stockings |
 | 9345  |  Vesper Noble Gloves |
 | 9346  |  Vesper Noble Shoes |
+
+# Tatoos
+
+| *ID*  |  *Item*  |
+| ------------------- | ------------------- |
+| 9540  |  Tattoo of Fight Lv.1 |
+| 9541  |  Tattoo of Fight Lv.2 |
+| 9542  |  Tattoo of Fight Lv.3 |
+| 9543  |  Tattoo of Fight Lv.4 |
+| 9544  |  Tattoo of Fight Lv.5 |
+| 9545  |  Tattoo of Fight - Gm Power |
+| 9546  |  Tattoo of Mage Lv.1 |
+| 9547  |  Tattoo of Mage Lv.2 |
+| 9548  |  Tattoo of Mage Lv.3 |
+| 9549  |  Tattoo of Mage Lv.4 |
+| 9550  |  Tattoo of Mage Lv.5 |
+| 9551  |  Tattoo of Mage - Gm Power |
+| 9552  |  TATTOO AIOX |
