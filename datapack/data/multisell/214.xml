@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- CREATED -->
+<!-- BY SMALLZ -->
+<!-- 2013 -->
+
+<!-- EXCHANGE -->
+
+<list>
+
+  <item id="1">
+	<ingredient id="6392" count="100"/>
+    <production id="8166" count="1"/>
+  </item>
+
+  <item id="2">
+	<ingredient id="6392" count="100"/>
+    <production id="8176" count="1"/>
+  </item>
+
+  <item id="3">
+	<ingredient id="6392" count="100"/>
+    <production id="8163" count="1"/>
+  </item>
+
+  <item id="4">
+	<ingredient id="6392" count="100"/>
+    <production id="8169" count="1"/>
+  </item>
+
+  <item id="5">
+	<ingredient id="6392" count="100"/>
+    <production id="8160" count="1"/>
+  </item>
+
+  <item id="6">
+	<ingredient id="6392" count="100"/>
+    <production id="8175" count="1"/>
+  </item>
+
+  <item id="7">
+	<ingredient id="6392" count="100"/>
+    <production id="8172" count="1"/>
+  </item>
+
+  <item id="8">
+	<ingredient id="6392" count="500"/>
+    <production id="1419" count="1"/>
+  </item>
+
+  <item id="9">
+	<ingredient id="6392" count="1000"/>
+    <production id="3874" count="1"/>
+  </item>
+
+  <item id="10">
+	<ingredient id="6392" count="2000"/>
+    <production id="3870" count="1"/>
+  </item>
+
+  <item id="11">
+	<ingredient id="6392" count="500"/>
+	<production id="6033" count="1"/>
+  </item>
+
+  <item id="12">
+	<ingredient id="6392" count="500"/>
+	<production id="6029" count="5"/>
+  </item>
+
+  <item id="13">
+	<ingredient id="6392" count="500"/>
+	<production id="3500" count="1"/>
+  </item>
+
+  <item id="14">
+	<ingredient id="6392" count="500"/>
+	<production id="3501" count="1"/>
+  </item>
+
+  <item id="15">
+	<ingredient id="6392" count="500"/>
+	<production id="3502" count="1"/>
+  </item>
+
+  <item id="16">
+	<ingredient id="6392" count="5000"/>
+	<production id="4422" count="1"/>
+  </item>
+
+  <item id="17">
+	<ingredient id="6392" count="5000"/>
+	<production id="4423" count="1"/>
+  </item>
+
+  <item id="18">
+	<ingredient id="6392" count="5000"/>
+	<production id="4424" count="1"/>
+  </item>
+
+  <item id="19">
+	<ingredient id="6392" count="500"/>
+	<production id="6648" count="1"/>
+  </item>
+
+  <item id="20">
+	<ingredient id="6392" count="500"/>
+	<production id="4425" count="1"/>
+  </item>
+
+  <item id="21">
+	<ingredient id="6392" count="500"/>
+	<production id="6649" count="1"/>
+  </item>
+
+  <item id="22">
+	<ingredient id="6392" count="500"/>
+	<production id="6650" count="1"/>
+  </item>
+
+  <item id="23">
+	<ingredient id="6392" count="500"/>
+	<production id="2375" count="1"/>
+  </item>
+
+  <item id="24">
+	<ingredient id="6392" count="5000"/>
+	<production id="6408" count="1"/>
+  </item>
+
+  <!-- Necklace of Valakas -->
+  <item id="25">
+	<ingredient id="6392" count="3000"/>
+    <production id="6657" count="1"/>
+  </item>
+
+  <!-- Necklace of Frintezza -->
+  <item id="26">
+	<ingredient id="6392" count="3000"/>
+    <production id="8191" count="1"/>
+  </item>
+
+  <!-- Earring of Antharas -->
+  <item id="27">
+	<ingredient id="6392" count="3000"/>
+    <production id="6656" count="1"/>
+  </item>
+
+  <!-- Earring of Zaken -->
+  <item id="28">
+	<ingredient id="6392" count="3000"/>
+    <production id="6659" count="1"/>
+  </item>
+
+  <!-- Earring of Orfen -->
+  <item id="29">
+	<ingredient id="6392" count="3000"/>
+    <production id="6661" count="1"/>
+  </item>
+
+  <!-- Ring of Baium -->
+  <item id="30">
+	<ingredient id="6392" count="3000"/>
+    <production id="6658" count="1"/>
+  </item>
+
+  <!-- Ring of Quen Ant -->
+  <item id="31">
+	<ingredient id="6392" count="3000"/>
+    <production id="6660" count="1"/>
+  </item>
+
+  <!-- Ring of Core -->
+  <item id="32">
+	<ingredient id="6392" count="3000"/>
+    <production id="6662" count="1"/>
+  </item>
+
+  <item id="33">
+	<ingredient id="6392" count="1000"/>
+	<production id="8618" count="1"/>
+  </item>
+
+  <item id="34">
+	<ingredient id="6392" count="1500"/>
+	<production id="8619" count="1"/>
+  </item>
+
+  <item id="35">
+	<ingredient id="6392" count="2500"/>
+	<production id="8620" count="1"/>
+  </item>
+
+  <item id="36">
+	<ingredient id="6392" count="5000"/>
+	<production id="8621" count="1"/>
+  </item>
+
+  <item id="37">
+	<ingredient id="6392" count="2500"/>
+	<production id="6622" count="1"/>
+  </item>
+
+  <item id="38">
+	<ingredient id="6392" count="2500"/>
+	<production id="8762" count="1"/>
+  </item>
+
+</list>
+<!-- CREATED -->
+<!-- BY SMALLZ -->
+<!-- 2013 -->

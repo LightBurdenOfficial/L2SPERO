@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- CREATED -->
+<!-- BY SMALLZ -->
+<!-- 2013 -->
+
+<!-- S-Grade Armors -->
+
+<list>
+
+  <!-- Imperial Crusader Heavy Armor -->
+  <item id="2">
+    <ingredient id="57" count="100000000"/>
+    <production id="6373" count="1"/>
+    <production id="6374" count="1"/>
+    <production id="6375" count="1"/>
+    <production id="6376" count="1"/>
+    <production id="6377" count="1"/>
+    <production id="6378" count="1"/>
+  </item>
+
+  <!-- Draconic Leather Armor -->
+  <item id="1">
+    <ingredient id="57" count="100000000"/>
+    <production id="6379" count="1"/>
+    <production id="6381" count="1"/>
+    <production id="6380" count="1"/>
+    <production id="6382" count="1"/>
+  </item>
+
+  <!-- Major Arcana Robe Armor -->
+  <item id="3">
+    <ingredient id="57" count="100000000"/>
+    <production id="6383" count="1"/>
+    <production id="6384" count="1"/>
+    <production id="6385" count="1"/>
+    <production id="6386" count="1"/>
+  </item>
+
+  <!-- Tateossian Necklace -->
+  <item id="4">
+    <ingredient id="57" count="10000000"/>
+    <production id="920" count="1"/>
+  </item>
+
+  <!-- Tateossian Earring -->
+  <item id="5">
+    <ingredient id="57" count="10000000"/>
+    <production id="858" count="2"/>
+  </item>
+
+  <!-- Tateossian Ring -->
+  <item id="6">
+    <ingredient id="57" count="10000000"/>
+    <production id="889" count="2"/>
+  </item>
+
+</list>
+<!-- CREATED -->
+<!-- BY SMALLZ -->
+<!-- 2013 -->
