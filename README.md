@@ -4,7 +4,7 @@
 ## Version 1132
 
 
-# MODIFCAÇÕES
+# MODIFICAÇÕES
 ## PROTEÇÕES
 * [Anti-PHX Critical Error](https://github.com/DigitalCoin1/L2SPERO/commit/786a38d4d7047fe4bde8f9bb67aa90b3afba9069)
 * [Spawn Protection + Protection Teleport Effect](https://github.com/DigitalCoin1/L2SPERO/commit/d9fa2b6c8e0111c51fc91379941a7bd0d8ec68d9)
