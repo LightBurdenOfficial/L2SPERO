@@ -571,6 +571,8 @@ public final class Config
 	public static int STARTING_ADENA;
 	public static int STARTING_AA;
 	public static boolean ENABLE_AIO_SYSTEM;
+	public static boolean ALLOW_AIO_ITEM;
+	public static String AIO_ITEMID;
 	public static Map<Integer, Integer> AIO_SKILLS;
 	public static boolean ALLOW_AIO_NCOLOR;
 	public static int AIO_NCOLOR;
@@ -696,6 +698,14 @@ public final class Config
 			VIP_DAYS_ID2 = Integer.parseInt(otherSettings.getProperty("VipCoinDays2", "2"));
 			VIP_COIN_ID3 = Integer.parseInt(otherSettings.getProperty("VipCoin3", "0"));
 			VIP_DAYS_ID3 = Integer.parseInt(otherSettings.getProperty("VipCoinDays3", "3"));
+			ALLOW_AIO_ITEM = Boolean.parseBoolean(otherSettings.getProperty("EnableDualAIO", "True"));
+			AIO_ITEMID = otherSettings.getProperty("ItemIdAio", "9209,9210");
+			AIO_ITEM = Integer.parseInt(otherSettings.getProperty("AioCoin", "10"));
+			AIO_DIAS = Integer.parseInt(otherSettings.getProperty("AioDays", "10"));
+			AIO_ITEM2 = Integer.parseInt(otherSettings.getProperty("AioCoin2", "10"));
+			AIO_DIAS2 = Integer.parseInt(otherSettings.getProperty("AioDays2", "10"));
+			AIO_ITEM3 = Integer.parseInt(otherSettings.getProperty("AioCoin3", "10"));
+			AIO_DIAS3 = Integer.parseInt(otherSettings.getProperty("AioDays3", "10"));
 			ALLOW_AIO_NCOLOR = Boolean.parseBoolean(otherSettings.getProperty("AllowAioNameColor", "True"));
 			AIO_NCOLOR = Integer.decode("0x" + otherSettings.getProperty("AioNameColor", "88AA88"));
 			ALLOW_AIO_TCOLOR = Boolean.parseBoolean(otherSettings.getProperty("AllowAioTitleColor", "True"));
@@ -1642,6 +1652,12 @@ public final class Config
 	public static int VIP_DAYS_ID2;
 	public static int VIP_COIN_ID3;
 	public static int VIP_DAYS_ID3;
+	public static int AIO_ITEM;
+	public static int AIO_DIAS;
+	public static int AIO_ITEM2;
+	public static int AIO_DIAS2;
+	public static int AIO_ITEM3;
+	public static int AIO_DIAS3;
 	
 	// ============================================================
 	public static void loadWeddingConfig()

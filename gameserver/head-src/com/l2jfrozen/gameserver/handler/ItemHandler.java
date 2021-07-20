@@ -26,6 +26,7 @@ import java.util.TreeMap;
 import org.apache.log4j.Logger;
 
 import com.l2jfrozen.gameserver.GameServer;
+import com.l2jfrozen.gameserver.handler.itemhandlers.AioItem;
 import com.l2jfrozen.gameserver.handler.itemhandlers.BeastSoulShot;
 import com.l2jfrozen.gameserver.handler.itemhandlers.BeastSpice;
 import com.l2jfrozen.gameserver.handler.itemhandlers.BeastSpiritShot;
@@ -111,6 +112,7 @@ public class ItemHandler
 	private ItemHandler()
 	{
 		_datatable = new TreeMap<>();
+		registerItemHandler(new AioItem());
 		registerItemHandler(new VipCoin());
 		registerItemHandler(new ScrollOfEscape());
 		registerItemHandler(new ScrollOfResurrection());
