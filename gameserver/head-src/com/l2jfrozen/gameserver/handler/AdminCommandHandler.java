@@ -59,6 +59,7 @@ import com.l2jfrozen.gameserver.handler.admincommandhandlers.AdminGm;
 import com.l2jfrozen.gameserver.handler.admincommandhandlers.AdminGmChat;
 import com.l2jfrozen.gameserver.handler.admincommandhandlers.AdminHeal;
 import com.l2jfrozen.gameserver.handler.admincommandhandlers.AdminHelpPage;
+import com.l2jfrozen.gameserver.handler.admincommandhandlers.AdminInventory;
 import com.l2jfrozen.gameserver.handler.admincommandhandlers.AdminInvul;
 import com.l2jfrozen.gameserver.handler.admincommandhandlers.AdminKick;
 import com.l2jfrozen.gameserver.handler.admincommandhandlers.AdminKill;
@@ -191,6 +192,7 @@ public class AdminCommandHandler
 		registerAdminCommandHandler(new AdminAio());
 		registerAdminCommandHandler(new AdminVip());
 		registerAdminCommandHandler(new AdminCharSupervision());
+		registerAdminCommandHandler(new AdminInventory());
 		registerAdminCommandHandler(new AdminWho()); // L2OFF command
 		registerAdminCommandHandler(new AdminSendDonate());
 		registerAdminCommandHandler(new AdminClanFullByName());
