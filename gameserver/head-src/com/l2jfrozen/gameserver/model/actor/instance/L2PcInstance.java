@@ -7869,6 +7869,10 @@ public final class L2PcInstance extends L2PlayableInstance
 		{
 			increasePvpKills();
 		}
+		if(target instanceof L2PcInstance && Config.ANNOUNCE_PVP_KILL && !isGM())
+		{
+			Announcements.getInstance().announceToPlayers("PvP: " + getName() + " hunted " + target.getName());
+		}
 		else
 		{
 			// check about wars
@@ -7880,13 +7884,9 @@ public final class L2PcInstance extends L2PlayableInstance
 					{
 						// 'Both way war' -> 'PvP Kill'
 						increasePvpKills();
-						if (target instanceof L2PcInstance && Config.ANNOUNCE_PVP_KILL)
+						if (target instanceof L2PcInstance && Config.ANNOUNCE_PVP_KILL && !isGM())
 						{
-							Announcements.getInstance().announceToAll("Player " + getName() + " hunted Player " + target.getName());
-						}
-						else if (target instanceof L2PcInstance && Config.ANNOUNCE_ALL_KILL)
-						{
-							Announcements.getInstance().announceToAll("Player " + getName() + " killed Player " + target.getName());
+							Announcements.getInstance().announceToPlayers("PvP: " + getName() + " hunted " + target.getName());
 						}
 						addItemReward(targetPlayer);
 						return;
@@ -7902,26 +7902,22 @@ public final class L2PcInstance extends L2PlayableInstance
 					if (Config.KARMA_AWARD_PK_KILL)
 					{
 						increasePvpKills();
+						if(target instanceof L2PcInstance && Config.ANNOUNCE_PVP_KILL && !isGM())
+						{
+							Announcements.getInstance().announceToPlayers("PvP: " + getName() + " hunted " + target.getName());
+						}
 					}
 					
-					if (target instanceof L2PcInstance && Config.ANNOUNCE_PVP_KILL)
-					{
-						Announcements.getInstance().announceToAll("Player " + getName() + " hunted Player " + target.getName());
-					}
 				}
 				else if (targetPlayer.getPvpFlag() == 0) // Target player doesn't have karma
 				{
 					increasePkKillsAndKarma(targetPlayer.getLevel());
-					if (target instanceof L2PcInstance && Config.ANNOUNCE_PK_KILL)
+					if (target instanceof L2PcInstance && Config.ANNOUNCE_PK_KILL && !isGM())
 					{
-						Announcements.getInstance().announceToAll("Player " + getName() + " has assassinated Player " + target.getName());
+						Announcements.getInstance().announceToPlayers("PK: " + getName() + " has assassinated " + target.getName());
 					}
 				}
 			}
-		}
-		if (target instanceof L2PcInstance && Config.ANNOUNCE_ALL_KILL)
-		{
-			Announcements.getInstance().announceToAll("Player " + getName() + " killed Player " + target.getName());
 		}
 		
 		if (_inEventDM && DM.is_started())

@@ -2810,7 +2810,6 @@ public final class Config
 	/** Announce PvP, PK, Kill */
 	public static boolean ANNOUNCE_PVP_KILL;
 	public static boolean ANNOUNCE_PK_KILL;
-	public static boolean ANNOUNCE_ALL_KILL;
 	
 	public static int DUEL_SPAWN_X;
 	public static int DUEL_SPAWN_Y;
@@ -2929,8 +2928,7 @@ public final class Config
 			ALLOW_POTS_IN_PVP = Boolean.parseBoolean(pvpSettings.getProperty("AllowPotsInPvP", "True"));
 			/** Enable Pk Info mod. Displays number of times player has killed other */
 			ENABLE_PK_INFO = Boolean.valueOf(pvpSettings.getProperty("EnablePkInfo", "false"));
-			// Get the AnnounceAllKill, AnnouncePvpKill and AnnouncePkKill values
-			ANNOUNCE_ALL_KILL = Boolean.parseBoolean(pvpSettings.getProperty("AnnounceAllKill", "False"));
+			// Get the AnnouncePvpKill and AnnouncePkKill values
 			ANNOUNCE_PVP_KILL = Boolean.parseBoolean(pvpSettings.getProperty("AnnouncePvPKill", "False"));
 			ANNOUNCE_PK_KILL = Boolean.parseBoolean(pvpSettings.getProperty("AnnouncePkKill", "False"));
 			
@@ -5655,17 +5653,13 @@ public final class Config
 		{
 			STARTING_AA = Integer.parseInt(pValue);
 		}
-		else if (pName.equalsIgnoreCase("AnnouncePvPKill") && !ANNOUNCE_ALL_KILL)
+		else if (pName.equalsIgnoreCase("AnnouncePvPKill"))
 		{
 			ANNOUNCE_PVP_KILL = Boolean.valueOf(pValue);
 		}
-		else if (pName.equalsIgnoreCase("AnnouncePkKill") && !ANNOUNCE_ALL_KILL)
+		else if (pName.equalsIgnoreCase("AnnouncePkKill"))
 		{
 			ANNOUNCE_PK_KILL = Boolean.valueOf(pValue);
-		}
-		else if (pName.equalsIgnoreCase("AnnounceAllKill") && !ANNOUNCE_PVP_KILL && !ANNOUNCE_PK_KILL)
-		{
-			ANNOUNCE_ALL_KILL = Boolean.valueOf(pValue);
 		}
 		else if (pName.equalsIgnoreCase("DisableWeightPenalty"))
 		{
