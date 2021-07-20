@@ -68,6 +68,7 @@ import com.l2jfrozen.gameserver.handler.itemhandlers.SoulShots;
 import com.l2jfrozen.gameserver.handler.itemhandlers.SpecialXMas;
 import com.l2jfrozen.gameserver.handler.itemhandlers.SpiritShot;
 import com.l2jfrozen.gameserver.handler.itemhandlers.SummonItems;
+import com.l2jfrozen.gameserver.handler.itemhandlers.VipCoin;
 
 /**
  * This class manages handlers of items
@@ -110,6 +111,7 @@ public class ItemHandler
 	private ItemHandler()
 	{
 		_datatable = new TreeMap<>();
+		registerItemHandler(new VipCoin());
 		registerItemHandler(new ScrollOfEscape());
 		registerItemHandler(new ScrollOfResurrection());
 		registerItemHandler(new SoulShots());

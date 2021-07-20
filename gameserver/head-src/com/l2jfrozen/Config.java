@@ -690,6 +690,12 @@ public final class Config
 			RAID_MIN_RESPAWN_MULTIPLIER = Float.parseFloat(otherSettings.getProperty("RaidMinRespawnMultiplier", "1.0"));
 			RAID_MAX_RESPAWN_MULTIPLIER = Float.parseFloat(otherSettings.getProperty("RaidMaxRespawnMultiplier", "1.0"));
 			ENABLE_AIO_SYSTEM = Boolean.parseBoolean(otherSettings.getProperty("EnableAioSystem", "True"));
+			VIP_COIN_ID1 = Integer.parseInt(otherSettings.getProperty("VipCoin", "0"));
+			VIP_DAYS_ID1 = Integer.parseInt(otherSettings.getProperty("VipCoinDays", "1"));
+			VIP_COIN_ID2 = Integer.parseInt(otherSettings.getProperty("VipCoin2", "0"));
+			VIP_DAYS_ID2 = Integer.parseInt(otherSettings.getProperty("VipCoinDays2", "2"));
+			VIP_COIN_ID3 = Integer.parseInt(otherSettings.getProperty("VipCoin3", "0"));
+			VIP_DAYS_ID3 = Integer.parseInt(otherSettings.getProperty("VipCoinDays3", "3"));
 			ALLOW_AIO_NCOLOR = Boolean.parseBoolean(otherSettings.getProperty("AllowAioNameColor", "True"));
 			AIO_NCOLOR = Integer.decode("0x" + otherSettings.getProperty("AioNameColor", "88AA88"));
 			ALLOW_AIO_TCOLOR = Boolean.parseBoolean(otherSettings.getProperty("AllowAioTitleColor", "True"));
@@ -1630,6 +1636,12 @@ public final class Config
 	public static int L2JMOD_WEDDING_DIVORCE_COSTS;
 	public static boolean WEDDING_GIVE_CUPID_BOW;
 	public static boolean ANNOUNCE_WEDDING;
+	public static int VIP_COIN_ID1;
+	public static int VIP_DAYS_ID1;
+	public static int VIP_COIN_ID2;
+	public static int VIP_DAYS_ID2;
+	public static int VIP_COIN_ID3;
+	public static int VIP_DAYS_ID3;
 	
 	// ============================================================
 	public static void loadWeddingConfig()
