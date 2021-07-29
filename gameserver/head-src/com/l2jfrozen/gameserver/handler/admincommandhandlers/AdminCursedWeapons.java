@@ -22,8 +22,6 @@ package com.l2jfrozen.gameserver.handler.admincommandhandlers;
 
 import java.util.StringTokenizer;
 
-import javolution.text.TextBuilder;
-
 import com.l2jfrozen.gameserver.handler.IAdminCommandHandler;
 import com.l2jfrozen.gameserver.managers.CursedWeaponsManager;
 import com.l2jfrozen.gameserver.model.CursedWeapon;
@@ -32,6 +30,8 @@ import com.l2jfrozen.gameserver.model.actor.instance.L2PcInstance;
 import com.l2jfrozen.gameserver.network.SystemMessageId;
 import com.l2jfrozen.gameserver.network.serverpackets.NpcHtmlMessage;
 import com.l2jfrozen.gameserver.network.serverpackets.SystemMessage;
+
+import javolution.text.TextBuilder;
 
 /**
  * This class handles following admin commands:<br>

@@ -24,6 +24,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.SQLIntegrityConstraintViolationException;
 import java.util.concurrent.ScheduledFuture;
 import java.util.logging.Level;
 import java.util.logging.LogRecord;
@@ -59,7 +60,6 @@ import com.l2jfrozen.gameserver.util.Util;
 import com.l2jfrozen.util.CloseUtil;
 import com.l2jfrozen.util.database.DatabaseUtils;
 import com.l2jfrozen.util.database.L2DatabaseFactory;
-import com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException;
 
 /**
  * This class manages items.
@@ -1405,7 +1405,7 @@ public final class L2ItemInstance extends L2Object
 			statement = null;
 			
 		}
-		catch (final MySQLIntegrityConstraintViolationException e)
+		catch (final SQLIntegrityConstraintViolationException e)
 		{
 			// if(Config.ENABLE_ALL_EXCEPTIONS)
 			// e.printStackTrace();

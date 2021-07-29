@@ -19,12 +19,12 @@
  */
 package com.l2jfrozen.gameserver.managers;
 
-import javolution.util.FastList;
-
 import org.apache.log4j.Logger;
 
 import com.l2jfrozen.gameserver.model.zone.type.L2FishingZone;
 import com.l2jfrozen.gameserver.model.zone.type.L2WaterZone;
+
+import javolution.util.FastList;
 
 public class FishingZoneManager
 {

@@ -23,8 +23,6 @@ package com.l2jfrozen.gameserver.model.spawn;
 import java.lang.reflect.Constructor;
 import java.util.List;
 
-import javolution.util.FastList;
-
 import org.apache.log4j.Logger;
 
 import com.l2jfrozen.Config;
@@ -38,6 +36,8 @@ import com.l2jfrozen.gameserver.model.quest.Quest;
 import com.l2jfrozen.gameserver.templates.L2NpcTemplate;
 import com.l2jfrozen.gameserver.thread.ThreadPoolManager;
 import com.l2jfrozen.util.random.Rnd;
+
+import javolution.util.FastList;
 
 /**
  * This class manages the spawn and respawn of a group of L2NpcInstance that are in the same are and have the same type. <B><U> Concept</U> :</B><BR>

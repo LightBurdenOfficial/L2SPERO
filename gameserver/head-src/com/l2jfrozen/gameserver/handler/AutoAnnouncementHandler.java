@@ -23,9 +23,6 @@ import java.util.Collection;
 import java.util.Map;
 import java.util.concurrent.ScheduledFuture;
 
-import javolution.text.TextBuilder;
-import javolution.util.FastMap;
-
 import org.apache.log4j.Logger;
 
 import com.l2jfrozen.Config;
@@ -36,6 +33,9 @@ import com.l2jfrozen.gameserver.thread.ThreadPoolManager;
 import com.l2jfrozen.util.CloseUtil;
 import com.l2jfrozen.util.database.DatabaseUtils;
 import com.l2jfrozen.util.database.L2DatabaseFactory;
+
+import javolution.text.TextBuilder;
+import javolution.util.FastMap;
 
 /**
  * Auto Announcment Handler Automatically send announcment at a set time interval.

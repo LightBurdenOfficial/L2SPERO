@@ -22,8 +22,6 @@ package com.l2jfrozen.gameserver.model.actor.instance;
 
 import java.util.StringTokenizer;
 
-import javolution.text.TextBuilder;
-
 import com.l2jfrozen.Config;
 import com.l2jfrozen.gameserver.controllers.TradeController;
 import com.l2jfrozen.gameserver.datatables.SkillTable;
@@ -39,6 +37,8 @@ import com.l2jfrozen.gameserver.network.serverpackets.NpcHtmlMessage;
 import com.l2jfrozen.gameserver.network.serverpackets.SellList;
 import com.l2jfrozen.gameserver.network.serverpackets.SystemMessage;
 import com.l2jfrozen.gameserver.templates.L2NpcTemplate;
+
+import javolution.text.TextBuilder;
 
 public class L2FishermanInstance extends L2FolkInstance
 {

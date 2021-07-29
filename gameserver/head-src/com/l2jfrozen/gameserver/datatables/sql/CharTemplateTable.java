@@ -26,8 +26,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Map;
 
-import javolution.util.FastMap;
-
 import org.apache.log4j.Logger;
 
 import com.l2jfrozen.Config;
@@ -37,6 +35,8 @@ import com.l2jfrozen.gameserver.templates.StatsSet;
 import com.l2jfrozen.util.CloseUtil;
 import com.l2jfrozen.util.database.DatabaseUtils;
 import com.l2jfrozen.util.database.L2DatabaseFactory;
+
+import javolution.util.FastMap;
 
 /**
  * @version $Revision: 1.6.2.1.2.10 $ $Date: 2005/03/29 14:00:54 $

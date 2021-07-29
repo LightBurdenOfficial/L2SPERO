@@ -22,8 +22,6 @@ package com.l2jfrozen.gameserver.model.actor.instance;
 import java.util.NoSuchElementException;
 import java.util.StringTokenizer;
 
-import javolution.text.TextBuilder;
-
 import com.l2jfrozen.Config;
 import com.l2jfrozen.gameserver.ai.CtrlIntention;
 import com.l2jfrozen.gameserver.controllers.TradeController;
@@ -48,6 +46,8 @@ import com.l2jfrozen.gameserver.network.serverpackets.SystemMessage;
 import com.l2jfrozen.gameserver.network.serverpackets.ValidateLocation;
 import com.l2jfrozen.gameserver.templates.L2NpcTemplate;
 import com.l2jfrozen.gameserver.util.Util;
+
+import javolution.text.TextBuilder;
 
 /**
  * Castle Chamberlains implementation used for: - tax rate control - regional manor system control - castle treasure control - ...

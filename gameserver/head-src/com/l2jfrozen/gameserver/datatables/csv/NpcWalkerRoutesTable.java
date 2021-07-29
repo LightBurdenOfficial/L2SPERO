@@ -28,12 +28,12 @@ import java.io.IOException;
 import java.io.LineNumberReader;
 import java.util.StringTokenizer;
 
-import javolution.util.FastList;
-
 import org.apache.log4j.Logger;
 
 import com.l2jfrozen.Config;
 import com.l2jfrozen.gameserver.model.L2NpcWalkerNode;
+
+import javolution.util.FastList;
 
 /**
  * Main Table to Load Npc Walkers Routes and Chat SQL Table.<br>

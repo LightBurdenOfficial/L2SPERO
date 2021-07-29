@@ -22,9 +22,9 @@ package com.l2jfrozen.loginserver.network.gameserverpackets;
 
 import java.util.List;
 
-import javolution.util.FastList;
-
 import com.l2jfrozen.loginserver.network.clientpackets.ClientBasePacket;
+
+import javolution.util.FastList;
 
 /**
  * @author -Wooden-

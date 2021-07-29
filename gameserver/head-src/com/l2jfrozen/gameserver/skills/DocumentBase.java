@@ -28,10 +28,6 @@ import java.util.StringTokenizer;
 
 import javax.xml.parsers.DocumentBuilderFactory;
 
-import javolution.text.TextBuilder;
-import javolution.util.FastList;
-import javolution.util.FastMap;
-
 import org.apache.log4j.Logger;
 import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
@@ -81,6 +77,10 @@ import com.l2jfrozen.gameserver.templates.L2Item;
 import com.l2jfrozen.gameserver.templates.L2Weapon;
 import com.l2jfrozen.gameserver.templates.L2WeaponType;
 import com.l2jfrozen.gameserver.templates.StatsSet;
+
+import javolution.text.TextBuilder;
+import javolution.util.FastList;
+import javolution.util.FastMap;
 
 /**
  * @author mkizub

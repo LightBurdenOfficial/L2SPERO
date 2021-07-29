@@ -22,11 +22,11 @@ package com.l2jfrozen.gameserver.network.serverpackets;
 
 import java.util.List;
 
-import javolution.util.FastList;
-
 import com.l2jfrozen.gameserver.model.L2Character;
 import com.l2jfrozen.gameserver.model.actor.instance.L2PetInstance;
 import com.l2jfrozen.gameserver.model.actor.instance.L2SummonInstance;
+
+import javolution.util.FastList;
 
 /**
  * This class ...

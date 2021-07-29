@@ -6,8 +6,6 @@ import java.util.logging.Logger;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 
-import javolution.util.FastMap;
-
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -18,6 +16,8 @@ import com.l2jfrozen.gameserver.model.entity.Announcements;
 import com.l2jfrozen.gameserver.network.clientpackets.Say2;
 import com.l2jfrozen.gameserver.network.serverpackets.CreatureSay;
 import com.l2jfrozen.util.random.Rnd;
+
+import javolution.util.FastMap;
 
 public class Trivia
 {

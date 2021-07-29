@@ -20,8 +20,6 @@ import java.util.List;
 import java.util.Random;
 import java.util.concurrent.Future;
 
-import javolution.util.FastList;
-
 import org.apache.log4j.Logger;
 
 import com.l2jfrozen.Config;
@@ -42,6 +40,8 @@ import com.l2jfrozen.gameserver.network.serverpackets.CreatureSay;
 import com.l2jfrozen.gameserver.network.serverpackets.SystemMessage;
 import com.l2jfrozen.gameserver.templates.L2NpcTemplate;
 import com.l2jfrozen.gameserver.thread.ThreadPoolManager;
+
+import javolution.util.FastList;
 
 /**
  * control for sequence of Christmas.

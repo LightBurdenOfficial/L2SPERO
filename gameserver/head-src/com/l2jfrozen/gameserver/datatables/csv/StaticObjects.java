@@ -28,13 +28,13 @@ import java.io.LineNumberReader;
 import java.util.Map;
 import java.util.StringTokenizer;
 
-import javolution.util.FastMap;
-
 import org.apache.log4j.Logger;
 
 import com.l2jfrozen.Config;
 import com.l2jfrozen.gameserver.idfactory.IdFactory;
 import com.l2jfrozen.gameserver.model.actor.instance.L2StaticObjectInstance;
+
+import javolution.util.FastMap;
 
 public class StaticObjects
 {

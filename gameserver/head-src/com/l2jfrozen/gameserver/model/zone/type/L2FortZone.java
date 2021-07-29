@@ -16,8 +16,6 @@
  */
 package com.l2jfrozen.gameserver.model.zone.type;
 
-import javolution.util.FastList;
-
 import com.l2jfrozen.Config;
 import com.l2jfrozen.gameserver.datatables.csv.MapRegionTable;
 import com.l2jfrozen.gameserver.managers.FortManager;
@@ -28,6 +26,8 @@ import com.l2jfrozen.gameserver.model.entity.siege.Fort;
 import com.l2jfrozen.gameserver.model.zone.L2ZoneType;
 import com.l2jfrozen.gameserver.network.SystemMessageId;
 import com.l2jfrozen.gameserver.network.serverpackets.SystemMessage;
+
+import javolution.util.FastList;
 
 /**
  * A castle zone

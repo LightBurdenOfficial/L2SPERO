@@ -23,8 +23,6 @@ import static com.l2jfrozen.gameserver.ai.CtrlIntention.AI_INTENTION_IDLE;
 import java.util.List;
 import java.util.concurrent.Future;
 
-import javolution.util.FastList;
-
 import org.apache.log4j.Logger;
 
 import com.l2jfrozen.Config;
@@ -47,6 +45,8 @@ import com.l2jfrozen.gameserver.model.actor.instance.L2PlayableInstance;
 import com.l2jfrozen.gameserver.thread.ThreadPoolManager;
 import com.l2jfrozen.gameserver.util.Util;
 import com.l2jfrozen.util.random.Rnd;
+
+import javolution.util.FastList;
 
 /**
  * This class manages AI of L2Attackable.

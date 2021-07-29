@@ -22,8 +22,6 @@ package com.l2jfrozen.gameserver.thread.daemons;
 
 import java.util.List;
 
-import javolution.util.FastList;
-
 import org.apache.log4j.Logger;
 
 import com.l2jfrozen.Config;
@@ -32,6 +30,8 @@ import com.l2jfrozen.gameserver.model.L2World;
 import com.l2jfrozen.gameserver.model.actor.instance.L2ItemInstance;
 import com.l2jfrozen.gameserver.templates.L2EtcItemType;
 import com.l2jfrozen.gameserver.thread.ThreadPoolManager;
+
+import javolution.util.FastList;
 
 public class ItemsAutoDestroy
 {

@@ -23,9 +23,6 @@ package com.l2jfrozen.gameserver.model.actor.instance;
 import java.util.Collection;
 import java.util.concurrent.ScheduledFuture;
 
-import javolution.text.TextBuilder;
-import javolution.util.FastList;
-
 import org.apache.log4j.Logger;
 
 import com.l2jfrozen.Config;
@@ -58,6 +55,9 @@ import com.l2jfrozen.gameserver.network.serverpackets.ValidateLocation;
 import com.l2jfrozen.gameserver.templates.L2CharTemplate;
 import com.l2jfrozen.gameserver.templates.L2Weapon;
 import com.l2jfrozen.gameserver.thread.ThreadPoolManager;
+
+import javolution.text.TextBuilder;
+import javolution.util.FastList;
 
 /**
  * This class ...

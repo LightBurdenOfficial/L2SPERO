@@ -22,8 +22,6 @@ package com.l2jfrozen.gameserver.handler.admincommandhandlers;
 
 import java.util.StringTokenizer;
 
-import javolution.text.TextBuilder;
-
 import org.apache.log4j.Logger;
 
 import com.l2jfrozen.Config;
@@ -38,6 +36,8 @@ import com.l2jfrozen.gameserver.network.SystemMessageId;
 import com.l2jfrozen.gameserver.network.serverpackets.NpcHtmlMessage;
 import com.l2jfrozen.gameserver.network.serverpackets.PledgeSkillList;
 import com.l2jfrozen.gameserver.network.serverpackets.SystemMessage;
+
+import javolution.text.TextBuilder;
 
 /**
  * This class handles following admin commands: - show_skills - remove_skills - skill_list - skill_index - add_skill - remove_skill - get_skills - reset_skills - give_all_skills - remove_all_skills - add_clan_skills

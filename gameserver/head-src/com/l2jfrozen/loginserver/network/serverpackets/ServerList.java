@@ -24,12 +24,12 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.util.List;
 
-import javolution.util.FastList;
-
 import com.l2jfrozen.gameserver.datatables.GameServerTable;
 import com.l2jfrozen.gameserver.datatables.GameServerTable.GameServerInfo;
 import com.l2jfrozen.loginserver.L2LoginClient;
 import com.l2jfrozen.loginserver.network.gameserverpackets.ServerStatus;
+
+import javolution.util.FastList;
 
 /**
  * ServerList Format: cc [cddcchhcdc] c: server list size (number of servers) c: ? [ (repeat for each servers) c: server id (ignored by client?) d: server ip d: server port c: age limit (used by client?) c: pvp or not (used by client?) h: current number of players h: max number of players c: 0 if

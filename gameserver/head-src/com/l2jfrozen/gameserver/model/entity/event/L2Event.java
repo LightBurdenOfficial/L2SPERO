@@ -29,8 +29,6 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedList;
 
-import javolution.text.TextBuilder;
-
 import org.apache.log4j.Logger;
 
 import com.l2jfrozen.Config;
@@ -45,6 +43,8 @@ import com.l2jfrozen.gameserver.network.serverpackets.MagicSkillUser;
 import com.l2jfrozen.gameserver.network.serverpackets.NpcHtmlMessage;
 import com.l2jfrozen.gameserver.templates.L2NpcTemplate;
 import com.l2jfrozen.gameserver.util.EventData;
+
+import javolution.text.TextBuilder;
 
 /**
  * This class ...

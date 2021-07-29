@@ -21,11 +21,11 @@ package com.l2jfrozen.gameserver.network.clientpackets;
 
 import java.util.List;
 
-import javolution.util.FastList;
-
 import com.l2jfrozen.gameserver.managers.CursedWeaponsManager;
 import com.l2jfrozen.gameserver.model.L2Character;
 import com.l2jfrozen.gameserver.network.serverpackets.ExCursedWeaponList;
+
+import javolution.util.FastList;
 
 /**
  * Format: (ch)

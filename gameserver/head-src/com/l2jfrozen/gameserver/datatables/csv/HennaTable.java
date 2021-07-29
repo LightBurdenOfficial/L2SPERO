@@ -29,13 +29,13 @@ import java.io.LineNumberReader;
 import java.util.Map;
 import java.util.StringTokenizer;
 
-import javolution.util.FastMap;
-
 import org.apache.log4j.Logger;
 
 import com.l2jfrozen.Config;
 import com.l2jfrozen.gameserver.templates.L2Henna;
 import com.l2jfrozen.gameserver.templates.StatsSet;
+
+import javolution.util.FastMap;
 
 /**
  * This class ...

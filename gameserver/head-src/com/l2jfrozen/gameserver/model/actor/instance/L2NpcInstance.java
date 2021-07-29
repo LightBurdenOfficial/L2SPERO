@@ -25,9 +25,6 @@ import static com.l2jfrozen.gameserver.ai.CtrlIntention.AI_INTENTION_ACTIVE;
 import java.text.DateFormat;
 import java.util.List;
 
-import javolution.text.TextBuilder;
-import javolution.util.FastList;
-
 import org.omg.PortableServer.POAManagerPackage.State;
 
 import com.l2jfrozen.Config;
@@ -100,6 +97,9 @@ import com.l2jfrozen.gameserver.templates.L2Weapon;
 import com.l2jfrozen.gameserver.templates.L2WeaponType;
 import com.l2jfrozen.gameserver.thread.ThreadPoolManager;
 import com.l2jfrozen.util.random.Rnd;
+
+import javolution.text.TextBuilder;
+import javolution.util.FastList;
 
 /**
  * This class represents a Non-Player-Character in the world. It can be a monster or a friendly character. It also uses a template to fetch some static values. The templates are hardcoded in the client, so we can rely on them.<BR>

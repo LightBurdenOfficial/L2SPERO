@@ -18,9 +18,9 @@ package com.l2jfrozen.gameserver.model;
 
 import java.util.List;
 
-import javolution.util.FastList;
-
 import com.l2jfrozen.gameserver.model.actor.instance.L2PcInstance;
+
+import javolution.util.FastList;
 
 /**
  * @author Gnacik

@@ -23,13 +23,13 @@
  */
 package com.l2jfrozen.gameserver.model.actor.instance;
 
-import javolution.text.TextBuilder;
-
 import com.l2jfrozen.gameserver.datatables.sql.HennaTreeTable;
 import com.l2jfrozen.gameserver.model.L2Character;
 import com.l2jfrozen.gameserver.network.serverpackets.HennaEquipList;
 import com.l2jfrozen.gameserver.network.serverpackets.ItemList;
 import com.l2jfrozen.gameserver.templates.L2NpcTemplate;
+
+import javolution.text.TextBuilder;
 
 /**
  * This class ...

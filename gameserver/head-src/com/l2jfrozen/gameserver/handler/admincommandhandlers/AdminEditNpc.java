@@ -30,9 +30,6 @@ import java.util.Map;
 import java.util.Set;
 import java.util.StringTokenizer;
 
-import javolution.text.TextBuilder;
-import javolution.util.FastList;
-
 import org.apache.log4j.Logger;
 
 import com.l2jfrozen.Config;
@@ -58,6 +55,9 @@ import com.l2jfrozen.gameserver.templates.StatsSet;
 import com.l2jfrozen.util.CloseUtil;
 import com.l2jfrozen.util.database.DatabaseUtils;
 import com.l2jfrozen.util.database.L2DatabaseFactory;
+
+import javolution.text.TextBuilder;
+import javolution.util.FastList;
 
 /**
  * @author terry Window - Preferences - Java - Code Style - Code Templates

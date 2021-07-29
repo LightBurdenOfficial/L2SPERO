@@ -20,13 +20,13 @@
  */
 package com.l2jfrozen.gameserver.handler.itemhandlers;
 
-import javolution.text.TextBuilder;
-
 import com.l2jfrozen.gameserver.handler.IItemHandler;
 import com.l2jfrozen.gameserver.model.actor.instance.L2ItemInstance;
 import com.l2jfrozen.gameserver.model.actor.instance.L2PcInstance;
 import com.l2jfrozen.gameserver.model.actor.instance.L2PlayableInstance;
 import com.l2jfrozen.gameserver.network.serverpackets.NpcHtmlMessage;
+
+import javolution.text.TextBuilder;
 
 public class MapForestOfTheDead implements IItemHandler
 {

@@ -41,10 +41,6 @@ import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.ScheduledFuture;
 
-import javolution.text.TextBuilder;
-import javolution.util.FastList;
-import javolution.util.FastMap;
-
 import org.apache.log4j.Logger;
 
 import com.l2jfrozen.Config;
@@ -62,6 +58,10 @@ import com.l2jfrozen.gameserver.thread.ThreadPoolManager;
 import com.l2jfrozen.util.L2FastList;
 import com.l2jfrozen.util.database.DatabaseUtils;
 import com.l2jfrozen.util.database.L2DatabaseFactory;
+
+import javolution.text.TextBuilder;
+import javolution.util.FastList;
+import javolution.util.FastMap;
 
 public class Olympiad
 {

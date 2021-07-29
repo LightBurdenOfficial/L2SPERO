@@ -23,8 +23,6 @@ package com.l2jfrozen.gameserver.taskmanager;
 
 import java.util.Map;
 
-import javolution.util.FastMap;
-
 import org.apache.log4j.Logger;
 
 import com.l2jfrozen.gameserver.model.L2Character;
@@ -33,6 +31,8 @@ import com.l2jfrozen.gameserver.model.actor.instance.L2CubicInstance;
 import com.l2jfrozen.gameserver.model.actor.instance.L2PcInstance;
 import com.l2jfrozen.gameserver.network.serverpackets.AutoAttackStop;
 import com.l2jfrozen.gameserver.thread.ThreadPoolManager;
+
+import javolution.util.FastMap;
 
 /**
  * This class ...

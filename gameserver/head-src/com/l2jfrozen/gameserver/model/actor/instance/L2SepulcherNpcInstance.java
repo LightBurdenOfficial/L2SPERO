@@ -20,8 +20,6 @@ import java.util.Collection;
 import java.util.Map;
 import java.util.concurrent.Future;
 
-import javolution.util.FastMap;
-
 import com.l2jfrozen.Config;
 import com.l2jfrozen.gameserver.ai.CtrlIntention;
 import com.l2jfrozen.gameserver.datatables.csv.DoorTable;
@@ -39,6 +37,8 @@ import com.l2jfrozen.gameserver.templates.L2NpcTemplate;
 import com.l2jfrozen.gameserver.thread.ThreadPoolManager;
 import com.l2jfrozen.gameserver.util.Util;
 import com.l2jfrozen.util.random.Rnd;
+
+import javolution.util.FastMap;
 
 /**
  * @author sandman

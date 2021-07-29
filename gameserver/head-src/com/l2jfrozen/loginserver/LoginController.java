@@ -35,10 +35,6 @@ import java.util.Map;
 
 import javax.crypto.Cipher;
 
-import javolution.util.FastCollection.Record;
-import javolution.util.FastList;
-import javolution.util.FastMap;
-
 import org.apache.log4j.Logger;
 
 import com.l2jfrozen.Config;
@@ -54,6 +50,10 @@ import com.l2jfrozen.util.Util;
 import com.l2jfrozen.util.database.DatabaseUtils;
 import com.l2jfrozen.util.database.L2DatabaseFactory;
 import com.l2jfrozen.util.random.Rnd;
+
+import javolution.util.FastCollection.Record;
+import javolution.util.FastList;
+import javolution.util.FastMap;
 
 /**
  * This class ...

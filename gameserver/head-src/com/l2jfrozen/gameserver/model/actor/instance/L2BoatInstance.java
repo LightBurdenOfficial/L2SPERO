@@ -29,8 +29,6 @@ import java.util.Collection;
 import java.util.Map;
 import java.util.StringTokenizer;
 
-import javolution.util.FastMap;
-
 import org.apache.log4j.Logger;
 
 import com.l2jfrozen.Config;
@@ -48,6 +46,8 @@ import com.l2jfrozen.gameserver.network.serverpackets.VehicleInfo;
 import com.l2jfrozen.gameserver.templates.L2CharTemplate;
 import com.l2jfrozen.gameserver.templates.L2Weapon;
 import com.l2jfrozen.gameserver.thread.ThreadPoolManager;
+
+import javolution.util.FastMap;
 
 /**
  * @author eX1steam, l2jfrozen

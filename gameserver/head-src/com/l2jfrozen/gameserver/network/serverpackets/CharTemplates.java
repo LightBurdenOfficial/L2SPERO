@@ -22,9 +22,9 @@ package com.l2jfrozen.gameserver.network.serverpackets;
 
 import java.util.List;
 
-import javolution.util.FastList;
-
 import com.l2jfrozen.gameserver.templates.L2PcTemplate;
+
+import javolution.util.FastList;
 
 /**
  * This class ...

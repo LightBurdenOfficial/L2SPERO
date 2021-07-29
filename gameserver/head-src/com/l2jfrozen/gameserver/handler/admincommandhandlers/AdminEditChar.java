@@ -25,8 +25,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.StringTokenizer;
 
-import javolution.text.TextBuilder;
-
 import org.apache.log4j.Logger;
 
 import com.l2jfrozen.Config;
@@ -56,6 +54,8 @@ import com.l2jfrozen.gameserver.network.serverpackets.SocialAction;
 import com.l2jfrozen.gameserver.network.serverpackets.StatusUpdate;
 import com.l2jfrozen.gameserver.network.serverpackets.SystemMessage;
 import com.l2jfrozen.gameserver.util.Util;
+
+import javolution.text.TextBuilder;
 
 public class AdminEditChar implements IAdminCommandHandler
 {

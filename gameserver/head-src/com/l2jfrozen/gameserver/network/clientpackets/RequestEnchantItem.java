@@ -20,6 +20,7 @@
 package com.l2jfrozen.gameserver.network.clientpackets;
 
 import java.util.Collection;
+
 import org.apache.log4j.Logger;
 
 import com.l2jfrozen.Config;

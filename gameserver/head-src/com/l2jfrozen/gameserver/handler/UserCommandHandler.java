@@ -22,8 +22,6 @@ package com.l2jfrozen.gameserver.handler;
 
 import java.util.Map;
 
-import javolution.util.FastMap;
-
 import org.apache.log4j.Logger;
 
 import com.l2jfrozen.Config;
@@ -42,6 +40,8 @@ import com.l2jfrozen.gameserver.handler.usercommandhandlers.OlympiadStat;
 import com.l2jfrozen.gameserver.handler.usercommandhandlers.PartyInfo;
 import com.l2jfrozen.gameserver.handler.usercommandhandlers.SiegeStatus;
 import com.l2jfrozen.gameserver.handler.usercommandhandlers.Time;
+
+import javolution.util.FastMap;
 
 /**
  * This class ...

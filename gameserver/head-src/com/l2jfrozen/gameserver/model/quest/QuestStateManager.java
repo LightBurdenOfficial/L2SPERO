@@ -21,11 +21,11 @@ package com.l2jfrozen.gameserver.model.quest;
 
 import java.util.List;
 
-import javolution.util.FastList;
-
 import com.l2jfrozen.Config;
 import com.l2jfrozen.gameserver.model.actor.instance.L2PcInstance;
 import com.l2jfrozen.gameserver.thread.ThreadPoolManager;
+
+import javolution.util.FastList;
 
 public class QuestStateManager
 {

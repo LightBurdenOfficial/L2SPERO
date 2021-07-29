@@ -28,9 +28,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ScheduledFuture;
 
-import javolution.util.FastList;
-import javolution.util.FastMap;
-
 import org.apache.log4j.Logger;
 
 import com.l2jfrozen.Config;
@@ -47,6 +44,9 @@ import com.l2jfrozen.util.CloseUtil;
 import com.l2jfrozen.util.database.DatabaseUtils;
 import com.l2jfrozen.util.database.L2DatabaseFactory;
 import com.l2jfrozen.util.random.Rnd;
+
+import javolution.util.FastList;
+import javolution.util.FastMap;
 
 /**
  * Auto Chat Handler Allows NPCs to automatically send messages to nearby players at a set time interval.

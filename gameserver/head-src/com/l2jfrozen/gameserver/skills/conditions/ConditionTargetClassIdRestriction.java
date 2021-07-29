@@ -20,10 +20,10 @@
  */
 package com.l2jfrozen.gameserver.skills.conditions;
 
-import javolution.util.FastList;
-
 import com.l2jfrozen.gameserver.model.actor.instance.L2PcInstance;
 import com.l2jfrozen.gameserver.skills.Env;
+
+import javolution.util.FastList;
 
 public class ConditionTargetClassIdRestriction extends Condition
 {

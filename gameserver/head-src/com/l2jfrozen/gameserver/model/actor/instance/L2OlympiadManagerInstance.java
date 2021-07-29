@@ -22,9 +22,6 @@ package com.l2jfrozen.gameserver.model.actor.instance;
 
 import java.util.List;
 
-import javolution.text.TextBuilder;
-import javolution.util.FastMap;
-
 import org.apache.log4j.Logger;
 
 import com.l2jfrozen.Config;
@@ -36,6 +33,9 @@ import com.l2jfrozen.gameserver.network.serverpackets.InventoryUpdate;
 import com.l2jfrozen.gameserver.network.serverpackets.NpcHtmlMessage;
 import com.l2jfrozen.gameserver.network.serverpackets.SystemMessage;
 import com.l2jfrozen.gameserver.templates.L2NpcTemplate;
+
+import javolution.text.TextBuilder;
+import javolution.util.FastMap;
 
 /**
  * Olympiad Npc's Instance

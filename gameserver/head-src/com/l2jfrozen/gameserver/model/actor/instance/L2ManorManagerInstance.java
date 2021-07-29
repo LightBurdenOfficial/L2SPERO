@@ -22,8 +22,6 @@ package com.l2jfrozen.gameserver.model.actor.instance;
 
 import java.util.StringTokenizer;
 
-import javolution.util.FastList;
-
 import com.l2jfrozen.gameserver.ai.CtrlIntention;
 import com.l2jfrozen.gameserver.controllers.TradeController;
 import com.l2jfrozen.gameserver.datatables.sql.ItemTable;
@@ -45,6 +43,8 @@ import com.l2jfrozen.gameserver.network.serverpackets.NpcHtmlMessage;
 import com.l2jfrozen.gameserver.network.serverpackets.SystemMessage;
 import com.l2jfrozen.gameserver.network.serverpackets.ValidateLocation;
 import com.l2jfrozen.gameserver.templates.L2NpcTemplate;
+
+import javolution.util.FastList;
 
 public class L2ManorManagerInstance extends L2MerchantInstance
 {

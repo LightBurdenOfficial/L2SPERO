@@ -29,8 +29,6 @@ import java.io.LineNumberReader;
 import java.util.Map;
 import java.util.StringTokenizer;
 
-import javolution.util.FastMap;
-
 import org.apache.log4j.Logger;
 
 import com.l2jfrozen.Config;
@@ -41,6 +39,8 @@ import com.l2jfrozen.gameserver.model.actor.instance.L2DoorInstance;
 import com.l2jfrozen.gameserver.model.entity.ClanHall;
 import com.l2jfrozen.gameserver.templates.L2CharTemplate;
 import com.l2jfrozen.gameserver.templates.StatsSet;
+
+import javolution.util.FastMap;
 
 public class DoorTable
 {

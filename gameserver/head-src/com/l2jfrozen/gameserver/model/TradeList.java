@@ -22,8 +22,6 @@ package com.l2jfrozen.gameserver.model;
 
 import java.util.List;
 
-import javolution.util.FastList;
-
 import org.apache.log4j.Logger;
 
 import com.l2jfrozen.Config;
@@ -39,6 +37,8 @@ import com.l2jfrozen.gameserver.network.serverpackets.SystemMessage;
 import com.l2jfrozen.gameserver.templates.L2EtcItemType;
 import com.l2jfrozen.gameserver.templates.L2Item;
 import com.l2jfrozen.gameserver.util.Util;
+
+import javolution.util.FastList;
 
 /**
  * @author Advi

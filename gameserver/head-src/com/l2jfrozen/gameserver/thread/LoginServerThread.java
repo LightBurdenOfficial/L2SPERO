@@ -35,9 +35,6 @@ import java.security.spec.RSAPublicKeySpec;
 import java.util.List;
 import java.util.Map;
 
-import javolution.util.FastList;
-import javolution.util.FastMap;
-
 import org.apache.log4j.Logger;
 
 import com.l2jfrozen.Config;
@@ -65,6 +62,9 @@ import com.l2jfrozen.gameserver.network.serverpackets.AuthLoginFail;
 import com.l2jfrozen.gameserver.network.serverpackets.CharSelectInfo;
 import com.l2jfrozen.util.Util;
 import com.l2jfrozen.util.random.Rnd;
+
+import javolution.util.FastList;
+import javolution.util.FastMap;
 
 public class LoginServerThread extends Thread
 {

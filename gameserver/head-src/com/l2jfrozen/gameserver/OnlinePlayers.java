@@ -2,9 +2,8 @@ package com.l2jfrozen.gameserver;
 
 import com.l2jfrozen.Config;
 import com.l2jfrozen.gameserver.model.L2World;
-import com.l2jfrozen.gameserver.thread.ThreadPoolManager;
 import com.l2jfrozen.gameserver.model.entity.Announcements;
-import com.l2jfrozen.gameserver.OnlinePlayers;
+import com.l2jfrozen.gameserver.thread.ThreadPoolManager;
 
 public class OnlinePlayers
 {

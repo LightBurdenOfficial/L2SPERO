@@ -18,8 +18,6 @@ package com.l2jfrozen.gameserver.ai.special;
 
 import java.util.List;
 
-import javolution.util.FastList;
-
 import com.l2jfrozen.Config;
 import com.l2jfrozen.gameserver.ai.CtrlIntention;
 import com.l2jfrozen.gameserver.datatables.SkillTable;
@@ -49,6 +47,8 @@ import com.l2jfrozen.gameserver.network.serverpackets.SpecialCamera;
 import com.l2jfrozen.gameserver.network.serverpackets.SystemMessage;
 import com.l2jfrozen.gameserver.templates.StatsSet;
 import com.l2jfrozen.util.random.Rnd;
+
+import javolution.util.FastList;
 
 /**
  * Frintezza AI

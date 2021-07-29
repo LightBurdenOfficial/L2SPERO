@@ -24,10 +24,6 @@ import java.util.ArrayList;
 import java.util.Map;
 import java.util.StringTokenizer;
 
-import javolution.text.TextBuilder;
-import javolution.util.FastList;
-import javolution.util.FastMap;
-
 import com.l2jfrozen.Config;
 import com.l2jfrozen.gameserver.cache.HtmCache;
 import com.l2jfrozen.gameserver.communitybbs.Manager.BaseBBSManager;
@@ -50,6 +46,10 @@ import com.l2jfrozen.gameserver.network.serverpackets.NpcHtmlMessage;
 import com.l2jfrozen.gameserver.powerpak.PowerPakConfig;
 import com.l2jfrozen.gameserver.powerpak.Buffer.BuffTable.Buff;
 import com.l2jfrozen.gameserver.taskmanager.AttackStanceTaskManager;
+
+import javolution.text.TextBuilder;
+import javolution.util.FastList;
+import javolution.util.FastMap;
 
 /**
  * @author Nick

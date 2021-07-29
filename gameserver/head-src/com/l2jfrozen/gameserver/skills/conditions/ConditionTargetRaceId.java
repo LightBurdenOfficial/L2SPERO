@@ -20,10 +20,10 @@
  */
 package com.l2jfrozen.gameserver.skills.conditions;
 
-import javolution.util.FastList;
-
 import com.l2jfrozen.gameserver.model.actor.instance.L2NpcInstance;
 import com.l2jfrozen.gameserver.skills.Env;
+
+import javolution.util.FastList;
 
 /**
  * @author nBd

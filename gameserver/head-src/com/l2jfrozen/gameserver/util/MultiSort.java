@@ -25,9 +25,9 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
-import javolution.util.FastList;
-
 import com.l2jfrozen.Config;
+
+import javolution.util.FastList;
 
 /**
  * Descending Integer Sort Algorithm - Fast ordering system. - Can easily be ported elsewhere. - Can handle any number of values, from a list or even from a map. - Handles duplicate values.

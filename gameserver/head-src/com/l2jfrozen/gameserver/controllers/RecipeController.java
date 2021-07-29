@@ -26,8 +26,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.WeakHashMap;
 
-import javolution.util.FastList;
-
 import org.apache.log4j.Logger;
 
 import com.l2jfrozen.Config;
@@ -53,6 +51,8 @@ import com.l2jfrozen.gameserver.skills.Stats;
 import com.l2jfrozen.gameserver.thread.ThreadPoolManager;
 import com.l2jfrozen.gameserver.util.Util;
 import com.l2jfrozen.util.random.Rnd;
+
+import javolution.util.FastList;
 
 public class RecipeController
 {

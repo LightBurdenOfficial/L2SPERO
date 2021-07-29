@@ -25,12 +25,12 @@ import java.io.OutputStream;
 import java.net.Socket;
 import java.net.SocketException;
 
-import javolution.util.FastList;
-
 import org.apache.log4j.Logger;
 
 import com.l2jfrozen.Config;
 import com.l2jfrozen.gameserver.model.actor.instance.L2PcInstance;
+
+import javolution.util.FastList;
 
 public class GeoEditorThread extends Thread
 {

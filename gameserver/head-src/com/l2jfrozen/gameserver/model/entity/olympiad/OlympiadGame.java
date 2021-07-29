@@ -18,8 +18,6 @@ package com.l2jfrozen.gameserver.model.entity.olympiad;
 
 import java.util.Map;
 
-import javolution.util.FastList;
-
 import org.apache.log4j.Logger;
 
 import com.l2jfrozen.Config;
@@ -49,6 +47,8 @@ import com.l2jfrozen.gameserver.network.serverpackets.SystemMessage;
 import com.l2jfrozen.gameserver.templates.StatsSet;
 import com.l2jfrozen.logs.Log;
 import com.l2jfrozen.util.L2FastList;
+
+import javolution.util.FastList;
 
 /**
  * @author GodKratos

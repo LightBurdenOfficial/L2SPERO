@@ -22,8 +22,6 @@ package com.l2jfrozen.gameserver.ai.special;
 
 import java.util.List;
 
-import javolution.util.FastList;
-
 import com.l2jfrozen.Config;
 import com.l2jfrozen.gameserver.managers.GrandBossManager;
 import com.l2jfrozen.gameserver.model.L2Attackable;
@@ -36,6 +34,8 @@ import com.l2jfrozen.gameserver.network.serverpackets.CreatureSay;
 import com.l2jfrozen.gameserver.network.serverpackets.PlaySound;
 import com.l2jfrozen.gameserver.templates.StatsSet;
 import com.l2jfrozen.util.random.Rnd;
+
+import javolution.util.FastList;
 
 /**
  * Core AI

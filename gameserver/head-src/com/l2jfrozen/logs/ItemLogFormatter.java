@@ -25,9 +25,9 @@ import java.util.Date;
 import java.util.logging.Formatter;
 import java.util.logging.LogRecord;
 
-import javolution.text.TextBuilder;
-
 import com.l2jfrozen.gameserver.model.actor.instance.L2ItemInstance;
+
+import javolution.text.TextBuilder;
 
 public class ItemLogFormatter extends Formatter
 {

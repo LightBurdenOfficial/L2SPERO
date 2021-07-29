@@ -33,9 +33,9 @@ package com.l2jfrozen.util.object;
 import java.util.Iterator;
 import java.util.Map;
 
-import javolution.util.FastMap;
-
 import com.l2jfrozen.gameserver.model.L2Object;
+
+import javolution.util.FastMap;
 
 /**
  * This class ...

@@ -22,13 +22,13 @@ package com.l2jfrozen.gameserver.network.serverpackets;
 
 import java.util.List;
 
-import javolution.util.FastList;
-
 import org.apache.log4j.Logger;
 
 import com.l2jfrozen.Config;
 import com.l2jfrozen.gameserver.model.ItemInfo;
 import com.l2jfrozen.gameserver.model.actor.instance.L2ItemInstance;
+
+import javolution.util.FastList;
 
 /**
  * 37 // Packet Identifier <BR>

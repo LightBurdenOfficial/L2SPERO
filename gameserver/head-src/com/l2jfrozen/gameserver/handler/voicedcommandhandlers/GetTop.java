@@ -4,10 +4,10 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-import javolution.text.TextBuilder;
-
 import com.l2jfrozen.gameserver.network.serverpackets.NpcHtmlMessage;
 import com.l2jfrozen.util.database.L2DatabaseFactory;
+
+import javolution.text.TextBuilder;
 
 /**
 * @author Kennedy Batista (MasterL2ColdBlood)

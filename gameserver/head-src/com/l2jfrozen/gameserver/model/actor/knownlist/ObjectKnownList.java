@@ -23,8 +23,6 @@ package com.l2jfrozen.gameserver.model.actor.knownlist;
 import java.util.Collection;
 import java.util.Map;
 
-import javolution.util.FastMap;
-
 import com.l2jfrozen.gameserver.model.L2Character;
 import com.l2jfrozen.gameserver.model.L2Object;
 import com.l2jfrozen.gameserver.model.L2World;
@@ -32,6 +30,8 @@ import com.l2jfrozen.gameserver.model.actor.instance.L2BoatInstance;
 import com.l2jfrozen.gameserver.model.actor.instance.L2PcInstance;
 import com.l2jfrozen.gameserver.model.actor.instance.L2PlayableInstance;
 import com.l2jfrozen.gameserver.util.Util;
+
+import javolution.util.FastMap;
 
 public class ObjectKnownList
 {

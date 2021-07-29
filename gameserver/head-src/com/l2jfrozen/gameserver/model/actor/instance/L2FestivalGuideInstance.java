@@ -23,8 +23,6 @@ package com.l2jfrozen.gameserver.model.actor.instance;
 import java.util.Calendar;
 import java.util.List;
 
-import javolution.text.TextBuilder;
-
 import com.l2jfrozen.Config;
 import com.l2jfrozen.gameserver.model.L2Party;
 import com.l2jfrozen.gameserver.model.entity.sevensigns.SevenSigns;
@@ -35,6 +33,8 @@ import com.l2jfrozen.gameserver.network.serverpackets.NpcHtmlMessage;
 import com.l2jfrozen.gameserver.network.serverpackets.SystemMessage;
 import com.l2jfrozen.gameserver.templates.L2NpcTemplate;
 import com.l2jfrozen.gameserver.templates.StatsSet;
+
+import javolution.text.TextBuilder;
 
 /**
  * Festival of Darkness Guide (Seven Signs).

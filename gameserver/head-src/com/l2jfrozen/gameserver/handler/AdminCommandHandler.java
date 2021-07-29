@@ -22,8 +22,6 @@ package com.l2jfrozen.gameserver.handler;
 
 import java.util.Arrays;
 
-import javolution.util.FastMap;
-
 import org.apache.log4j.Logger;
 
 import com.l2jfrozen.Config;
@@ -99,6 +97,8 @@ import com.l2jfrozen.gameserver.handler.admincommandhandlers.AdminVIPEngine;
 import com.l2jfrozen.gameserver.handler.admincommandhandlers.AdminVip;
 import com.l2jfrozen.gameserver.handler.admincommandhandlers.AdminWho;
 import com.l2jfrozen.gameserver.handler.admincommandhandlers.AdminZone;
+
+import javolution.util.FastMap;
 
 /**
  * This class ...

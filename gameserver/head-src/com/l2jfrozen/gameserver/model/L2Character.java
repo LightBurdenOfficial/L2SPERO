@@ -29,10 +29,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.Future;
 
-import javolution.util.FastList;
-import javolution.util.FastMap;
-import javolution.util.FastTable;
-
 import org.apache.log4j.Logger;
 
 import com.l2jfrozen.Config;
@@ -140,6 +136,10 @@ import com.l2jfrozen.gameserver.thread.ThreadPoolManager;
 import com.l2jfrozen.gameserver.util.Util;
 import com.l2jfrozen.util.Point3D;
 import com.l2jfrozen.util.random.Rnd;
+
+import javolution.util.FastList;
+import javolution.util.FastMap;
+import javolution.util.FastTable;
 
 /**
  * Mother class of all character objects of the world (PC, NPC...)<BR>

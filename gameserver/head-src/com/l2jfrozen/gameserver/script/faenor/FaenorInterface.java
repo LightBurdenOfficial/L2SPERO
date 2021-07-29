@@ -25,8 +25,6 @@ import java.util.Map;
 
 import javax.script.ScriptContext;
 
-import javolution.util.FastList;
-
 import org.apache.log4j.Logger;
 
 import com.l2jfrozen.Config;
@@ -39,6 +37,8 @@ import com.l2jfrozen.gameserver.script.EngineInterface;
 import com.l2jfrozen.gameserver.script.EventDroplist;
 import com.l2jfrozen.gameserver.script.Expression;
 import com.l2jfrozen.gameserver.templates.L2NpcTemplate;
+
+import javolution.util.FastList;
 
 /**
  * @author Luis Arias

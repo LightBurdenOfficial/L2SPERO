@@ -22,8 +22,6 @@ package com.l2jfrozen.gameserver.model.actor.instance;
 
 import java.util.List;
 
-import javolution.util.FastList;
-
 import com.l2jfrozen.gameserver.idfactory.IdFactory;
 import com.l2jfrozen.gameserver.model.actor.knownlist.RaceManagerKnownList;
 import com.l2jfrozen.gameserver.model.entity.MonsterRace;
@@ -39,6 +37,8 @@ import com.l2jfrozen.gameserver.network.serverpackets.SystemMessage;
 import com.l2jfrozen.gameserver.templates.L2NpcTemplate;
 import com.l2jfrozen.gameserver.thread.ThreadPoolManager;
 import com.l2jfrozen.gameserver.util.Broadcast;
+
+import javolution.util.FastList;
 
 public class L2RaceManagerInstance extends L2NpcInstance
 {

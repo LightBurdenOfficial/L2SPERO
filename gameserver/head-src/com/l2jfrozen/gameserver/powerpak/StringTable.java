@@ -11,9 +11,9 @@ import java.io.InputStreamReader;
 import java.io.LineNumberReader;
 import java.util.Map;
 
-import javolution.util.FastMap;
-
 import com.l2jfrozen.Config;
+
+import javolution.util.FastMap;
 
 public final class StringTable
 {

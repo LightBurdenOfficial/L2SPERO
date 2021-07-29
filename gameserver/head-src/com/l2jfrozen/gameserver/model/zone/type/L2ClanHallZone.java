@@ -19,8 +19,6 @@
  */
 package com.l2jfrozen.gameserver.model.zone.type;
 
-import javolution.util.FastMap;
-
 import com.l2jfrozen.gameserver.datatables.csv.MapRegionTable;
 import com.l2jfrozen.gameserver.managers.ClanHallManager;
 import com.l2jfrozen.gameserver.model.L2Character;
@@ -29,6 +27,8 @@ import com.l2jfrozen.gameserver.model.actor.instance.L2PcInstance;
 import com.l2jfrozen.gameserver.model.entity.ClanHall;
 import com.l2jfrozen.gameserver.model.zone.L2ZoneType;
 import com.l2jfrozen.gameserver.network.serverpackets.ClanHallDecoration;
+
+import javolution.util.FastMap;
 
 /**
  * A clan hall zone

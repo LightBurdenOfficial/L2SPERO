@@ -23,9 +23,9 @@ package com.l2jfrozen.util;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import javolution.text.TextBuilder;
-
 import org.apache.log4j.Logger;
+
+import javolution.text.TextBuilder;
 
 /**
  * This class ...

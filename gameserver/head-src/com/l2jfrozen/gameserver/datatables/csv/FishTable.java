@@ -29,13 +29,13 @@ import java.io.LineNumberReader;
 import java.util.List;
 import java.util.StringTokenizer;
 
-import javolution.util.FastList;
-
 import org.apache.log4j.Logger;
 
 import com.l2jfrozen.Config;
 import com.l2jfrozen.gameserver.datatables.sql.SkillTreeTable;
 import com.l2jfrozen.gameserver.model.FishData;
+
+import javolution.util.FastList;
 
 /**
  * @author -Nemesiss-

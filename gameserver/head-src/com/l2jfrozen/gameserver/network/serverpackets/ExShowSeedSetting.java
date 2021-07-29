@@ -19,13 +19,13 @@
  */
 package com.l2jfrozen.gameserver.network.serverpackets;
 
-import javolution.util.FastList;
-
 import com.l2jfrozen.gameserver.managers.CastleManager;
 import com.l2jfrozen.gameserver.managers.CastleManorManager;
 import com.l2jfrozen.gameserver.managers.CastleManorManager.SeedProduction;
 import com.l2jfrozen.gameserver.model.L2Manor;
 import com.l2jfrozen.gameserver.model.entity.siege.Castle;
+
+import javolution.util.FastList;
 
 /**
  * format(packet 0xFE) ch dd [ddcdcdddddddd] c - id h - sub id d - manor id d - size [ d - seed id d - level c d - reward 1 id c d - reward 2 id d - next sale limit d - price for castle to produce 1 d - min seed price d - max seed price d - today sales d - today price d - next sales d - next price ]

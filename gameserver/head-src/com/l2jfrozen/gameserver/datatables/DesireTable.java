@@ -35,9 +35,9 @@ package com.l2jfrozen.gameserver.datatables;
 
 import java.util.Map;
 
-import javolution.util.FastMap;
-
 import com.l2jfrozen.gameserver.model.L2Object;
+
+import javolution.util.FastMap;
 
 /**
  * This class ...

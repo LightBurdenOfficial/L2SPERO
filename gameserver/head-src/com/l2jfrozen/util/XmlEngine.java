@@ -27,14 +27,14 @@ import java.util.List;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
-import javolution.util.FastList;
-
 import org.apache.log4j.Logger;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.xml.sax.SAXException;
 
 import com.l2jfrozen.Config;
+
+import javolution.util.FastList;
 
 /**
  * @author programmos

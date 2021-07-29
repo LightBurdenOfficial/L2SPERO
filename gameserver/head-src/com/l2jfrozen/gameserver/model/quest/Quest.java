@@ -25,6 +25,7 @@ import java.io.StringWriter;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLIntegrityConstraintViolationException;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Map;
@@ -56,7 +57,6 @@ import com.l2jfrozen.util.CloseUtil;
 import com.l2jfrozen.util.database.DatabaseUtils;
 import com.l2jfrozen.util.database.L2DatabaseFactory;
 import com.l2jfrozen.util.random.Rnd;
-import com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException;
 
 /**
  * @author Luis Arias
@@ -1313,7 +1313,7 @@ public class Quest extends ManagedScript
 			DatabaseUtils.close(statement);
 			statement = null;
 		}
-		catch (final MySQLIntegrityConstraintViolationException e)
+		catch (final SQLIntegrityConstraintViolationException e)
 		{
 			// if(Config.ENABLE_ALL_EXCEPTIONS)
 			// e.printStackTrace();

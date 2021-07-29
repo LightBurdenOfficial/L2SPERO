@@ -24,8 +24,6 @@ import java.util.Map;
 
 import javax.script.ScriptContext;
 
-import javolution.util.FastMap;
-
 import org.apache.log4j.Logger;
 import org.w3c.dom.Node;
 
@@ -34,6 +32,8 @@ import com.l2jfrozen.gameserver.script.IntList;
 import com.l2jfrozen.gameserver.script.Parser;
 import com.l2jfrozen.gameserver.script.ParserFactory;
 import com.l2jfrozen.gameserver.script.ScriptEngine;
+
+import javolution.util.FastMap;
 
 /**
  * @author Luis Arias

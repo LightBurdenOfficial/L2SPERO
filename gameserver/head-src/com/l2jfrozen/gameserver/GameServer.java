@@ -155,7 +155,6 @@ import com.l2jfrozen.util.IPv4Filter;
 import com.l2jfrozen.util.Memory;
 import com.l2jfrozen.util.Util;
 import com.l2jfrozen.util.database.L2DatabaseFactory;
-import com.l2jfrozen.gameserver.OnlinePlayers;
 
 public class GameServer
 {

@@ -34,8 +34,6 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Set;
 
-import javolution.util.FastSet;
-
 import org.apache.log4j.Logger;
 
 import com.l2jfrozen.Config;
@@ -56,6 +54,8 @@ import com.l2jfrozen.loginserver.network.loginserverpackets.LoginServerFail;
 import com.l2jfrozen.loginserver.network.loginserverpackets.PlayerAuthResponse;
 import com.l2jfrozen.loginserver.network.serverpackets.ServerBasePacket;
 import com.l2jfrozen.util.Util;
+
+import javolution.util.FastSet;
 
 /**
  * @author -Wooden-

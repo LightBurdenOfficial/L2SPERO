@@ -30,12 +30,12 @@ package com.l2jfrozen.gameserver.datatables.csv;
 import java.io.File;
 import java.util.Scanner;
 
-import javolution.util.FastMap;
-
 import org.apache.log4j.Logger;
 
 import com.l2jfrozen.Config;
 import com.l2jfrozen.gameserver.model.L2SummonItem;
+
+import javolution.util.FastMap;
 
 public class SummonItemsData
 {

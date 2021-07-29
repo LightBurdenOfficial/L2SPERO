@@ -24,8 +24,6 @@ import java.io.File;
 import java.util.List;
 import java.util.Map;
 
-import javolution.util.FastList;
-
 import org.apache.log4j.Logger;
 
 import com.l2jfrozen.Config;
@@ -37,6 +35,8 @@ import com.l2jfrozen.gameserver.templates.L2EtcItem;
 import com.l2jfrozen.gameserver.templates.L2EtcItemType;
 import com.l2jfrozen.gameserver.templates.L2Item;
 import com.l2jfrozen.gameserver.templates.L2Weapon;
+
+import javolution.util.FastList;
 
 /**
  * @author PrioGramMoS, L2JFrozen

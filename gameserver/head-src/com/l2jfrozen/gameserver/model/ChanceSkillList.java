@@ -16,13 +16,13 @@
  */
 package com.l2jfrozen.gameserver.model;
 
-import javolution.util.FastMap;
-
 import com.l2jfrozen.gameserver.handler.ISkillHandler;
 import com.l2jfrozen.gameserver.handler.SkillHandler;
 import com.l2jfrozen.gameserver.network.serverpackets.MagicSkillLaunched;
 import com.l2jfrozen.gameserver.network.serverpackets.MagicSkillUser;
 import com.l2jfrozen.gameserver.skills.Formulas;
+
+import javolution.util.FastMap;
 
 /**
  * @author kombat

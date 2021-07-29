@@ -22,8 +22,6 @@ package com.l2jfrozen.gameserver.model.actor.instance;
 
 import java.util.StringTokenizer;
 
-import javolution.text.TextBuilder;
-
 import com.l2jfrozen.Config;
 import com.l2jfrozen.gameserver.controllers.TradeController;
 import com.l2jfrozen.gameserver.model.L2TradeList;
@@ -38,6 +36,8 @@ import com.l2jfrozen.gameserver.network.serverpackets.SellList;
 import com.l2jfrozen.gameserver.network.serverpackets.StatusUpdate;
 import com.l2jfrozen.gameserver.network.serverpackets.WearList;
 import com.l2jfrozen.gameserver.templates.L2NpcTemplate;
+
+import javolution.text.TextBuilder;
 
 /**
  * This class ...

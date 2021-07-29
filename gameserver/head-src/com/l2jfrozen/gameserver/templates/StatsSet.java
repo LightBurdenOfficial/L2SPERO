@@ -22,11 +22,11 @@ package com.l2jfrozen.gameserver.templates;
 
 import java.util.Map;
 
-import javolution.util.FastMap;
-
 import org.apache.log4j.Logger;
 
 import com.l2jfrozen.Config;
+
+import javolution.util.FastMap;
 
 /**
  * @author mkizub <BR>

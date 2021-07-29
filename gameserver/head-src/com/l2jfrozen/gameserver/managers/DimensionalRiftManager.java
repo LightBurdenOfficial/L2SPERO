@@ -30,9 +30,6 @@ import java.sql.ResultSet;
 
 import javax.xml.parsers.DocumentBuilderFactory;
 
-import javolution.util.FastList;
-import javolution.util.FastMap;
-
 import org.apache.log4j.Logger;
 import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
@@ -52,6 +49,9 @@ import com.l2jfrozen.gameserver.util.Util;
 import com.l2jfrozen.util.CloseUtil;
 import com.l2jfrozen.util.database.L2DatabaseFactory;
 import com.l2jfrozen.util.random.Rnd;
+
+import javolution.util.FastList;
+import javolution.util.FastMap;
 
 /**
  * Thanks to L2Fortress and balancer.ru - kombat

@@ -26,8 +26,6 @@ import java.sql.ResultSet;
 
 import javax.xml.parsers.DocumentBuilderFactory;
 
-import javolution.util.FastList;
-
 import org.apache.log4j.Logger;
 import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
@@ -71,6 +69,8 @@ import com.l2jfrozen.gameserver.model.zone.type.L2WaterZone;
 import com.l2jfrozen.util.CloseUtil;
 import com.l2jfrozen.util.database.DatabaseUtils;
 import com.l2jfrozen.util.database.L2DatabaseFactory;
+
+import javolution.util.FastList;
 
 /**
  * This class manages the augmentation data and can also create new augmentations.

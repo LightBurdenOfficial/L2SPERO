@@ -22,11 +22,11 @@ package com.l2jfrozen.gameserver.templates;
 
 import java.util.List;
 
-import javolution.util.FastList;
-
 import com.l2jfrozen.gameserver.datatables.sql.ItemTable;
 import com.l2jfrozen.gameserver.model.base.ClassId;
 import com.l2jfrozen.gameserver.model.base.Race;
+
+import javolution.util.FastList;
 
 /**
  * @author mkizub

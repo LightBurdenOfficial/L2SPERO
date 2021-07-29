@@ -7,7 +7,6 @@ package com.l2jfrozen.gameserver.handler.voicedcommandhandlers;
 
 import com.l2jfrozen.gameserver.handler.IVoicedCommandHandler;
 import com.l2jfrozen.gameserver.model.actor.instance.L2PcInstance;
-import com.l2jfrozen.gameserver.handler.voicedcommandhandlers.GetTop;
 
 public class Top implements IVoicedCommandHandler
 {

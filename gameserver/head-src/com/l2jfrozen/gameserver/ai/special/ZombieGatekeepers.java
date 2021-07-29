@@ -16,9 +16,6 @@
  */
 package com.l2jfrozen.gameserver.ai.special;
 
-import javolution.util.FastList;
-import javolution.util.FastMap;
-
 import com.l2jfrozen.gameserver.ai.CtrlIntention;
 import com.l2jfrozen.gameserver.model.L2Attackable;
 import com.l2jfrozen.gameserver.model.L2Character;
@@ -26,6 +23,9 @@ import com.l2jfrozen.gameserver.model.actor.instance.L2ItemInstance;
 import com.l2jfrozen.gameserver.model.actor.instance.L2NpcInstance;
 import com.l2jfrozen.gameserver.model.actor.instance.L2PcInstance;
 import com.l2jfrozen.gameserver.model.quest.Quest;
+
+import javolution.util.FastList;
+import javolution.util.FastMap;
 
 public class ZombieGatekeepers extends Quest implements Runnable
 {

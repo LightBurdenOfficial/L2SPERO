@@ -23,9 +23,9 @@ package com.l2jfrozen.gameserver.skills;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import javolution.util.FastList;
-
 import com.l2jfrozen.gameserver.skills.funcs.Func;
+
+import javolution.util.FastList;
 
 /**
  * A calculator is created to manage and dynamically calculate the effect of a character property (ex : MAX_HP, REGENERATE_HP_RATE...). In fact, each calculator is a table of Func object in which each Func represents a mathematic function : <BR>

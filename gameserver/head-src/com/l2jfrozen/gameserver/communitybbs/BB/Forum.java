@@ -26,9 +26,6 @@ import java.sql.ResultSet;
 import java.util.List;
 import java.util.Map;
 
-import javolution.util.FastList;
-import javolution.util.FastMap;
-
 import org.apache.log4j.Logger;
 
 import com.l2jfrozen.Config;
@@ -37,6 +34,9 @@ import com.l2jfrozen.gameserver.communitybbs.Manager.TopicBBSManager;
 import com.l2jfrozen.util.CloseUtil;
 import com.l2jfrozen.util.database.DatabaseUtils;
 import com.l2jfrozen.util.database.L2DatabaseFactory;
+
+import javolution.util.FastList;
+import javolution.util.FastMap;
 
 public class Forum
 {

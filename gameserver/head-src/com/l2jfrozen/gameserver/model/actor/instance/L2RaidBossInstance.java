@@ -21,18 +21,18 @@
 package com.l2jfrozen.gameserver.model.actor.instance;
 
 import com.l2jfrozen.Config;
-import com.l2jfrozen.gameserver.model.entity.Announcements;
 import com.l2jfrozen.gameserver.managers.RaidBossPointsManager;
 import com.l2jfrozen.gameserver.managers.RaidBossSpawnManager;
 import com.l2jfrozen.gameserver.model.L2Character;
 import com.l2jfrozen.gameserver.model.L2Summon;
+import com.l2jfrozen.gameserver.model.entity.Announcements;
 import com.l2jfrozen.gameserver.model.spawn.L2Spawn;
 import com.l2jfrozen.gameserver.network.SystemMessageId;
+import com.l2jfrozen.gameserver.network.serverpackets.NpcHtmlMessage;
 import com.l2jfrozen.gameserver.network.serverpackets.SystemMessage;
 import com.l2jfrozen.gameserver.templates.L2NpcTemplate;
 import com.l2jfrozen.gameserver.thread.ThreadPoolManager;
 import com.l2jfrozen.util.random.Rnd;
-import com.l2jfrozen.gameserver.network.serverpackets.NpcHtmlMessage;
 
 
 /**

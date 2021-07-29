@@ -16,9 +16,6 @@
  */
 package com.l2jfrozen.gameserver.datatables;
 
-import javolution.util.FastList;
-import javolution.util.FastMap;
-
 import org.apache.log4j.Logger;
 
 import com.l2jfrozen.Config;
@@ -26,6 +23,9 @@ import com.l2jfrozen.gameserver.model.actor.instance.L2PcInstance;
 import com.l2jfrozen.gameserver.network.SystemMessageId;
 import com.l2jfrozen.gameserver.network.serverpackets.L2GameServerPacket;
 import com.l2jfrozen.gameserver.network.serverpackets.SystemMessage;
+
+import javolution.util.FastList;
+import javolution.util.FastMap;
 
 /**
  * This class stores references to all online game masters. (access level > 100)

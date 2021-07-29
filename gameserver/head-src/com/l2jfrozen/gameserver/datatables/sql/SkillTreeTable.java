@@ -28,9 +28,6 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 
-import javolution.util.FastList;
-import javolution.util.FastMap;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -47,6 +44,9 @@ import com.l2jfrozen.gameserver.skills.holders.PlayerSkillHolder;
 import com.l2jfrozen.util.CloseUtil;
 import com.l2jfrozen.util.database.DatabaseUtils;
 import com.l2jfrozen.util.database.L2DatabaseFactory;
+
+import javolution.util.FastList;
+import javolution.util.FastMap;
 
 /**
  * This class ...

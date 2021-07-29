@@ -33,10 +33,6 @@ package com.l2jfrozen.gameserver.util;
 import java.util.List;
 import java.util.Set;
 
-import javolution.util.FastList;
-import javolution.util.FastMap;
-import javolution.util.FastSet;
-
 import org.apache.log4j.Logger;
 
 import com.l2jfrozen.Config;
@@ -47,6 +43,10 @@ import com.l2jfrozen.gameserver.model.actor.instance.L2MinionInstance;
 import com.l2jfrozen.gameserver.model.actor.instance.L2MonsterInstance;
 import com.l2jfrozen.gameserver.templates.L2NpcTemplate;
 import com.l2jfrozen.util.random.Rnd;
+
+import javolution.util.FastList;
+import javolution.util.FastMap;
+import javolution.util.FastSet;
 
 /**
  * This class ...

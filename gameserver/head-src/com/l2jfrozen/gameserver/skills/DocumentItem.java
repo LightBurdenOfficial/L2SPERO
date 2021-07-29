@@ -24,9 +24,6 @@ import java.io.File;
 import java.util.List;
 import java.util.Map;
 
-import javolution.util.FastList;
-import javolution.util.FastMap;
-
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 
@@ -39,6 +36,9 @@ import com.l2jfrozen.gameserver.templates.L2Item;
 import com.l2jfrozen.gameserver.templates.L2Weapon;
 import com.l2jfrozen.gameserver.templates.L2WeaponType;
 import com.l2jfrozen.gameserver.templates.StatsSet;
+
+import javolution.util.FastList;
+import javolution.util.FastMap;
 
 /**
  * @author mkizub

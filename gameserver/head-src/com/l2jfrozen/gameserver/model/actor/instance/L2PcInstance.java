@@ -43,10 +43,6 @@ import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.ReentrantLock;
 
-import javolution.text.TextBuilder;
-import javolution.util.FastList;
-import javolution.util.FastMap;
-
 import org.apache.commons.lang.RandomStringUtils;
 
 import com.l2jfrozen.Config;
@@ -244,6 +240,10 @@ import com.l2jfrozen.util.Point3D;
 import com.l2jfrozen.util.database.DatabaseUtils;
 import com.l2jfrozen.util.database.L2DatabaseFactory;
 import com.l2jfrozen.util.random.Rnd;
+
+import javolution.text.TextBuilder;
+import javolution.util.FastList;
+import javolution.util.FastMap;
 
 /**
  * This class represents all player characters in the world.<br>

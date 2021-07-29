@@ -17,8 +17,6 @@ package com.l2jfrozen.gameserver.model.actor.instance;
 import java.util.List;
 import java.util.concurrent.Future;
 
-import javolution.util.FastList;
-
 import org.apache.log4j.Logger;
 
 import com.l2jfrozen.Config;
@@ -43,6 +41,8 @@ import com.l2jfrozen.gameserver.skills.l2skills.L2SkillDrain;
 import com.l2jfrozen.gameserver.taskmanager.AttackStanceTaskManager;
 import com.l2jfrozen.gameserver.thread.ThreadPoolManager;
 import com.l2jfrozen.util.random.Rnd;
+
+import javolution.util.FastList;
 
 /**
  * The Class L2CubicInstance.

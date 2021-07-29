@@ -36,11 +36,11 @@ import javax.script.CompiledScript;
 import javax.script.ScriptEngine;
 import javax.script.ScriptException;
 
-import javolution.util.FastMap;
-
 import org.apache.log4j.Logger;
 
 import com.l2jfrozen.Config;
+
+import javolution.util.FastMap;
 
 /**
  * Cache of Compiled Scripts

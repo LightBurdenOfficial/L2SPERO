@@ -18,8 +18,6 @@ package com.l2jfrozen.gameserver.model.entity.olympiad;
 
 import java.util.Map;
 
-import javolution.util.FastMap;
-
 import org.apache.log4j.Logger;
 
 import com.l2jfrozen.Config;
@@ -27,6 +25,8 @@ import com.l2jfrozen.gameserver.model.actor.instance.L2PcInstance;
 import com.l2jfrozen.gameserver.model.entity.olympiad.Olympiad.COMP_TYPE;
 import com.l2jfrozen.util.L2FastList;
 import com.l2jfrozen.util.random.Rnd;
+
+import javolution.util.FastMap;
 
 /**
  * @author GodKratos

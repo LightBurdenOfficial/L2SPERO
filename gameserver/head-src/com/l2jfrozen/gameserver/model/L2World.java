@@ -25,9 +25,6 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import javolution.util.FastList;
-import javolution.util.FastMap;
-
 import org.apache.log4j.Logger;
 
 import com.l2jfrozen.Config;
@@ -38,6 +35,9 @@ import com.l2jfrozen.gameserver.model.actor.instance.L2PlayableInstance;
 import com.l2jfrozen.util.Point3D;
 import com.l2jfrozen.util.object.L2ObjectMap;
 import com.l2jfrozen.util.object.L2ObjectSet;
+
+import javolution.util.FastList;
+import javolution.util.FastMap;
 
 /**
  * This class ...

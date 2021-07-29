@@ -20,9 +20,6 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-import javolution.util.FastList;
-import javolution.util.FastMap;
-
 import org.apache.log4j.Logger;
 
 import com.l2jfrozen.Config;
@@ -31,6 +28,9 @@ import com.l2jfrozen.gameserver.powerpak.PowerPakConfig;
 import com.l2jfrozen.util.CloseUtil;
 import com.l2jfrozen.util.database.DatabaseUtils;
 import com.l2jfrozen.util.database.L2DatabaseFactory;
+
+import javolution.util.FastList;
+import javolution.util.FastMap;
 
 /**
  * This class stores players' buff schemes into FastMap. On player login, his scheme is loaded and on server shutdown all modified schemes are saved to DataBase. This avoids too many unnecessary DataBase connections and queries. If server crashes, nothing important is lost :)

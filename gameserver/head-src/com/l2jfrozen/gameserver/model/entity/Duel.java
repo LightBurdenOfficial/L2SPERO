@@ -22,9 +22,6 @@ package com.l2jfrozen.gameserver.model.entity;
 
 import java.util.Calendar;
 
-import javolution.util.FastList;
-import javolution.util.FastMap;
-
 import org.apache.log4j.Logger;
 
 import com.l2jfrozen.Config;
@@ -46,6 +43,9 @@ import com.l2jfrozen.gameserver.network.serverpackets.PlaySound;
 import com.l2jfrozen.gameserver.network.serverpackets.SocialAction;
 import com.l2jfrozen.gameserver.network.serverpackets.SystemMessage;
 import com.l2jfrozen.gameserver.thread.ThreadPoolManager;
+
+import javolution.util.FastList;
+import javolution.util.FastMap;
 
 /**
  * The Class Duel.

@@ -44,9 +44,6 @@ import java.util.NoSuchElementException;
 import java.util.Properties;
 import java.util.StringTokenizer;
 
-import javolution.util.FastComparator;
-import javolution.util.FastTable;
-
 import org.apache.log4j.Logger;
 
 import com.l2jfrozen.Config;
@@ -92,6 +89,9 @@ import com.l2jfrozen.gameserver.util.GMAudit;
 import com.l2jfrozen.util.database.DatabaseUtils;
 import com.l2jfrozen.util.database.L2DatabaseFactory;
 import com.l2jfrozen.util.object.L2ObjectMap;
+
+import javolution.util.FastComparator;
+import javolution.util.FastTable;
 
 public class GameStatusThread extends Thread
 {

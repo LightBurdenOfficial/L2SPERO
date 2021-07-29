@@ -25,9 +25,6 @@ import java.sql.ResultSet;
 import java.util.List;
 import java.util.Set;
 
-import javolution.util.FastList;
-import javolution.util.FastSet;
-
 import com.l2jfrozen.Config;
 import com.l2jfrozen.gameserver.network.serverpackets.ActionFailed;
 import com.l2jfrozen.gameserver.network.serverpackets.NpcHtmlMessage;
@@ -35,6 +32,9 @@ import com.l2jfrozen.gameserver.templates.L2NpcTemplate;
 import com.l2jfrozen.util.CloseUtil;
 import com.l2jfrozen.util.database.DatabaseUtils;
 import com.l2jfrozen.util.database.L2DatabaseFactory;
+
+import javolution.util.FastList;
+import javolution.util.FastSet;
 
 /**
  * This class implements a L2Box instance which is used like a warehouse but<br>

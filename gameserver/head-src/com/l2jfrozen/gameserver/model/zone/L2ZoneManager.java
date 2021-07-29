@@ -19,13 +19,13 @@
  */
 package com.l2jfrozen.gameserver.model.zone;
 
-import javolution.util.FastList;
-
 import org.apache.log4j.Logger;
 
 import com.l2jfrozen.Config;
 import com.l2jfrozen.gameserver.model.L2Character;
 import com.l2jfrozen.gameserver.model.actor.instance.L2PcInstance;
+
+import javolution.util.FastList;
 
 /**
  * This class manages all zones for a given world region

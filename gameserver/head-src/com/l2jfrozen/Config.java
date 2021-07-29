@@ -40,16 +40,16 @@ import java.util.Map;
 import java.util.Properties;
 import java.util.Random;
 
-import javolution.text.TypeFormat;
-import javolution.util.FastList;
-import javolution.util.FastMap;
-
 import org.apache.log4j.Logger;
 
 import com.l2jfrozen.gameserver.model.entity.olympiad.OlympiadPeriod;
 import com.l2jfrozen.gameserver.util.FloodProtectorConfig;
 import com.l2jfrozen.loginserver.LoginController;
 import com.l2jfrozen.util.StringUtil;
+
+import javolution.text.TypeFormat;
+import javolution.util.FastList;
+import javolution.util.FastMap;
 
 public final class Config
 {

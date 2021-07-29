@@ -23,8 +23,6 @@ package com.l2jfrozen.gameserver.model;
 import java.util.Iterator;
 import java.util.concurrent.ScheduledFuture;
 
-import javolution.util.FastList;
-
 import org.apache.log4j.Logger;
 
 import com.l2jfrozen.Config;
@@ -40,6 +38,8 @@ import com.l2jfrozen.gameserver.model.zone.L2ZoneType;
 import com.l2jfrozen.gameserver.model.zone.type.L2PeaceZone;
 import com.l2jfrozen.gameserver.thread.ThreadPoolManager;
 import com.l2jfrozen.util.object.L2ObjectSet;
+
+import javolution.util.FastList;
 
 /**
  * This class ...

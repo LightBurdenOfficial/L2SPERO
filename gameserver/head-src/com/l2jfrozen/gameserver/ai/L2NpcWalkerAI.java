@@ -19,8 +19,6 @@
  */
 package com.l2jfrozen.gameserver.ai;
 
-import javolution.util.FastList;
-
 import com.l2jfrozen.Config;
 import com.l2jfrozen.gameserver.datatables.csv.NpcWalkerRoutesTable;
 import com.l2jfrozen.gameserver.model.L2Character;
@@ -28,6 +26,8 @@ import com.l2jfrozen.gameserver.model.L2NpcWalkerNode;
 import com.l2jfrozen.gameserver.model.actor.instance.L2NpcWalkerInstance;
 import com.l2jfrozen.gameserver.model.actor.position.L2CharPosition;
 import com.l2jfrozen.gameserver.thread.ThreadPoolManager;
+
+import javolution.util.FastList;
 
 public class L2NpcWalkerAI extends L2CharacterAI implements Runnable
 {

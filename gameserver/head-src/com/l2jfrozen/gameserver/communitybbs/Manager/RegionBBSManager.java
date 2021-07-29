@@ -28,10 +28,6 @@ import java.util.logging.Level;
 import java.util.logging.LogRecord;
 import java.util.logging.Logger;
 
-import javolution.text.TextBuilder;
-import javolution.util.FastList;
-import javolution.util.FastMap;
-
 import com.l2jfrozen.Config;
 import com.l2jfrozen.gameserver.GameServer;
 import com.l2jfrozen.gameserver.datatables.xml.ExperienceData;
@@ -42,6 +38,10 @@ import com.l2jfrozen.gameserver.network.clientpackets.Say2;
 import com.l2jfrozen.gameserver.network.serverpackets.CreatureSay;
 import com.l2jfrozen.gameserver.network.serverpackets.ShowBoard;
 import com.l2jfrozen.gameserver.network.serverpackets.SystemMessage;
+
+import javolution.text.TextBuilder;
+import javolution.util.FastList;
+import javolution.util.FastMap;
 
 public class RegionBBSManager extends BaseBBSManager
 {

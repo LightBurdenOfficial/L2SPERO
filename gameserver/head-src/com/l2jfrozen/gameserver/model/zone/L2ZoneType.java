@@ -19,8 +19,6 @@
  */
 package com.l2jfrozen.gameserver.model.zone;
 
-import javolution.util.FastMap;
-
 import org.apache.log4j.Logger;
 import org.w3c.dom.Node;
 
@@ -29,6 +27,8 @@ import com.l2jfrozen.gameserver.model.L2Character;
 import com.l2jfrozen.gameserver.model.L2Object;
 import com.l2jfrozen.gameserver.model.actor.instance.L2PcInstance;
 import com.l2jfrozen.gameserver.network.serverpackets.L2GameServerPacket;
+
+import javolution.util.FastMap;
 
 /**
  * Abstract base class for any zone type Handles basic operations

@@ -22,9 +22,9 @@ package com.l2jfrozen.gameserver.model;
 
 import java.util.List;
 
-import javolution.util.FastList;
-
 import com.l2jfrozen.gameserver.model.actor.instance.L2NpcInstance;
+
+import javolution.util.FastList;
 
 public class L2SiegeClan
 {

@@ -22,9 +22,6 @@ package com.l2jfrozen.gameserver.model;
 
 import java.util.List;
 
-import javolution.util.FastList;
-import javolution.util.FastMap;
-
 import com.l2jfrozen.Config;
 import com.l2jfrozen.gameserver.ai.CtrlEvent;
 import com.l2jfrozen.gameserver.ai.CtrlIntention;
@@ -66,6 +63,9 @@ import com.l2jfrozen.gameserver.thread.ThreadPoolManager;
 import com.l2jfrozen.gameserver.thread.daemons.ItemsAutoDestroy;
 import com.l2jfrozen.gameserver.util.Util;
 import com.l2jfrozen.util.random.Rnd;
+
+import javolution.util.FastList;
+import javolution.util.FastMap;
 
 /**
  * This class manages all NPC that can be attacked.<BR>

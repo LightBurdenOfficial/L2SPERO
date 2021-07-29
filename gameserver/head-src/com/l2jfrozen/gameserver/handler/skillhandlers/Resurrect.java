@@ -22,8 +22,6 @@ package com.l2jfrozen.gameserver.handler.skillhandlers;
 
 import java.util.List;
 
-import javolution.util.FastList;
-
 import com.l2jfrozen.gameserver.handler.ISkillHandler;
 import com.l2jfrozen.gameserver.model.L2Character;
 import com.l2jfrozen.gameserver.model.L2Object;
@@ -35,6 +33,8 @@ import com.l2jfrozen.gameserver.model.actor.instance.L2PetInstance;
 import com.l2jfrozen.gameserver.network.serverpackets.SystemMessage;
 import com.l2jfrozen.gameserver.skills.Formulas;
 import com.l2jfrozen.gameserver.taskmanager.DecayTaskManager;
+
+import javolution.util.FastList;
 
 /**
  * This class ...

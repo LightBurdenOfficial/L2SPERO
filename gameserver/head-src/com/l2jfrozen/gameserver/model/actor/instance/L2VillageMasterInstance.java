@@ -23,8 +23,6 @@ package com.l2jfrozen.gameserver.model.actor.instance;
 import java.util.Iterator;
 import java.util.Set;
 
-import javolution.text.TextBuilder;
-
 import com.l2jfrozen.Config;
 import com.l2jfrozen.gameserver.datatables.sql.CharTemplateTable;
 import com.l2jfrozen.gameserver.datatables.sql.ClanTable;
@@ -55,6 +53,8 @@ import com.l2jfrozen.gameserver.network.serverpackets.SystemMessage;
 import com.l2jfrozen.gameserver.network.serverpackets.UserInfo;
 import com.l2jfrozen.gameserver.templates.L2NpcTemplate;
 import com.l2jfrozen.gameserver.util.Util;
+
+import javolution.text.TextBuilder;
 
 /**
  * This class ...

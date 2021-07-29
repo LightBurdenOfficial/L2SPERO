@@ -22,9 +22,6 @@ package com.l2jfrozen.gameserver.model.quest;
 
 import java.util.Map;
 
-import javolution.util.FastList;
-import javolution.util.FastMap;
-
 import org.apache.log4j.Logger;
 
 import com.l2jfrozen.Config;
@@ -52,6 +49,9 @@ import com.l2jfrozen.gameserver.network.serverpackets.TutorialShowHtml;
 import com.l2jfrozen.gameserver.network.serverpackets.TutorialShowQuestionMark;
 import com.l2jfrozen.gameserver.skills.Stats;
 import com.l2jfrozen.util.random.Rnd;
+
+import javolution.util.FastList;
+import javolution.util.FastMap;
 
 /**
  * @author Luis Arias

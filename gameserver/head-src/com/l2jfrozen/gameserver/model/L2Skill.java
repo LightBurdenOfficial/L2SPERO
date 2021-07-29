@@ -25,8 +25,6 @@ import java.util.Collection;
 import java.util.List;
 import java.util.StringTokenizer;
 
-import javolution.util.FastList;
-
 import org.apache.log4j.Logger;
 
 import com.l2jfrozen.Config;
@@ -74,6 +72,8 @@ import com.l2jfrozen.gameserver.skills.l2skills.L2SkillSignetCasttime;
 import com.l2jfrozen.gameserver.skills.l2skills.L2SkillSummon;
 import com.l2jfrozen.gameserver.templates.StatsSet;
 import com.l2jfrozen.gameserver.util.Util;
+
+import javolution.util.FastList;
 
 /**
  * This class...

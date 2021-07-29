@@ -22,14 +22,14 @@ package com.l2jfrozen.gameserver.network.serverpackets;
 
 import java.util.List;
 
-import javolution.util.FastList;
-
 import org.apache.log4j.Logger;
 
 import com.l2jfrozen.Config;
 import com.l2jfrozen.gameserver.model.actor.instance.L2ItemInstance;
 import com.l2jfrozen.gameserver.model.actor.instance.L2MerchantInstance;
 import com.l2jfrozen.gameserver.model.actor.instance.L2PcInstance;
+
+import javolution.util.FastList;
 
 /**
  * This class ...

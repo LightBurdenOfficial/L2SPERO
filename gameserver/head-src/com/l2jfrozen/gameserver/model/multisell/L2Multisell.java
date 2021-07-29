@@ -24,8 +24,6 @@ import java.util.List;
 
 import javax.xml.parsers.DocumentBuilderFactory;
 
-import javolution.util.FastList;
-
 import org.apache.log4j.Logger;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
@@ -38,6 +36,8 @@ import com.l2jfrozen.gameserver.network.serverpackets.MultiSellList;
 import com.l2jfrozen.gameserver.templates.L2Armor;
 import com.l2jfrozen.gameserver.templates.L2Item;
 import com.l2jfrozen.gameserver.templates.L2Weapon;
+
+import javolution.util.FastList;
 
 /**
  * Multisell list manager
