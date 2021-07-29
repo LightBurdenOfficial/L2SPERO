@@ -363,7 +363,7 @@ public final class Config
 			GAME_SERVER_LOGIN_HOST = serverSettings.getProperty("LoginHost", "127.0.0.1");
 			
 			DATABASE_POOL_TYPE = serverSettings.getProperty("DatabasePoolType", "c3p0");
-			DATABASE_DRIVER = serverSettings.getProperty("Driver", "com.mysql.jdbc.Driver");
+			DATABASE_DRIVER = serverSettings.getProperty("Driver", "com.mysql.cb.jdbc.Driver");
 			
 			GAMESERVER_DB = serverSettings.getProperty("GameserverDB", "gameserver_beta");
 			LOGINSERVER_DB = serverSettings.getProperty("LoginserverDB", "loginserver_beta");
@@ -4535,7 +4535,7 @@ public final class Config
 			EXTERNAL_HOSTNAME = serverSettings.getProperty("ExternalHostname", "localhost");
 			
 			DATABASE_POOL_TYPE = serverSettings.getProperty("DatabasePoolType", "c3p0");
-			DATABASE_DRIVER = serverSettings.getProperty("Driver", "com.mysql.jdbc.Driver");
+			DATABASE_DRIVER = serverSettings.getProperty("Driver", "com.mysql.cb.jdbc.Driver");
 			DATABASE_URL = serverSettings.getProperty("URL", "jdbc:mysql://localhost/l2jdb");
 			DATABASE_LOGIN = serverSettings.getProperty("Login", "root");
 			DATABASE_PASSWORD = serverSettings.getProperty("Password", "");
