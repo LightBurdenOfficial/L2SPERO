@@ -62,7 +62,7 @@ public class FriendList extends L2GameServerPacket
 			final String sqlQuery = "SELECT friend_id, friend_name FROM character_friends WHERE " + "char_id=" + _activeChar.getObjectId() + " AND not_blocked = 1 ORDER BY friend_name ASC";
 			
 			con = L2DatabaseFactory.getInstance().getConnection(false);
-			PreparedStatement statement = con.prepareStatement(sqlQuery);
+			PreparedStatement statement = con.prepareStatement(sqlQuery, ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_UPDATABLE);
 			ResultSet rset = statement.executeQuery(sqlQuery);
 			
 			// Obtain the total number of friend entries for this player.
