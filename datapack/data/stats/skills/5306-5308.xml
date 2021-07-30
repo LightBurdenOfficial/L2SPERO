@@ -16,9 +16,7 @@ Description(s):
     <mul val='1.04' order='0x30' stat='pAtk'/>
     <mul val='1.04' order='0x30' stat='mAtk'/>
     <mul val='1.08' order='0x30' stat='mCritRate'/>
-	<mul val='1.15' order='0x30' stat='cAtk'/>
-	<add val='60' order='0x40' stat='darkRes'/>
-    <add val='70' order='0x40' stat='sleepRes'/>
+	  <mul val='1.15' order='0x30' stat='cAtk'/>
     <mul val='0.90' order='0x30' stat='mReuse'/>
     <mul val='0.90' order='0x30' stat='atkReuse'/>
     <add val='7' order='0x40' stat="reflectDam"/>
@@ -36,13 +34,8 @@ Description(s):
   <set name="castRange" val="-1"/>
   <set name="effectRange" val="-1"/>
   <for>
-    <add val='60' order='0x40' stat='bleedRes'/>
     <mul val='1.08' order='0x30' stat='gainHp'/>
     <add val='4' order='0x40' stat='absorbDam'/>
-    <add val='50' order='0x40' stat='stunRes'/>
-    <add val='50' order='0x40' stat='derangementRes'/>
-    <mul val='0.92' order='0x30' stat='MpConsumeRate'/>
-	<add val='60' order='0x40' stat='debuffRes'/>
    </for>
 </skill>
 <skill id="5308" levels="1" name="Titanium Ring">
@@ -57,10 +50,8 @@ Description(s):
   <set name="castRange" val="-1"/>
   <set name="effectRange" val="-1"/>
   <for>
-    <add val='60' order='0x40' stat='poisonRes'/>
     <add val='3' order='0x40' stat='accCombat'/>
     <mul val='1.09' order='0x30' stat='cAtk'/>
-    <add val='70' order='0x40' stat='rootRes'/>
     <mul val='1.06' order='0x30' stat='pAtkSpd'/>
     <mul val='1.06' order='0x30' stat='mAtkSpd'/>
   </for>
