@@ -1,2 +1,21 @@
 # You can active the anti bot on other.properties
 # Words to use between 10 and 16 keys.
+lineage
+servidor
+donate
+lineage2
+Interlude
+clique
+chave
+ok
+confirmar
+vote
+doe
+ajude
+lute
+pvp
+x1noob
+l2spero
+cryptocurrencies
+sperocoin
+spero
