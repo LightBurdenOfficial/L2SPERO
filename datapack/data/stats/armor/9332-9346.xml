@@ -5,93 +5,92 @@
 <list>
     <item id="9332" name="Vesper Noble Helmet">
         <for>
-            <add stat="pDef" order="0x10" val="101"/>
+            <add stat="pDef" order="0x10" val="133"/>
             <enchant stat="pDef" order="0x0C" val="0"/>
         </for>
     </item>
     <item id="9333" name="Vesper Noble Breastplate">
         <for>
-            <add stat="pDef" order="0x10" val="250"/>
+            <add stat="pDef" order="0x10" val="348"/>
             <enchant stat="pDef" order="0x0C" val="0"/>
         </for>
     </item>
     <item id="9334" name="Vesper Noble Gaiter">
         <for>
-            <add stat="pDef" order="0x10" val="156"/>
+            <add stat="pDef" order="0x10" val="220"/>
             <enchant stat="pDef" order="0x0C" val="0"/>
         </for>
     </item>
     <item id="9335" name="Vesper Noble Gauntlet">
         <for>
-            <add stat="pDef" order="0x10" val="68"/>
+            <add stat="pDef" order="0x10" val="97"/>
             <enchant stat="pDef" order="0x0C" val="0"/>
         </for>
     </item>
     <item id="9336" name="Vesper Noble Boots">
         <for>
-            <add stat="pDef" order="0x10" val="68"/>
+            <add stat="pDef" order="0x10" val="97"/>
             <enchant stat="pDef" order="0x0C" val="0"/>
         </for>
     </item>
     <item id="9337" name="Vesper Noble Leather Helmet">
         <for>
-            <add stat="pDef" order="0x10" val="101"/>
+            <add stat="pDef" order="0x10" val="133"/>
             <enchant stat="pDef" order="0x0C" val="0"/>
         </for>
     </item>
     <item id="9338" name="Vesper Noble Leather Breastplate">
         <for>
-            <add stat="pDef" order="0x10" val="187"/>
+            <add stat="pDef" order="0x10" val="302"/>
             <enchant stat="pDef" order="0x0C" val="0"/>
         </for>
     </item>
     <item id="9339" name="Vesper Noble Leather Legging">
         <for>
-            <add stat="pDef" order="0x10" val="117"/>
+            <add stat="pDef" order="0x10" val="120"/>
             <enchant stat="pDef" order="0x0C" val="0"/>
         </for>
     </item>
     <item id="9340" name="Vesper Noble Leather Gloves">
         <for>
-            <add stat="pDef" order="0x10" val="68"/>
+            <add stat="pDef" order="0x10" val="97"/>
             <enchant stat="pDef" order="0x0C" val="0"/>
         </for>
     </item>
     <item id="9341" name="Vesper Noble Leather Boots">
         <for>
-            <add stat="pDef" order="0x10" val="68"/>
+            <add stat="pDef" order="0x10" val="97"/>
             <enchant stat="pDef" order="0x0C" val="0"/>
         </for>
     </item>
     <item id="9342" name="Vesper Noble Circlet">
         <for>
-            <add stat="pDef" order="0x10" val="101"/>
+            <add stat="pDef" order="0x10" val="133"/>
             <enchant stat="pDef" order="0x0C" val="0"/>
         </for>
     </item>
     <item id="9343" name="Vesper Noble Tunic">
         <for>
-            <add stat="pDef" order="0x10" val="125"/>
-            <add stat="maxMp" order="0x10" val="637"/>
+            <add stat="pDef" order="0x10" val="152"/>
+            <add stat="maxMp" order="0x10" val="1150"/>
             <enchant stat="pDef" order="0x0C" val="0"/>
         </for>
     </item>
     <item id="9344" name="Vesper Noble Stockings">
         <for>
-            <add stat="pDef" order="0x10" val="78"/>
-            <add stat="maxMp" order="0x10" val="415"/>
+            <add stat="pDef" order="0x10" val="130"/>
             <enchant stat="pDef" order="0x0C" val="0"/>
         </for>
     </item>
     <item id="9345" name="Vesper Noble Gloves">
         <for>
-            <add stat="pDef" order="0x10" val="68"/>
+            <add stat="pDef" order="0x10" val="97"/>
             <enchant stat="pDef" order="0x0C" val="0"/>
         </for>
     </item>
     <item id="9346" name="Vesper Noble Shoes">
         <for>
-            <add stat="pDef" order="0x10" val="68"/>
+            <add stat="pDef" order="0x10" val="97"/>
             <enchant stat="pDef" order="0x0C" val="0"/>
         </for>
     </item>

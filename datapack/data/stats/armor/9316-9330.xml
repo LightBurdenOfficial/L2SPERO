@@ -5,93 +5,92 @@
 <list>
     <item id="9316" name="Vesper Helmet">
         <for>
-            <add stat="pDef" order="0x10" val="101"/>
+            <add stat="pDef" order="0x10" val="126"/>
             <enchant stat="pDef" order="0x0C" val="0"/>
         </for>
     </item>
     <item id="9317" name="Vesper Breastplate">
         <for>
-            <add stat="pDef" order="0x10" val="250"/>
+            <add stat="pDef" order="0x10" val="331"/>
             <enchant stat="pDef" order="0x0C" val="0"/>
         </for>
     </item>
     <item id="9318" name="Vesper Gaiter">
         <for>
-            <add stat="pDef" order="0x10" val="156"/>
+            <add stat="pDef" order="0x10" val="209"/>
             <enchant stat="pDef" order="0x0C" val="0"/>
         </for>
     </item>
     <item id="9319" name="Vesper Gauntlet">
         <for>
-            <add stat="pDef" order="0x10" val="68"/>
+            <add stat="pDef" order="0x10" val="92"/>
             <enchant stat="pDef" order="0x0C" val="0"/>
         </for>
     </item>
     <item id="9320" name="Vesper Boots">
         <for>
-            <add stat="pDef" order="0x10" val="68"/>
+            <add stat="pDef" order="0x10" val="92"/>
             <enchant stat="pDef" order="0x0C" val="0"/>
         </for>
     </item>
     <item id="9321" name="Vesper Leather Helmet">
         <for>
-            <add stat="pDef" order="0x10" val="101"/>
+            <add stat="pDef" order="0x10" val="126"/>
             <enchant stat="pDef" order="0x0C" val="0"/>
         </for>
     </item>
     <item id="9322" name="Vesper Leather Breastplate">
         <for>
-            <add stat="pDef" order="0x10" val="187"/>
+            <add stat="pDef" order="0x10" val="288"/>
             <enchant stat="pDef" order="0x0C" val="0"/>
         </for>
     </item>
     <item id="9323" name="Vesper Leather Legging">
         <for>
-            <add stat="pDef" order="0x10" val="117"/>
+            <add stat="pDef" order="0x10" val="115"/>
             <enchant stat="pDef" order="0x0C" val="0"/>
         </for>
     </item>
     <item id="9324" name="Vesper Leather Gloves">
         <for>
-            <add stat="pDef" order="0x10" val="68"/>
+            <add stat="pDef" order="0x10" val="92"/>
             <enchant stat="pDef" order="0x0C" val="0"/>
         </for>
     </item>
     <item id="9325" name="Vesper Leather Boots">
         <for>
-            <add stat="pDef" order="0x10" val="68"/>
+            <add stat="pDef" order="0x10" val="92"/>
             <enchant stat="pDef" order="0x0C" val="0"/>
         </for>
     </item>
     <item id="9326" name="Vesper Circlet">
         <for>
-            <add stat="pDef" order="0x10" val="101"/>
+            <add stat="pDef" order="0x10" val="126"/>
             <enchant stat="pDef" order="0x0C" val="0"/>
         </for>
     </item>
     <item id="9327" name="Vesper Tunic">
         <for>
-            <add stat="pDef" order="0x10" val="125"/>
-            <add stat="maxMp" order="0x10" val="637"/>
+            <add stat="pDef" order="0x10" val="144"/>
+            <add stat="maxMp" order="0x10" val="1056"/>
             <enchant stat="pDef" order="0x0C" val="0"/>
         </for>
     </item>
     <item id="9328" name="Vesper Stockings">
         <for>
-            <add stat="pDef" order="0x10" val="78"/>
-            <add stat="maxMp" order="0x10" val="415"/>
+            <add stat="pDef" order="0x10" val="124"/>
             <enchant stat="pDef" order="0x0C" val="0"/>
         </for>
     </item>
     <item id="9329" name="Vesper Gloves">
         <for>
-            <add stat="pDef" order="0x10" val="68"/>
+            <add stat="pDef" order="0x10" val="92"/>
             <enchant stat="pDef" order="0x0C" val="0"/>
         </for>
     </item>
     <item id="9330" name="Vesper Shoes">
         <for>
-            <add stat="pDef" order="0x10" val="68"/>
+            <add stat="pDef" order="0x10" val="92"/>
             <enchant stat="pDef" order="0x0C" val="0"/>
         </for>
     </item>
