@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
 <!-- XML Stats Criadas Por: EmersonMds Obrigado por Usar -->
 <list>
-<item id='19100' name="Dual Dragon Slayer">
+<item id='19153' name="Dual Sword of Templar">
   <for>
-    <set val='422' order='0x08' stat='pAtk'/>
-    <set val='132' order='0x08' stat='mAtk'/>
+    <set val='472' order='0x08' stat='pAtk'/>
+    <set val='203' order='0x08' stat='mAtk'/>
     <set val='9' order='0x08' stat='rCrit'/>
     <add val='0' order='0x10' stat='accCombat'/>
     <set val='325' order='0x08' stat='pAtkSpd'/>
@@ -12,8 +12,7 @@
     <enchant val='0' order='0x0C' stat='mAtk'/>
   </for>
 </item>
-
-<item id='19557' name="Dual Dragon Slayer Haste">
+<item id='19555' name="Dual Dragon Slayer Focus">
   <for>
     <set val='422' order='0x08' stat='pAtk'/>
     <set val='132' order='0x08' stat='mAtk'/>
@@ -22,14 +21,13 @@
     <set val='325' order='0x08' stat='pAtkSpd'/>
     <enchant val='0' order='0x0C' stat='pAtk'/>
     <enchant val='0' order='0x0C' stat='mAtk'/>
-    <!-- SA: Haste -->
-    <mul val='1.07' order='0x30' stat='pAtkSpd'/>
+    <!-- SA: Focus -->
+    <add val='98' order='0x40' stat='rCrit'/>
     <!-- Enhances damage to target during PvP -->
     <mul val='1.05' order='0x30' stat='pvpPhysDmg'/>
     <mul val='1.05' order='0x30' stat='pvpMagicalDmg'/>
   </for>
 </item>
-
 <item id='19556' name="Dual Dragon Slayer Health">
   <for>
     <set val='422' order='0x08' stat='pAtk'/>
@@ -44,8 +42,7 @@
     <mul val='1.05' order='0x30' stat='pvpMagicalDmg'/>
   </for>
 </item>
-
-<item id='19555' name="Dual Dragon Slayer Focus">
+<item id='19557' name="Dual Dragon Slayer Haste">
   <for>
     <set val='422' order='0x08' stat='pAtk'/>
     <set val='132' order='0x08' stat='mAtk'/>
@@ -54,8 +51,8 @@
     <set val='325' order='0x08' stat='pAtkSpd'/>
     <enchant val='0' order='0x0C' stat='pAtk'/>
     <enchant val='0' order='0x0C' stat='mAtk'/>
-    <!-- SA: Focus -->
-    <add val='98' order='0x40' stat='rCrit'/>
+    <!-- SA: Haste -->
+    <mul val='1.07' order='0x30' stat='pAtkSpd'/>
     <!-- Enhances damage to target during PvP -->
     <mul val='1.05' order='0x30' stat='pvpPhysDmg'/>
     <mul val='1.05' order='0x30' stat='pvpMagicalDmg'/>

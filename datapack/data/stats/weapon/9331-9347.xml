@@ -5,17 +5,17 @@
 <list>
 	<item id="9331" name="Vesper Shield">
 		<for>
-			<sub order="0x10" stat="rEvas" val="8" />
-			<set order="0x08" stat="rShld" val="20" />
-			<set order="0x08" stat="sDef" val="371" />
+			<add val='43' order='0x10' stat='rEvas'/>
+    		<set val='325' order='0x08' stat='sDef'/>
+    		<set val='55' order='0x08' stat='rShld'/>
 			<enchant val="0" order="0x0C" stat="sDef" />
 		</for>
 	</item>
 	<item id="9347" name="Vesper Shield">
 		<for>
-			<sub order="0x10" stat="rEvas" val="8" />
-			<set order="0x08" stat="rShld" val="20" />
-			<set order="0x08" stat="sDef" val="371" />
+			<add val='43' order='0x10' stat='rEvas'/>
+    		<set val='325' order='0x08' stat='sDef'/>
+    		<set val='55' order='0x08' stat='rShld'/>
 			<enchant val="0" order="0x0C" stat="sDef" />
 		</for>
 	</item>

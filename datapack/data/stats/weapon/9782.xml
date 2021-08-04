@@ -2,10 +2,9 @@
 <list>
 <item id='9782' name="Dark Knight Shield">
   <for>
-    <add val='250' order='0x40' stat='pDef'/>
-    <add val='0' order='0x40' stat='rEvas'/>
-    <set val='142' order='0x08' stat='sDef'/>
-    <set val='20' order='0x08' stat='rShld'/>
+    <add val='13' order='0x10' stat='rEvas'/>
+    <set val='295' order='0x08' stat='sDef'/>
+    <set val='25' order='0x08' stat='rShld'/>
     <enchant val='0' order='0x0C' stat='sDef'/>
   </for>
 </item>
