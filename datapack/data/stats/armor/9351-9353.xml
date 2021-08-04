@@ -5,22 +5,22 @@
 <list>
 	<item id="9351" name="Vesper Necklace">
 		<for>
-			<add order="0x10" stat="mDef" val="125" />
-			<add order="0x40" stat="maxMp" val="50" />
+			<add order="0x10" stat="mDef" val="110" />
+			<add order="0x40" stat="maxMp" val="57" />
 			<enchant order="0x0C" stat="mDef" val="0" />
 		</for>
 	</item>
 	<item id="9352" name="Vesper Earring">
 		<for>
-			<add order="0x10" stat="mDef" val="94" />
-			<add order="0x40" stat="maxMp" val="37" />
+			<add order="0x10" stat="mDef" val="86" />
+			<add order="0x40" stat="maxMp" val="45" />
 			<enchant order="0x0C" stat="mDef" val="0" />
 		</for>
 	</item>
 	<item id="9353" name="Vesper Ring">
 		<for>
-			<add order="0x10" stat="mDef" val="62" />
-			<add order="0x40" stat="maxMp" val="25" />
+			<add order="0x10" stat="mDef" val="63" />
+			<add order="0x40" stat="maxMp" val="36" />
 			<enchant order="0x0C" stat="mDef" val="0" />
 		</for>
 	</item>	
