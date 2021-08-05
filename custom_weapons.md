@@ -9,71 +9,71 @@
 
 # Epic
 
-| *ID*  |  *Item*  |
-| ------------------- | ------------------- |
-| 19100  |  Cruzarion Dual Dragon Slayer |
-| 19101  |  Cruzarion Dual Gods Blade |
-| 19102  |  Cruzarion Dual Infinity Crushers  |
-| 19103  |  Cruzarion Dual Infinity Scepter |
-| 19104  |  Cruzarion Dual Heavens Divider  |
-| 19105  |  Dusk Shield Unique |
-| 19106  |  Dusk Sword Unique |
-| 19107  |  Dusk Staff Unique |
-| 19108  |  Cruzarion Dual Infinity Cleavers |
-| 19109  |  Bow of Scion |
-| 19110  |  Bow of Scion Epic/Cheap Shot |
-| 19111  |  Bow of Scion  Epic/Focus |
-| 19112  |  Bow of Scion  Epic/Crt. Slow |
-| 19113  |  Dual Gods Blade Focus |
-| 19114  |  Dual Gods Blade Crt.Dmage |
-| 19115  |  Dual Gods Blade Haste |
-| 19117  |  Glint Eye |
-| 19118  |  Glint Eye  Epic/Focus |
-| 19119  |  Glint Eye  Epic/Might Mortal |
-| 19120  |  Glint Eye  Epic/Haste |
-| 19121  |  Pariah Shield |
-| 19123  |  Zariche Demonic Sword |
-| 19124  |  Dusk Sword Unique Acumen |
-| 19125  |  Dusk Sword Unique Focus |
-| 19126  |  Dusk Sword Unique Haste |
-| 19127  |  Dusk Staff Unique Acumen |
-| 19128  |  Dusk Staff Unique Magic Hold |
-| 19129  |  Dusk Staff Unique Wild Magic |
-| 19130  |  Wakizashi Sword |
-| 19132  |  Sword of Templar |
-| 19133  |  Sword of Templar  Epic/Focus |
-| 19134  |  Sword of Templar  Epic/Haste |
-| 19135  |  Sword of Templar  Epic/Crt. Stun |
-| 19153  |  Dual sword of Templar |
-| 19161  |  Ares Fists Epic |
-| 19162  |  Ares Fists Epic/Crt. Damage |
-| 19163  |  Ares Fists Epic/Haste |
-| 19164  |  Ares Fists Epic/Health |
-| 19600  |  Great Sword of Scion |
-| 19601  |  Great Sword of Scion - Haste |
-| 19602  |  Great Sword of Scion - Health |
-| 19603  |  Great Sword of Scion - Focus |
-| 19606  |  Evil Stormstriker |
-| 19607  |  Evil Stormstriker - Haste |
-| 19608  |  Evil Stormstriker - Health |
-| 19609  |  Evil Stormstriker - Focus |
-| 19610  |  Demonic Eye |
-| 19611  |  Demonic Eye - Haste |
-| 19612  |  Demonic Eye - Health |
-| 19613  |  Demonic Eye - Focus |
-| 19614  |  Demonic Eye - Crt Stun |
-| 19615  |  Evil Separator of Darkness |
-| 19616  |  Evil Separator of Darkness Acumen |
-| 19617  |  Evil Separator of Darkness Magic Hold |
-| 19618  |  Evil Separator of Darkness Wild Magic |
-| 19619  |  Soul Fusion of Lightness |
-| 19620  |  Soul Fusion of Lightness Acumen |
-| 19621  |  Soul Fusion of Lightness Magic Hold |
-| 19622  |  Soul Fusion of Lightness Wild Magic |
-| 19555  |  Dual Gods Blade Focus |
-| 19556  |  Dual Gods Blade Crt.Dmage |
-| 19557  |  Dual Gods Blade Haste |
-| 19604  |  Glint Eye  Epic/Crt.Damage |
+| *ID*  |  *Item*  | *Type* |
+| ------------------- | ------------------- | ------------------- |
+| 19100  |  Cruzarion Dual Dragon Slayer | dual
+| 19101  |  Cruzarion Dual Gods Blade | dual
+| 19102  |  Cruzarion Dual Infinity Crushers  | dual
+| 19103  |  Cruzarion Dual Infinity Scepter | dual
+| 19104  |  Cruzarion Dual Heavens Divider  | dual
+| 19105  |  Dusk Shield Unique | none
+| 19106  |  Dusk Sword Unique | sword
+| 19107  |  Dusk Staff Unique | sword
+| 19108  |  Cruzarion Dual Infinity Cleavers | dual
+| 19109  |  Bow of Scion | bow
+| 19110  |  Bow of Scion Epic/Cheap Shot | bow
+| 19111  |  Bow of Scion  Epic/Focus | bow
+| 19112  |  Bow of Scion  Epic/Crt. Slow | bow
+| 19113  |  Dual Gods Blade Focus | dual
+| 19114  |  Dual Gods Blade Crt.Dmage | dual
+| 19115  |  Dual Gods Blade Haste | dual
+| 19117  |  Glint Eye | dagger
+| 19118  |  Glint Eye  Epic/Focus | dagger
+| 19119  |  Glint Eye  Epic/Might Mortal | dagger
+| 19120  |  Glint Eye  Epic/Haste | dagger
+| 19121  |  Pariah Shield | none
+| 19123  |  Zariche Demonic Sword | bigsword
+| 19124  |  Dusk Sword Unique Acumen | sword
+| 19125  |  Dusk Sword Unique Focus | sword
+| 19126  |  Dusk Sword Unique Haste | sword
+| 19127  |  Dusk Staff Unique Acumen | blunt
+| 19128  |  Dusk Staff Unique Magic Hold | blunt
+| 19129  |  Dusk Staff Unique Wild Magic | blunt
+| 19130  |  Wakizashi Sword | bigsword
+| 19132  |  Sword of Templar | sword
+| 19133  |  Sword of Templar  Epic/Focus | sword
+| 19134  |  Sword of Templar  Epic/Haste | sword
+| 19135  |  Sword of Templar  Epic/Crt. Stun | sword
+| 19153  |  Dual sword of Templar | dual
+| 19161  |  Ares Fists Epic | dualfist
+| 19162  |  Ares Fists Epic/Crt. Damage | dualfist
+| 19163  |  Ares Fists Epic/Haste | dualfist
+| 19164  |  Ares Fists Epic/Health | dualfist
+| 19600  |  Great Sword of Scion | bigsword
+| 19601  |  Great Sword of Scion - Haste | bigsword
+| 19602  |  Great Sword of Scion - Health | bigsword
+| 19603  |  Great Sword of Scion - Focus | bigsword
+| 19606  |  Evil Stormstriker | blunt
+| 19607  |  Evil Stormstriker - Haste | blunt
+| 19608  |  Evil Stormstriker - Health | blunt
+| 19609  |  Evil Stormstriker - Focus | blunt
+| 19610  |  Demonic Eye | pole
+| 19611  |  Demonic Eye - Haste | pole
+| 19612  |  Demonic Eye - Health | pole
+| 19613  |  Demonic Eye - Focus | pole
+| 19614  |  Demonic Eye - Crt Stun | pole
+| 19615  |  Evil Separator of Darkness | sword
+| 19616  |  Evil Separator of Darkness Acumen | blunt
+| 19617  |  Evil Separator of Darkness Magic Hold | blunt
+| 19618  |  Evil Separator of Darkness Wild Magic | blunt
+| 19619  |  Soul Fusion of Lightness | sword
+| 19620  |  Soul Fusion of Lightness Acumen | blunt
+| 19621  |  Soul Fusion of Lightness Magic Hold | blunt
+| 19622  |  Soul Fusion of Lightness Wild Magic | blunt
+| 19555  |  Dual Gods Blade Focus | dual
+| 19556  |  Dual Gods Blade Crt.Dmage | dual
+| 19557  |  Dual Gods Blade Haste | dual
+| 19604  |  Glint Eye  Epic/Crt.Damage | dagger
 
 
 # Dynasty
