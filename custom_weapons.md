@@ -78,103 +78,102 @@
 
 # Dynasty
 
-| *ID*  |  *Item*  |
-| ------------------- | ------------------- |
-| 9800  |  Dynasty Rapier |
-| 9801  |  Dynasty Rapier - Focus |
-| 9802  |  Epic Shield |
-| 9803  |  Dynasty Rapier - Light |
-| 9804  |  Dynasty Ancient Sword |
-| 9805  |  Dynasty Ancient Sword - Focus |
-| 9806  |  Dynasty Ancient Sword - Health |
-| 9807  |  Dynasty Ancient Sword - Light |
-| 9808  |  Dynasty Blade |
-| 9809  |  Dynasty Blade - Focus |
-| 9810  |  Dynasty Blade - Health |
-| 9811  |  Dynasty Blade - Light |
-| 9812  |  Dynasty Two Handed Sword |
-| 9813  |  Dynasty Two Handed Sword - Focus |
-| 9814  |  Dynasty Two Handed Sword - Health |
-| 9815  |  Dynasty Two Handed Sword - Light |
-| 9816  |  Dynasty Magic Sword |
-| 9817  |  Dynasty Magic Sword - Acumen |
-| 9818  |  Dynasty Magic Sword - Mana Up |
-| 9819  |  Dynasty Magic Sword - Conversion |
-| 9820  |  Dynasty Bow |
-| 9821  |  Dynasty Bow - Cheap Shot |
-| 9822  |  Dynasty Bow - Guidance |
-| 9823  |  Dynasty Bow - Evasion |
-| 9824  |  Dynasty Dagger |
-| 9825  |  Dynasty Dagger - Focus |
-| 9826  |  Dynasty Dagger - Evasion |
-| 9827  |  Dynasty Dagger - Critical Damage |
-| 9828  |  Dynasty Spear |
-| 9829  |  Dynasty Spear - Anger |
-| 9830  |  Dynasty Spear - Critical Stun |
-| 9831  |  Dynasty Spear - Light |
-| 9832  |  Dynasty Hammer |
-| 9833  |  Dynasty Hammer - Anger |
-| 9834  |  Dynasty Hammer - Health |
-| 9835  |  Dynasty Hammer - Risk Focus |
-| 9836  |  Dynasty Staff |
-| 9837  |  Dynasty Staff - Mana Up |
-| 9838  |  Dynasty Staff - Conversion |
-| 9839  |  Dynasty Staff - Acumen |
-| 9840  |  Dynasty Fist |
-| 9841  |  Dynasty Fist - Risk Haste |
-| 9842  |  Dynasty Fist - Risk Evasion |
-| 9843  |  Dynasty Fist - Haste |
-| 9844  |  Dynasty Sigil |
-| 9845  |  Dynasty Shield - Evasion |
-| 9846  |  Dynasty Crusher |
-| 9847  |  Dynasty Crusher - Anger |
-| 9848  |  Dynasty Crusher - Health |
-| 9849  |  Dynasty Crusher - Risk Focus |
-| 9850  |  Dynasty Two Handed Staff |
-| 9851  |  Dynasty Two Handed Staff - Mana Up |
-| 9852  |  Dynasty Two Handed Staff - Conversion |
-| 9853  |  Dynasty Two Handed Staff - Acumen |
-| 9854  |  Dynasty Dual Blade |
+| *ID*  |  *Item*  | *Type* |
+| ------------------- | ------------------- | ------------------- |
+| 9800  |  Dynasty Rapier | sword |
+| 9801  |  Dynasty Rapier - Focus | sword |
+| 9803  |  Dynasty Rapier - Light | sword |
+| 9804  |  Dynasty Ancient Sword | bigsword |
+| 9805  |  Dynasty Ancient Sword - Focus | bigsword |
+| 9806  |  Dynasty Ancient Sword - Health | bigsword |
+| 9807  |  Dynasty Ancient Sword - Light | bigsword |
+| 9808  |  Dynasty Blade | sword |
+| 9809  |  Dynasty Blade - Focus | sword |
+| 9810  |  Dynasty Blade - Health | sword |
+| 9811  |  Dynasty Blade - Light | sword |
+| 9812  |  Dynasty Two Handed Sword | bigsword |
+| 9813  |  Dynasty Two Handed Sword - Focus | bigsword |
+| 9814  |  Dynasty Two Handed Sword - Health | bigsword |
+| 9815  |  Dynasty Two Handed Sword - Light | bigsword |
+| 9816  |  Dynasty Magic Sword | sword |
+| 9817  |  Dynasty Magic Sword - Acumen | sword |
+| 9818  |  Dynasty Magic Sword - Mana Up | sword |
+| 9819  |  Dynasty Magic Sword - Conversion | sword |
+| 9820  |  Dynasty Bow | bow |
+| 9821  |  Dynasty Bow - Cheap Shot | bow |
+| 9822  |  Dynasty Bow - Guidance | bow |
+| 9823  |  Dynasty Bow - Evasion | bow |
+| 9824  |  Dynasty Dagger | dagger |
+| 9825  |  Dynasty Dagger - Focus | dagger |
+| 9826  |  Dynasty Dagger - Evasion | dagger |
+| 9827  |  Dynasty Dagger - Critical Damage | dagger |
+| 9828  |  Dynasty Spear | pole |
+| 9829  |  Dynasty Spear - Anger | pole |
+| 9830  |  Dynasty Spear - Critical Stun | pole |
+| 9831  |  Dynasty Spear - Light | pole |
+| 9832  |  Dynasty Hammer | blunt |
+| 9833  |  Dynasty Hammer - Anger | blunt |
+| 9834  |  Dynasty Hammer - Health | blunt |
+| 9835  |  Dynasty Hammer - Risk Focus | blunt |
+| 9836  |  Dynasty Staff | bigblunt |
+| 9837  |  Dynasty Staff - Mana Up | bigblunt |
+| 9838  |  Dynasty Staff - Conversion | bigblunt |
+| 9839  |  Dynasty Staff - Acumen | bigblunt |
+| 9840  |  Dynasty Fist | dualfist |
+| 9841  |  Dynasty Fist - Risk Haste | dualfist |
+| 9842  |  Dynasty Fist - Risk Evasion | dualfist |
+| 9843  |  Dynasty Fist - Haste | dualfist |
+| 9844  |  Dynasty Sigil | none |
+| 9845  |  Dynasty Shield - Evasion | none |
+| 9846  |  Dynasty Crusher | bigblunt |
+| 9847  |  Dynasty Crusher - Anger | bigblunt |
+| 9848  |  Dynasty Crusher - Health | bigblunt |
+| 9849  |  Dynasty Crusher - Risk Focus | bigblunt |
+| 9850  |  Dynasty Two Handed Staff | bigblunt |
+| 9851  |  Dynasty Two Handed Staff - Mana Up | bigblunt |
+| 9852  |  Dynasty Two Handed Staff - Conversion | bigblunt |
+| 9853  |  Dynasty Two Handed Staff - Acumen | bigblunt |
+| 9854  |  Dynasty Dual Blade | dual |
 
 # Vesper
 
-| *ID*  |  *Item*  |
-| ------------------- | ------------------- |
-| 9437  |  Vesper Cutter |
-| 9438  |  Vesper Slasher |
-| 9439  |  Vesper Buster |
-| 9440  |  Vesper Shaper |
-| 9441  |  Vesper Fighter |
-| 9442  |  Vesper Stormer |
-| 9443  |  Vesper Avenger |
-| 9444  |  Vesper Caster |
-| 9445  |  Vesper Thrower |
-| 9446  |  Vesper Dual Sword |
-| 9447  |  Vesper Shield |
-| 9448  |  Vesper Cutter - Haste |
-| 9449  |  Vesper Cutter - Health |
-| 9450  |  Vesper Cutter - Focus |
-| 9451  |  Vesper Slasher - Haste |
-| 9452  |  Vesper Slasher - Health |
-| 9453  |  Vesper Slasher - Focus |
-| 9454  |  Vesper Buster - Mana Up |
-| 9455  |  Vesper Buster - Acumen |
-| 9456  |  Vesper Buster - Magic Hold |
-| 9457  |  Vesper Shaper - Critical Damage |
-| 9458  |  Vesper Shaper - HP Drain |
-| 9459  |  Vesper Shaper - Haste |
-| 9460  |  Vesper Fighter - Focus |
-| 9461  |  Vesper Fighter - Health |
-| 9462  |  Vesper Fighter - Critical Stun |
-| 9463  |  Vesper Stormer - Health |
-| 9464  |  Vesper Stormer - Guidance |
-| 9465  |  Vesper Stormer - Haste |
-| 9466  |  Vesper Avenger - HP Drain |
-| 9467  |  Vesper Avenger - Health |
-| 9468  |  Vesper Avenger - HP Regeneration |
-| 9469  |  Vesper Caster - Acumen |
-| 9470  |  Vesper Caster - MP Regeneration |
-| 9471  |  Vesper Caster - Mana Up |
-| 9472  |  Vesper Thrower - Cheap Shot |
-| 9473  |  Vesper Thrower - Focus |
-| 9474  |  Vesper Thrower - Critical Slow |
+| *ID*  |  *Item*  | *Type* |
+| ------------------- | ------------------- | ------------------- |
+| 9437  |  Vesper Cutter | sword |
+| 9438  |  Vesper Slasher | bigsword |
+| 9439  |  Vesper Buster | sword |
+| 9440  |  Vesper Shaper | dagger |
+| 9441  |  Vesper Fighter | dualfist |
+| 9442  |  Vesper Stormer | pole |
+| 9443  |  Vesper Avenger | blunt |
+| 9444  |  Vesper Caster | blunt |
+| 9445  |  Vesper Thrower | bow |
+| 9446  |  Vesper Dual Sword | dual |
+| 9447  |  Vesper Shield | none |
+| 9448  |  Vesper Cutter - Haste | sword |
+| 9449  |  Vesper Cutter - Health | sword |
+| 9450  |  Vesper Cutter - Focus | sword |
+| 9451  |  Vesper Slasher - Haste | bigsword |
+| 9452  |  Vesper Slasher - Health | bigsword |
+| 9453  |  Vesper Slasher - Focus | bigsword |
+| 9454  |  Vesper Buster - Mana Up | sword |
+| 9455  |  Vesper Buster - Acumen | sword |
+| 9456  |  Vesper Buster - Magic Hold | sword |
+| 9457  |  Vesper Shaper - Critical Damage | dagger |
+| 9458  |  Vesper Shaper - HP Drain | dagger |
+| 9459  |  Vesper Shaper - Haste | dagger |
+| 9460  |  Vesper Fighter - Focus | dualfist |
+| 9461  |  Vesper Fighter - Health | dualfist |
+| 9462  |  Vesper Fighter - Critical Stun | dualfist |
+| 9463  |  Vesper Stormer - Health | pole |
+| 9464  |  Vesper Stormer - Guidance | pole |
+| 9465  |  Vesper Stormer - Haste | pole |
+| 9466  |  Vesper Avenger - HP Drain | blunt |
+| 9467  |  Vesper Avenger - Health | blunt |
+| 9468  |  Vesper Avenger - HP Regeneration | blunt |
+| 9469  |  Vesper Caster - Acumen | blunt |
+| 9470  |  Vesper Caster - MP Regeneration | blunt |
+| 9471  |  Vesper Caster - Mana Up | blunt |
+| 9472  |  Vesper Thrower - Cheap Shot | bow |
+| 9473  |  Vesper Thrower - Focus | bow |
+| 9474  |  Vesper Thrower - Critical Slow | bow |
