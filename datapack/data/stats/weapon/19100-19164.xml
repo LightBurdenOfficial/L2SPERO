@@ -8,7 +8,7 @@
     <set val='9' order='0x08' stat='rCrit'/>
     <add val='0' order='0x10' stat='accCombat'/>
     <set val='357' order='0x08' stat='pAtkSpd'/>
-    <mul val='1.26' order='0x30' stat='maxHp'>
+    <mul val='1.26' order='0x30' stat='maxHp' />
     <enchant val='0' order='0x0C' stat='pAtk'/>
     <enchant val='0' order='0x0C' stat='mAtk'/>
     <!-- Enhances damage to target during PvP -->
@@ -24,7 +24,7 @@
     <add val='0' order='0x10' stat='accCombat'/>
     <set val='357' order='0x08' stat='pAtkSpd'/>
     <enchant val='0' order='0x0C' stat='pAtk'/>
-    <mul val='1.26' order='0x30' stat='maxHp'>
+    <mul val='1.26' order='0x30' stat='maxHp' />
     <enchant val='0' order='0x0C' stat='mAtk'/>
     <!-- Enhances damage to target during PvP -->
     <mul val='1.15' order='0x30' stat='pvpPhysDmg'/>
