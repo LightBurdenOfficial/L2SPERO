@@ -209,7 +209,8 @@
     <mul val='1.20' order='0x30' stat='pvpPhysDmg'/>
     <mul val='1.20' order='0x30' stat='pvpMagicalDmg'/>
   </for>
-  <item id='19115' name="Dual God's Blade Haste">
+</item>
+<item id='19115' name="Dual God's Blade Haste">
   <for>
     <set val='402' order='0x08' stat='pAtk'/>
     <set val='152' order='0x08' stat='mAtk'/>
@@ -234,7 +235,7 @@
    <set val='476' order='0x08' stat='pAtkSpd'/>
    <enchant val='0' order='0x0C' stat='pAtk'/>
    <enchant val='0' order='0x0C' stat='mAtk'/>
-</for>
+  </for>
 </item>
 <item id='19118' name="Glint Eye Epic/Focus">
   <for>
@@ -407,7 +408,7 @@
    <set val='438' order='0x08' stat='pAtkSpd'/>
    <enchant val='0' order='0x0C' stat='pAtk'/>
    <enchant val='0' order='0x0C' stat='mAtk'/>
-</for>
+  </for>
 </item>
 <item id='19133' name="Sword Of Templar Epic/Focus">
   <for>
