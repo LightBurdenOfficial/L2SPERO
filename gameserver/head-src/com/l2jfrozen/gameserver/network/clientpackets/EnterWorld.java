@@ -285,8 +285,8 @@ public class EnterWorld extends L2GameClientPacket
 		sendPacket(new SystemMessage(SystemMessageId.WELCOME_TO_LINEAGE));
 		
 		// Credits to L2jfrozen
-		activeChar.sendMessage("This server uses L2JFrozen, a project founded by L2Chef and");
-		activeChar.sendMessage("developed by the L2JFrozen Dev Team at l2jfrozen.com");
+		activeChar.sendMessage("This is a private server emulator for LineAge II game.");
+		activeChar.sendMessage("The maintenance of the source code of this server is carried out by the SPERO team.");
 		
 		SevenSigns.getInstance().sendCurrentPeriodMsg(activeChar);
 		Announcements.getInstance().showAnnouncements(activeChar);
