@@ -5,10 +5,10 @@
 
 Description: DEX-2
              STR+2
-             P. Def. +10%
-             maximum HP +750
-             Sleep/Hold -75%
-             Poison/Bleed attack -75%
+             P. Def. +11%
+             maximum HP +8000
+             Sleep/Hold -80%
+             Poison/Bleed attack -80%
              When all set items are enchanted by 6 or higher, P. Def. and MP regeneration rate will increase.-->
   <set name="power" val="0.0"/>
   <set name="target" val="TARGET_SELF"/>
@@ -17,10 +17,10 @@ Description: DEX-2
   <set name="castRange" val="-1"/>
   <set name="effectRange" val="-1"/>
   <for>
-    <mul order="0x30" stat="pDef" val="1.1"/> <!-- P Def. +10% -->
-    <add order="0x40" stat="maxHp" val="750"/> <!-- Maximum HP +750 -->
-    <mul order="0x30" stat="sleepVuln" val="0.75"/> <!-- Sleep Resistence +75% -->
-    <mul order="0x30" stat="rootVuln" val="0.75"/> <!-- Hold Resistence +75% -->
+    <mul order="0x30" stat="pDef" val="1.11"/> <!-- P Def. +11% -->
+    <add order="0x40" stat="maxHp" val="800"/> <!-- Maximum HP +800 -->
+    <mul order="0x30" stat="sleepVuln" val="0.80"/> <!-- Sleep Resistence +80% -->
+    <mul order="0x30" stat="rootVuln" val="0.80"/> <!-- Hold Resistence +80% -->
     <sub order="0x40" stat="DEX" val="2"/> <!-- DEX -2 -->
     <add order="0x40" stat="STR" val="2"/> <!-- STR +2 -->
   </for>
@@ -48,10 +48,10 @@ Description:
             DEX+1
             STR+1
             CON-2
-            Attack speed +6%
-            P. Atk +6%
-            Maximum MP +489
-            weight limit +6000
+            Attack speed +7%
+            P. Atk +7%
+            Maximum MP +500
+            weight limit +6500
             When all set items are enchanted by 6 or higher, M. Def. and Evasion will increase -->
 
   <set name="power" val="0.0"/>
@@ -61,10 +61,10 @@ Description:
   <set name="castRange" val="-1"/>
   <set name="effectRange" val="-1"/>
   <for>
-    <mul order="0x30" stat="pAtkSpd" val="1.06"/> <!-- Attack Speed +6% -->
-    <mul order="0x30" stat="pAtk" val="1.06"/> <!-- P. Atk +6% -->
-    <add order="0x40" stat="maxMp" val="489"/> <!-- Maximum MP +489 -->
-    <add order="0x40" stat="maxLoad" val="6000"/> <!-- Weight Limit +6000 -->
+    <mul order="0x30" stat="pAtkSpd" val="1.07"/> <!-- Attack Speed +7% -->
+    <mul order="0x30" stat="pAtk" val="1.07"/> <!-- P. Atk +7% -->
+    <add order="0x40" stat="maxMp" val="500"/> <!-- Maximum MP +500 -->
+    <add order="0x40" stat="maxLoad" val="6500"/> <!-- Weight Limit +6500 -->
     <add order="0x40" stat="DEX" val="1"/> <!-- DEX +1 -->
     <add order="0x40" stat="STR" val="1"/> <!-- STR +1 -->
     <sub order="0x40" stat="CON" val="2"/> <!-- CON -2 -->
@@ -77,12 +77,12 @@ Description:
             WIT+1
             INT+1
             MEN-2
-            Magic attack 18%
-            Casting Speed 6%
-            Speed +8
-            magic cancel rate -50%
-            stun vulnerability -50%
-            weight limit +5759 
+            Magic attack 19%
+            Casting Speed 7%
+            Speed +9
+            magic cancel rate -60%
+            stun vulnerability -55%
+            weight limit +6500
             When all set items are enchanted by 6 or higher, P. Def. and Weight Gauge will increase -->
   <set name="power" val="0.0"/>
   <set name="target" val="TARGET_SELF"/>
@@ -91,15 +91,15 @@ Description:
   <set name="castRange" val="-1"/>
   <set name="effectRange" val="-1"/>
   <for>
-    <mul order="0x30" stat="mAtk" val="1.18"/> <!-- M. Atk +18% -->
-    <mul order="0x30" stat="mAtkSpd" val="1.06"/> <!-- Casting Speed +6% -->
-    <add order="0x40" stat="runSpd" val="8"/> <!-- Movement Speed +7 -->
-    <sub order="0x40" stat="cancel" val="50"/> <!-- Casting Cancel Probability -50% -->
-    <add order="0x40" stat="maxLoad" val="6000"/> <!-- Weight Limit +6000 -->
+    <mul order="0x30" stat="mAtk" val="1.19"/> <!-- M. Atk +19% -->
+    <mul order="0x30" stat="mAtkSpd" val="1.07"/> <!-- Casting Speed +7% -->
+    <add order="0x40" stat="runSpd" val="9"/> <!-- Movement Speed +9 -->
+    <sub order="0x40" stat="cancel" val="60"/> <!-- Casting Cancel Probability -60% -->
+    <add order="0x40" stat="maxLoad" val="6500"/> <!-- Weight Limit +6500 -->
     <add order="0x40" stat="WIT" val="1"/> <!-- WIT +1 -->
     <add order="0x40" stat="INT" val="1"/> <!-- INT +1 -->
     <sub order="0x40" stat="MEN" val="2"/> <!-- MEN -2 -->
-    <mul order="0x30" stat="stunVuln" val="0.5"/> <!-- Stun resistance +50% -->
+    <mul order="0x30" stat="stunVuln" val="0.55"/> <!-- Stun resistance +55% -->
   </for>
 </skill>
 </list>
