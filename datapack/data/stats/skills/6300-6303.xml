@@ -5,10 +5,10 @@
 
 Description: DEX-2
              STR+2
-             P. Def. +10%
-             maximum HP +750
-             Sleep/Hold -75%
-             Poison/Bleed attack -75%
+             P. Def. +12%
+             maximum HP +850
+             Sleep/Hold -85%
+             Poison/Bleed attack -85%
              When all set items are enchanted by 6 or higher, P. Def. and MP regeneration rate will increase.-->
   <set name="power" val="0.0"/>
   <set name="target" val="TARGET_SELF"/>
@@ -17,10 +17,10 @@ Description: DEX-2
   <set name="castRange" val="-1"/>
   <set name="effectRange" val="-1"/>
   <for>
-    <mul order="0x30" stat="pDef" val="1.1"/> <!-- P Def. +10% -->
-    <add order="0x40" stat="maxHp" val="750"/> <!-- Maximum HP +750 -->
-    <mul order="0x30" stat="sleepVuln" val="0.75"/> <!-- Sleep Resistence +75% -->
-    <mul order="0x30" stat="rootVuln" val="0.75"/> <!-- Hold Resistence +75% -->
+    <mul order="0x30" stat="pDef" val="1.12"/> <!-- P Def. +12% -->
+    <add order="0x40" stat="maxHp" val="850"/> <!-- Maximum HP +850 -->
+    <mul order="0x30" stat="sleepVuln" val="0.85"/> <!-- Sleep Resistence +85% -->
+    <mul order="0x30" stat="rootVuln" val="0.85"/> <!-- Hold Resistence +85% -->
     <sub order="0x40" stat="DEX" val="2"/> <!-- DEX -2 -->
     <add order="0x40" stat="STR" val="2"/> <!-- STR +2 -->
   </for>
@@ -48,10 +48,10 @@ Description:
             DEX+1
             STR+1
             CON-2
-            Attack speed +6%
-            P. Atk +6%
-            Maximum MP +489
-            weight limit +6000
+            Attack speed +8%
+            P. Atk +8%
+            Maximum MP +550
+            weight limit +7000
             When all set items are enchanted by 6 or higher, M. Def. and Evasion will increase -->
 
   <set name="power" val="0.0"/>
@@ -61,12 +61,12 @@ Description:
   <set name="castRange" val="-1"/>
   <set name="effectRange" val="-1"/>
   <for>
-    <mul order="0x30" stat="pAtkSpd" val="1.06"/> <!-- Attack Speed +6% -->
-    <mul order="0x30" stat="pAtk" val="1.06"/> <!-- P. Atk +6% -->
-    <add order="0x40" stat="maxMp" val="489"/> <!-- Maximum MP +489 -->
-    <add order="0x40" stat="maxLoad" val="6000"/> <!-- Weight Limit +6000 -->
-    <add order="0x40" stat="DEX" val="1"/> <!-- DEX +1 -->
-    <add order="0x40" stat="STR" val="1"/> <!-- STR +1 -->
+    <mul order="0x30" stat="pAtkSpd" val="1.08"/> <!-- Attack Speed +8% -->
+    <mul order="0x30" stat="pAtk" val="1.08"/> <!-- P. Atk +8% -->
+    <add order="0x40" stat="maxMp" val="550"/> <!-- Maximum MP +550 -->
+    <add order="0x40" stat="maxLoad" val="7000"/> <!-- Weight Limit +7000 -->
+    <add order="0x40" stat="DEX" val="2"/> <!-- DEX +1 -->
+    <add order="0x40" stat="STR" val="2"/> <!-- STR +1 -->
     <sub order="0x40" stat="CON" val="2"/> <!-- CON -2 -->
   </for>
 </skill>
@@ -91,15 +91,15 @@ Description:
   <set name="castRange" val="-1"/>
   <set name="effectRange" val="-1"/>
   <for>
-    <mul order="0x30" stat="mAtk" val="1.18"/> <!-- M. Atk +18% -->
-    <mul order="0x30" stat="mAtkSpd" val="1.06"/> <!-- Casting Speed +6% -->
-    <add order="0x40" stat="runSpd" val="8"/> <!-- Movement Speed +7 -->
-    <sub order="0x40" stat="cancel" val="50"/> <!-- Casting Cancel Probability -50% -->
-    <add order="0x40" stat="maxLoad" val="6000"/> <!-- Weight Limit +6000 -->
+    <mul order="0x30" stat="mAtk" val="1.20"/> <!-- M. Atk +20% -->
+    <mul order="0x30" stat="mAtkSpd" val="1.08"/> <!-- Casting Speed +8% -->
+    <add order="0x40" stat="runSpd" val="10"/> <!-- Movement Speed +10 -->
+    <sub order="0x40" stat="cancel" val="70"/> <!-- Casting Cancel Probability -70% -->
+    <add order="0x40" stat="maxLoad" val="7000"/> <!-- Weight Limit +7000 -->
     <add order="0x40" stat="WIT" val="1"/> <!-- WIT +1 -->
     <add order="0x40" stat="INT" val="1"/> <!-- INT +1 -->
     <sub order="0x40" stat="MEN" val="2"/> <!-- MEN -2 -->
-    <mul order="0x30" stat="stunVuln" val="0.5"/> <!-- Stun resistance +50% -->
+    <mul order="0x30" stat="stunVuln" val="0.6"/> <!-- Stun resistance +60% -->
   </for>
 </skill>
 </list>
