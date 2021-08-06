@@ -13,10 +13,10 @@
 			<add order="0x10" stat="STR" val="2" /> <!-- Str +2 -->
 			<sub order="0x10" stat="DEX" val="2" /> <!-- Dex -2 -->
 			<mul order="0x30" stat="pAtk" val="1.0557" /> <!-- P. Atk. +5.57% -->
-			<mul order="0x30" stat="pDef" val="1.0557" /> <!-- P. Def. +5.57% -->
-			<add order="0x40" stat="maxHp" val="531" /> <!-- Max HP by 531 -->
-			<sub order="0x40" stat="rootVuln" val="70" /> <!-- resistance to hold by 70% -->
-			<sub order="0x40" stat="sleepVuln" val="70" /> <!-- resistance to sleep by 70% -->
+			<mul order="0x30" stat="pDef" val="1.13" /> <!-- P. Def. +13% -->
+			<add order="0x40" stat="maxHp" val="900" /> <!-- Max HP by 900 -->
+			<sub order="0x40" stat="rootVuln" val="90" /> <!-- resistance to hold by 90% -->
+			<sub order="0x40" stat="sleepVuln" val="90" /> <!-- resistance to sleep by 90% -->
 		</for>
 	</skill>
 	<skill id="509" levels="1" name="Vesper Shield">
@@ -38,10 +38,10 @@
 			<add order="0x10" stat="STR" val="1" /> <!-- Str +1 -->
 			<sub order="0x10" stat="CON" val="2" /> <!-- Con -2 -->
 			<add order="0x10" stat="DEX" val="1" /> <!-- Dex +1 -->
-			<mul order="0x30" stat="pAtk" val="1.0557" /> <!-- P. Atk. +5.57% -->
-			<mul order="0x30" stat="pAtkSpd" val="1.05" /> <!-- Atk. Spd. +5% -->
+			<mul order="0x30" stat="pAtk" val="1.09" /> <!-- P. Atk. +9% -->
+			<mul order="0x30" stat="pAtkSpd" val="1.09" /> <!-- Atk. Spd. +9% -->
 			<mul order="0x30" stat="regMp" val="1.05" /> <!-- MP Recovery Rate by 5% -->
-			<add order="0x40" stat="maxMp" val="347" /> <!-- Max MP by 347 -->
+			<add order="0x40" stat="maxMp" val="600" /> <!-- Max MP by 600 -->
 		</for>
 	</skill>
 	<skill id="511" levels="1" name="Vesper Robe Set">
@@ -54,11 +54,12 @@
 			<add order="0x10" stat="INT" val="1" /> <!-- Int +1 -->
 			<sub order="0x10" stat="MEN" val="2" /> <!-- Men -2 -->
 			<add order="0x10" stat="WIT" val="1" /> <!-- Wit +1 -->
-			<mul order="0x30" stat="mAtk" val="1.0847" /> <!-- M. Atk. 8.47% -->
-			<mul order="0x30" stat="mAtkSpd" val="1.15" /> <!-- Casting Speed 15% -->
+			<mul order="0x30" stat="mAtk" val="1.21" /> <!-- M. Atk. 21% -->
+			<mul order="0x30" stat="mAtkSpd" val="1.09" /> <!-- Casting Speed 9% -->
+			<add order="0x40" stat="runSpd" val="11"/> <!-- Movement Speed +11 -->
 			<mul order="0x30" stat="regMp" val="1.0557" /> <!-- MP Recovery Rate by 5.57% -->
-			<sub order="0x40" stat="stunVuln" val="50" /> <!-- resistance to Stun Attacks by 50% -->
-			<sub order="0x40" stat="cancel" val="30" /> <!-- decreases the damage to be cancelled by magic by 30 -->
+			<sub order="0x40" stat="stunVuln" val="70" /> <!-- resistance to Stun Attacks by 70% -->
+			<sub order="0x40" stat="cancel" val="75" /> <!-- decreases the damage to be cancelled by magic by 75 -->
 		</for>
 	</skill>
 </list>	
