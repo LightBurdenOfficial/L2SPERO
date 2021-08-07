@@ -48,7 +48,7 @@ public class RequestSocialAction extends L2GameClientPacket
 		if (activeChar == null)
 			return;
 		
-		activeChar.updateLastAction();
+		activeChar.setLastActionMillis(System.currentTimeMillis());
 		// You cannot do anything else while fishing
 		if (activeChar.isFishing())
 		{

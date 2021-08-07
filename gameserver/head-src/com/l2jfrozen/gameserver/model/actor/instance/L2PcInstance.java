@@ -456,6 +456,8 @@ public final class L2PcInstance extends L2PlayableInstance
 	/** The active_boxes_characters. */
 	public List<String> active_boxes_characters = new ArrayList<>();
 	
+	private long _lastAction = 0;
+	
 	/**
 	 * UPDATE characters SET level=?,maxHp=?,curHp=?,maxCp=?,curCp=?,maxMp=?,curMp=?,str=?,con=?,dex=?,_int=?,men=?,wit=? ,face=?,hairStyle=?,hairColor =?,heading=?,x=?,y=?,z=?,exp=?,expBeforeDeath=?,sp=?,karma=?,pvpkills=?,pkkills=?,rec_have =?,rec_left=?,clanid=?,maxload
 	 * =?,race=?,classid=?,deletetime=?,title=?,accesslevel=?,online=?,isin7sdungeon=?,clan_privs =?,wantspeace=?,base_class =?,onlinetime=?,in_jail=?,jail_timer=?,newbie=?,nobless=?,power_grade=?,subpledge=?,last_recom_date =?,lvl_joined_academy
@@ -18601,6 +18603,16 @@ public final class L2PcInstance extends L2PlayableInstance
 		/*
 		 * LOGGER.info("Player "+getName()+" has this boxes"); for(String name:active_boxes_characters){ LOGGER.info("*** "+name+" ***"); }
 		 */
+	}
+	
+	public long getLastActionMillis()
+	{
+		return _lastAction;
+	}
+	    
+	public void setLastActionMillis(long val)
+	{
+		_lastAction = val;
 	}
 	
 	/**

@@ -185,6 +185,8 @@ public final class Say2 extends L2GameClientPacket
 			_type = PETITION_GM;
 		}
 		
+		activeChar.setLastActionMillis(System.currentTimeMillis());
+		
 		if (_text.length() > Config.MAX_CHAT_LENGTH)
 		{
 			if (Config.DEBUG)

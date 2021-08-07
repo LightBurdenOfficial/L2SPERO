@@ -29,6 +29,7 @@ import com.l2jfrozen.gameserver.datatables.SkillTable;
 import com.l2jfrozen.gameserver.model.Inventory;
 import com.l2jfrozen.gameserver.model.L2Party;
 import com.l2jfrozen.gameserver.model.actor.instance.L2PcInstance;
+import com.l2jfrozen.gameserver.model.entity.LeaveBuster;
 import com.l2jfrozen.gameserver.model.entity.olympiad.Olympiad;
 import com.l2jfrozen.gameserver.model.entity.sevensigns.SevenSignsFestival;
 import com.l2jfrozen.gameserver.network.L2GameClient;
@@ -61,6 +62,8 @@ public final class RequestRestart extends L2GameClientPacket
 			LOGGER.warn("[RequestRestart] activeChar null!?");
 			return;
 		}
+		
+		player.setLastActionMillis(System.currentTimeMillis());
 		
 		// Check if player is enchanting
 		if (player.getActiveEnchantItem() != null)
@@ -168,6 +171,9 @@ public final class RequestRestart extends L2GameClientPacket
 		{
 			player.removeSkill(SkillTable.getInstance().getInfo(4289, 1));
 		}
+		
+		LeaveBuster._players.get(player).cancel(true);
+		LeaveBuster._players.remove(player);
 		
 		if (player.getInventory().getPaperdollItem(Inventory.PAPERDOLL_RHAND) != null && player.getInventory().getPaperdollItem(Inventory.PAPERDOLL_RHAND).isAugmented())
 		{

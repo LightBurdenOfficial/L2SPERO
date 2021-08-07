@@ -3614,6 +3614,8 @@ public final class Config
 	public static boolean ALLOW_DUALBOX_OLY;
 	public static boolean ALLOW_DUALBOX_EVENT;
 	
+	public static int LEAVEBURSTER_TIME_KICK;
+	
 	// ============================================================
 	public static void loadPOtherConfig()
 	{
@@ -3649,6 +3651,8 @@ public final class Config
 			BOT_PROTECTOR_FIRST_CHECK = Integer.parseInt(POtherSetting.getProperty("BotProtectFirstCheck", "15"));
 			BOT_PROTECTOR_NEXT_CHECK = Integer.parseInt(POtherSetting.getProperty("BotProtectNextCheck", "60"));
 			BOT_PROTECTOR_WAIT_ANSVER = Integer.parseInt(POtherSetting.getProperty("BotProtectAnsver", "180"));
+			
+			LEAVEBURSTER_TIME_KICK = Integer.parseInt(POtherSetting.getProperty("LeaveBursterTimeKick", "10"));
 		}
 		catch (final Exception e)
 		{

@@ -24,6 +24,7 @@ import com.l2jfrozen.gameserver.datatables.SkillTable;
 import com.l2jfrozen.gameserver.model.L2Character;
 import com.l2jfrozen.gameserver.model.L2Party;
 import com.l2jfrozen.gameserver.model.actor.instance.L2PcInstance;
+import com.l2jfrozen.gameserver.model.entity.LeaveBuster;
 import com.l2jfrozen.gameserver.model.entity.olympiad.Olympiad;
 import com.l2jfrozen.gameserver.model.entity.sevensigns.SevenSignsFestival;
 import com.l2jfrozen.gameserver.network.SystemMessageId;
@@ -48,6 +49,8 @@ public final class Logout extends L2GameClientPacket
 		
 		if (player == null)
 			return;
+		
+		player.setLastActionMillis(System.currentTimeMillis());
 		
 		if (player.isInFunEvent() && !player.isGM())
 		{
@@ -119,6 +122,9 @@ public final class Logout extends L2GameClientPacket
 		
 		if (player.isFlying())
 			player.removeSkill(SkillTable.getInstance().getInfo(4289, 1));
+		
+		LeaveBuster._players.get(player).cancel(true);
+		LeaveBuster._players.remove(player);
 		
 		if (Config.OFFLINE_LOGOUT && player.isSitting())
 		{

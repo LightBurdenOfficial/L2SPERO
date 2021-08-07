@@ -59,6 +59,7 @@ import com.l2jfrozen.gameserver.model.base.PlayerClass;
 import com.l2jfrozen.gameserver.model.entity.Announcements;
 import com.l2jfrozen.gameserver.model.entity.ClanHall;
 import com.l2jfrozen.gameserver.model.entity.Hero;
+import com.l2jfrozen.gameserver.model.entity.LeaveBuster;
 import com.l2jfrozen.gameserver.model.entity.Wedding;
 import com.l2jfrozen.gameserver.model.entity.event.CTF;
 import com.l2jfrozen.gameserver.model.entity.event.DM;
@@ -135,6 +136,9 @@ public class EnterWorld extends L2GameClientPacket
 		
 		// Set lock at login
 		activeChar.setLocked(true);
+		
+		activeChar.setLastActionMillis(System.currentTimeMillis());
+		LeaveBuster._players.put(activeChar, ThreadPoolManager.getInstance().scheduleAiAtFixedRate(new LeaveBuster(activeChar), 5000, 5000));
 		
 		// Register in flood protector
 		// FloodProtector.getInstance().registerNewPlayer(activeChar.getObjectId());

@@ -78,6 +78,8 @@ public class MoveBackwardToLocation extends L2GameClientPacket
 		if (activeChar == null)
 			return;
 		
+		activeChar.setLastActionMillis(System.currentTimeMillis());
+		
 		// Move flood protection
 		if (!getClient().getFloodProtectors().getMoveAction().tryPerformAction("MoveBackwardToLocation"))
 		{
