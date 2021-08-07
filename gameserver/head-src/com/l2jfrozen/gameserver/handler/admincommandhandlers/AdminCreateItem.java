@@ -358,7 +358,6 @@ public class AdminCreateItem implements IAdminCommandHandler
 			Player = activeChar;
 		}
 		
-		if (!activeChar.isAFK())
 		Player.getInventory().addItem("Admin", id, num, Player, null);
 		ItemList il = new ItemList(Player, true);
 		Player.sendPacket(il);

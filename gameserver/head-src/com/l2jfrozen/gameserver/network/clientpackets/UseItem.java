@@ -68,7 +68,6 @@ public final class UseItem extends L2GameClientPacket
 		if (activeChar == null)
 			return;
 		
-		activeChar.updateLastAction();
 		final L2ItemInstance item = activeChar.getInventory().getItemByObjectId(_objectId);
 		
 		if (item == null)

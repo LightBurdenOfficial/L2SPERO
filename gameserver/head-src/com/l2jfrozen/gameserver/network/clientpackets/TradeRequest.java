@@ -51,7 +51,6 @@ public final class TradeRequest extends L2GameClientPacket
 		if (player == null)
 			return;
 		
-		player.updateLastAction();
 		if (!player.getAccessLevel().allowTransaction())
 		{
 			player.sendMessage("Transactions are disable for your Access Level");

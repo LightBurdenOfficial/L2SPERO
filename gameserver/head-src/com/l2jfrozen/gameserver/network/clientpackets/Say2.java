@@ -153,7 +153,6 @@ public final class Say2 extends L2GameClientPacket
 			return;
 		}
 		
-		activeChar.updateLastAction();
 		if (activeChar.isChatBanned() && !activeChar.isGM() && _type != CLAN && _type != ALLIANCE && _type != PARTY)
 		{
 			activeChar.sendMessage("You may not chat while a chat ban is in effect.");
