@@ -8,18 +8,23 @@
 <list>
 
   <!-- Imperial Crusader Heavy Armor -->
-  <item id="2">
+  <item id="1">
     <ingredient id="57" count="100000000"/>
     <production id="6373" count="1"/>
     <production id="6374" count="1"/>
     <production id="6375" count="1"/>
     <production id="6376" count="1"/>
-    <production id="6377" count="1"/>
     <production id="6378" count="1"/>
   </item>
 
+  <!-- Imperial Crusader Shield -->
+  <item id="2">
+    <ingredient id="57" count="50000000"/>
+    <production id="6377" count="1"/>
+  </item>
+
   <!-- Draconic Leather Armor -->
-  <item id="1">
+  <item id="3">
     <ingredient id="57" count="100000000"/>
     <production id="6379" count="1"/>
     <production id="6381" count="1"/>
@@ -28,7 +33,7 @@
   </item>
 
   <!-- Major Arcana Robe Armor -->
-  <item id="3">
+  <item id="4">
     <ingredient id="57" count="100000000"/>
     <production id="6383" count="1"/>
     <production id="6384" count="1"/>
@@ -37,21 +42,183 @@
   </item>
 
   <!-- Tateossian Necklace -->
-  <item id="4">
+  <item id="5">
     <ingredient id="57" count="10000000"/>
     <production id="920" count="1"/>
   </item>
 
   <!-- Tateossian Earring -->
-  <item id="5">
+  <item id="6">
     <ingredient id="57" count="10000000"/>
     <production id="858" count="2"/>
   </item>
 
   <!-- Tateossian Ring -->
-  <item id="6">
+  <item id="7">
     <ingredient id="57" count="10000000"/>
     <production id="889" count="2"/>
+  </item>
+
+  <!-- TITANIUM -->
+  <!-- Titanium Helm - Heavy -->
+  <item id="8">
+    <ingredient id="15003" count="10"/>
+    <production id="9861" count="1"/>
+    <production id="9862" count="1"/>
+    <production id="9863" count="1"/>
+    <production id="9860" count="1"/>
+  </item>
+
+  <!-- Titanium Helm - Light -->
+  <item id="9">
+    <ingredient id="15003" count="10"/>
+    <production id="9864" count="1"/>
+    <production id="9865" count="1"/>
+    <production id="9866" count="1"/>
+    <production id="9870" count="1"/>
+  </item>
+
+  <!-- Titanium Helm - Robe -->
+  <item id="10">
+    <ingredient id="15003" count="10"/>
+    <production id="9867" count="1"/>
+    <production id="9868" count="1"/>
+    <production id="9869" count="1"/>
+    <production id="9880" count="1"/>
+  </item>
+
+  <!-- Titanium Necklace -->
+  <item id="11">
+    <ingredient id="15003" count="10"/>
+    <production id="11044" count="1"/>
+  </item>
+
+  <!-- Titanium Earring -->
+  <item id="12">
+    <ingredient id="15003" count="5"/>
+    <production id="11045" count="1"/>
+  </item>
+
+  <!-- Titanium Ring -->
+  <item id="13">
+    <ingredient id="15003" count="5"/>
+    <production id="11046" count="1"/>
+  </item>
+
+  <!-- DARK KNIGHT -->
+  <!-- Dark Knight Helmet - Heavy -->
+  <item id="14">
+    <ingredient id="15003" count="10"/>
+    <production id="25800" count="1"/>
+    <production id="25801" count="1"/>
+    <production id="25802" count="1"/>
+    <production id="25803" count="1"/>
+    <production id="25812" count="1"/>
+  </item>
+
+  <!-- Dark Knight Shield -->
+  <item id="15">
+    <ingredient id="15003" count="10"/>
+    <production id="9782" count="1"/>
+  </item>
+
+  <!-- Dark Knight Shield -->
+  <item id="16">
+    <ingredient id="15003" count="10"/>
+    <production id="19105" count="1"/>
+  </item>
+
+  <!-- Dark Knight Shield -->
+  <item id="17">
+    <ingredient id="15003" count="10"/>
+    <production id="19121" count="1"/>
+  </item>
+
+  <!-- Dark Knight Leather Helmet -->
+  <item id="18">
+    <ingredient id="15003" count="10"/>
+    <production id="25804" count="1"/>
+    <production id="25805" count="1"/>
+    <production id="25806" count="1"/>
+    <production id="25807" count="1"/>
+    <production id="25813" count="1"/>
+  </item>
+
+  <!-- Dark Knight Circlet -->
+  <item id="19">
+    <ingredient id="15003" count="10"/>
+    <production id="25808" count="1"/>
+    <production id="25809" count="1"/>
+    <production id="25810" count="1"/>
+    <production id="25811" count="1"/>
+    <production id="25814" count="1"/>
+  </item>
+
+  <!-- DYNASTY -->
+  <!-- Dynasty Heavy Armor -->
+  <item id="20">
+    <ingredient id="15003" count="10"/>
+    <production id="9933" count="1"/>
+    <production id="9934" count="1"/>
+    <production id="9936" count="1"/>
+    <production id="9937" count="1"/>
+    <production id="9935" count="1"/>
+  </item>
+
+  <!--Dynasty Shield -->
+  <item id="21">
+    <ingredient id="15003" count="10"/>
+    <production id="9948" count="1"/>
+  </item>
+
+  <!--Dynasty Shield -->
+  <item id="22">
+    <ingredient id="15003" count="10"/>
+    <production id="9844" count="1"/>
+  </item>
+
+  <!--Dynasty Shield -->
+  <item id="23">
+    <ingredient id="15003" count="10"/>
+    <production id="9845" count="1"/>
+  </item>
+
+  <!-- Dynasty Light Armor -->
+  <item id="24">
+    <ingredient id="15003" count="10"/>
+    <production id="9938" count="1"/>
+    <production id="9939" count="1"/>
+    <production id="9941" count="1"/>
+    <production id="9942" count="1"/>
+    <production id="9940" count="1"/>
+  </item>
+
+  <!-- Dynasty Robe Armor -->
+  <item id="25">
+    <ingredient id="15003" count="10"/>
+    <production id="9943" count="1"/>
+    <production id="9944" count="1"/>
+    <production id="9946" count="1"/>
+    <production id="9947" count="1"/>
+    <production id="9945" count="1"/>
+  </item>
+
+  <!-- Dynasty Necklace -->
+  <item id="26">
+    <ingredient id="15003" count="10"/>
+    <production id="9949" count="1"/>
+  </item>
+
+  <!-- Dynasty Earring -->
+  <item id="27">
+    <ingredient id="15003" count="5"/>
+    <production id="9950" count="1"/>
+  </item>
+
+  <!-- Dynasty Ring -->
+  <item id="28">
+    <ingredient id="15003" count="5"/>
+    <production id="9951" count="1"/>
   </item>
 
 </list>
