@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <list>
-<item id='95000' name="Dynasty Ring">
+<item id='9949' name="Dynasty Ring">
   <for>
   <add val='58' order='0x10' stat='mDef'/>
   <add val='31' order='0x60' stat='maxMp'/>
   <enchant val='0' order='0x0C' stat='mDef'/>
 </for>
 </item>
-<item id='95001' name="Dynasty Necklace">
+<item id='9950' name="Dynasty Necklace">
   <for>
   <add val='105' order='0x10' stat='mDef'/>
   <add val='52' order='0x60' stat='maxMp'/>
   <enchant val='0' order='0x0C' stat='mDef'/>
 </for>
 </item>
-<item id='95002' name="Dynasty Earring">
+<item id='9951' name="Dynasty Earring">
   <for>
   <add val='81' order='0x10' stat='mDef'/>
   <add val='40' order='0x60' stat='maxMp'/>
