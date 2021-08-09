@@ -49,6 +49,11 @@ import com.l2jfrozen.gameserver.model.actor.instance.L2PcInstance;
 		 }
 		 return;
 	 }
+	 
+	 if (_p.isGM())
+	 {
+		 return;
+	 }
         
 	 if ((System.currentTimeMillis() - _p.getLastActionMillis()) / 1000/60 >= Config.LEAVEBURSTER_TIME_KICK)
 	 {
