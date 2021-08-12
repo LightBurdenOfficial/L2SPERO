@@ -108,7 +108,7 @@
   <!-- DARK KNIGHT -->
   <!-- Dark Knight Helmet - Heavy -->
   <item id="14">
-    <ingredient id="15003" count="10"/>
+    <ingredient id="15003" count="20"/>
     <production id="25800" count="1"/>
     <production id="25801" count="1"/>
     <production id="25802" count="1"/>
@@ -118,25 +118,25 @@
 
   <!-- Dark Knight Shield -->
   <item id="15">
-    <ingredient id="15003" count="10"/>
+    <ingredient id="15003" count="20"/>
     <production id="9782" count="1"/>
   </item>
 
   <!-- Dark Knight Shield -->
   <item id="16">
-    <ingredient id="15003" count="10"/>
+    <ingredient id="15003" count="20"/>
     <production id="19105" count="1"/>
   </item>
 
   <!-- Dark Knight Shield -->
   <item id="17">
-    <ingredient id="15003" count="10"/>
+    <ingredient id="15003" count="20"/>
     <production id="19121" count="1"/>
   </item>
 
   <!-- Dark Knight Leather Helmet -->
   <item id="18">
-    <ingredient id="15003" count="10"/>
+    <ingredient id="15003" count="20"/>
     <production id="25804" count="1"/>
     <production id="25805" count="1"/>
     <production id="25806" count="1"/>
@@ -146,7 +146,7 @@
 
   <!-- Dark Knight Circlet -->
   <item id="19">
-    <ingredient id="15003" count="10"/>
+    <ingredient id="15003" count="20"/>
     <production id="25808" count="1"/>
     <production id="25809" count="1"/>
     <production id="25810" count="1"/>
@@ -157,7 +157,7 @@
   <!-- DYNASTY -->
   <!-- Dynasty Heavy Armor -->
   <item id="20">
-    <ingredient id="15003" count="10"/>
+    <ingredient id="15003" count="30"/>
     <production id="9933" count="1"/>
     <production id="9934" count="1"/>
     <production id="9936" count="1"/>
@@ -167,25 +167,25 @@
 
   <!--Dynasty Shield -->
   <item id="21">
-    <ingredient id="15003" count="10"/>
+    <ingredient id="15003" count="30"/>
     <production id="9948" count="1"/>
   </item>
 
   <!--Dynasty Shield -->
   <item id="22">
-    <ingredient id="15003" count="10"/>
+    <ingredient id="15003" count="30"/>
     <production id="9844" count="1"/>
   </item>
 
   <!--Dynasty Shield -->
   <item id="23">
-    <ingredient id="15003" count="10"/>
+    <ingredient id="15003" count="30"/>
     <production id="9845" count="1"/>
   </item>
 
   <!-- Dynasty Light Armor -->
   <item id="24">
-    <ingredient id="15003" count="10"/>
+    <ingredient id="15003" count="30"/>
     <production id="9938" count="1"/>
     <production id="9939" count="1"/>
     <production id="9941" count="1"/>
@@ -195,7 +195,7 @@
 
   <!-- Dynasty Robe Armor -->
   <item id="25">
-    <ingredient id="15003" count="10"/>
+    <ingredient id="15003" count="30"/>
     <production id="9943" count="1"/>
     <production id="9944" count="1"/>
     <production id="9946" count="1"/>
@@ -205,19 +205,19 @@
 
   <!-- Dynasty Necklace -->
   <item id="26">
-    <ingredient id="15003" count="10"/>
+    <ingredient id="15003" count="30"/>
     <production id="9949" count="1"/>
   </item>
 
   <!-- Dynasty Earring -->
   <item id="27">
-    <ingredient id="15003" count="5"/>
+    <ingredient id="15003" count="15"/>
     <production id="9950" count="1"/>
   </item>
 
   <!-- Dynasty Ring -->
   <item id="28">
-    <ingredient id="15003" count="5"/>
+    <ingredient id="15003" count="15"/>
     <production id="9951" count="1"/>
   </item>
 

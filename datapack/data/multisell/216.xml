@@ -1,0 +1,379 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- CREATED -->
+<!-- BY SMALLZ -->
+<!-- 2013 -->
+
+<!-- S-Grade Weapons -->
+
+<list>
+
+  <!-- Bow of Scion  -->
+  <item id="1">
+    <ingredient id="15003" count="5"/>
+    <production id="19109" count="1"/>
+  </item>
+
+  <!-- Bow of Scion Epic/Cheap Shot  -->
+  <item id="2">
+    <ingredient id="15003" count="10"/>
+    <production id="19110" count="1"/>
+  </item>
+
+  <!-- Bow of Scion Epic/Focus  -->
+  <item id="3">
+    <ingredient id="15003" count="10"/>
+    <production id="19111" count="1"/>
+  </item>
+
+  <!-- Bow of Scion Epic/Crt. Slow  -->
+  <item id="4">
+    <ingredient id="15003" count="10"/>
+    <production id="19112" count="1"/>
+  </item>
+
+  <!-- Glint Eye  -->
+  <item id="5">
+    <ingredient id="15003" count="5"/>
+    <production id="19117" count="1"/>
+  </item>
+
+  <!-- Glint Eye Epic/Focus  -->
+  <item id="6">
+    <ingredient id="15003" count="10"/>
+    <production id="19118" count="1"/>
+  </item>
+
+  <!-- Glint Eye Epic/Might Mortal  -->
+  <item id="7">
+    <ingredient id="15003" count="10"/>
+    <production id="19119" count="1"/>
+  </item>
+
+  <!-- Glint Eye Epic/Haste  -->
+  <item id="8">
+    <ingredient id="15003" count="10"/>
+    <production id="19120" count="1"/>
+  </item>
+
+  <!-- Glint Eye Epic/Crt.Damage  -->
+  <item id="9">
+    <ingredient id="15003" count="10"/>
+    <production id="19604" count="1"/>
+  </item>
+
+  <!-- Zariche Demonic Sword  -->
+  <item id="10">
+    <ingredient id="15003" count="20"/>
+    <production id="19123" count="1"/>
+  </item>
+
+  <!-- Dusk Sword Unique  -->
+  <item id="11">
+    <ingredient id="15003" count="5"/>
+    <production id="19106" count="1"/>
+  </item>
+
+  <!-- Dusk Sword Unique Acumen  -->
+  <item id="12">
+    <ingredient id="15003" count="10"/>
+    <production id="19124" count="1"/>
+  </item>
+
+  <!-- Dusk Sword Unique Focus  -->
+  <item id="13">
+    <ingredient id="15003" count="10"/>
+    <production id="19125" count="1"/>
+  </item>
+
+  <!-- Dusk Sword Unique Haste  -->
+  <item id="14">
+    <ingredient id="15003" count="10"/>
+    <production id="19126" count="1"/>
+  </item>
+
+  <!-- Dusk Staff Unique  -->
+  <item id="15">
+    <ingredient id="15003" count="5"/>
+    <production id="19107" count="1"/>
+  </item>
+
+  <!-- Dusk Staff Unique Acumen  -->
+  <item id="16">
+    <ingredient id="15003" count="10"/>
+    <production id="19127" count="1"/>
+  </item>
+
+  <!-- Dusk Staff Unique Magic Hold  -->
+  <item id="17">
+    <ingredient id="15003" count="10"/>
+    <production id="19128" count="1"/>
+  </item>
+
+  <!-- Dusk Staff Unique Wild Magic  -->
+  <item id="18">
+    <ingredient id="15003" count="10"/>
+    <production id="19129" count="1"/>
+  </item>
+
+  <!-- Wakizashi Sword  -->
+  <item id="19">
+    <ingredient id="15003" count="20"/>
+    <production id="19130" count="1"/>
+  </item>
+
+  <!-- Sword of Templar  -->
+  <item id="20">
+    <ingredient id="15003" count="5"/>
+    <production id="19132" count="1"/>
+  </item>
+
+  <!-- Sword of Templar Epic/Focus  -->
+  <item id="21">
+    <ingredient id="15003" count="10"/>
+    <production id="19133" count="1"/>
+  </item>
+
+  <!-- Sword of Templar Epic/Haste  -->
+  <item id="22">
+    <ingredient id="15003" count="10"/>
+    <production id="19134" count="1"/>
+  </item>
+
+  <!-- Sword of Templar Epic/Crt. Stun  -->
+  <item id="23">
+    <ingredient id="15003" count="10"/>
+    <production id="19135" count="1"/>
+  </item>
+
+  <!-- Ares Fists Epic  -->
+  <item id="24">
+    <ingredient id="15003" count="5"/>
+    <production id="19161" count="1"/>
+  </item>
+
+  <!-- Ares Fists Epic/Crt. Damage  -->
+  <item id="25">
+    <ingredient id="15003" count="10"/>
+    <production id="19162" count="1"/>
+  </item>
+
+  <!-- Ares Fists Epic/Haste  -->
+  <item id="26">
+    <ingredient id="15003" count="10"/>
+    <production id="19163" count="1"/>
+  </item>
+
+  <!-- Ares Fists Epic/Health  -->
+  <item id="27">
+    <ingredient id="15003" count="10"/>
+    <production id="19164" count="1"/>
+  </item>
+
+  <!-- Great Sword of Scion  -->
+  <item id="28">
+    <ingredient id="15003" count="5"/>
+    <production id="19600" count="1"/>
+  </item>
+
+  <!-- Great Sword of Scion - Haste  -->
+  <item id="29">
+    <ingredient id="15003" count="10"/>
+    <production id="19601" count="1"/>
+  </item>
+
+  <!-- Great Sword of Scion - Health  -->
+  <item id="30">
+    <ingredient id="15003" count="10"/>
+    <production id="19602" count="1"/>
+  </item>
+
+  <!-- Great Sword of Scion - Focus  -->
+  <item id="31">
+    <ingredient id="15003" count="10"/>
+    <production id="19603" count="1"/>
+  </item>
+
+  <!-- Evil Stormstriker  -->
+  <item id="32">
+    <ingredient id="15003" count="5"/>
+    <production id="19606" count="1"/>
+  </item>
+
+  <!-- Evil Stormstriker - Haste  -->
+  <item id="33">
+    <ingredient id="15003" count="10"/>
+    <production id="19607" count="1"/>
+  </item>
+
+  <!-- Evil Stormstriker - Health  -->
+  <item id="34">
+    <ingredient id="15003" count="10"/>
+    <production id="19608" count="1"/>
+  </item>
+
+  <!-- Evil Stormstriker - Focus  -->
+  <item id="35">
+    <ingredient id="15003" count="10"/>
+    <production id="19609" count="1"/>
+  </item>
+
+  <!-- Demonic Eye  -->
+  <item id="36">
+    <ingredient id="15003" count="5"/>
+    <production id="19610" count="1"/>
+  </item>
+
+  <!-- Demonic Eye - Haste  -->
+  <item id="37">
+    <ingredient id="15003" count="10"/>
+    <production id="19611" count="1"/>
+  </item>
+
+  <!-- Demonic Eye - Health  -->
+  <item id="38">
+    <ingredient id="15003" count="10"/>
+    <production id="19612" count="1"/>
+  </item>
+
+  <!-- Demonic Eye - Focus  -->
+  <item id="39">
+    <ingredient id="15003" count="10"/>
+    <production id="19613" count="1"/>
+  </item>
+
+  <!-- Demonic Eye - Crt Stun  -->
+  <item id="40">
+    <ingredient id="15003" count="10"/>
+    <production id="19614" count="1"/>
+  </item>
+
+  <!-- Evil Separator of Darkness  -->
+  <item id="41">
+    <ingredient id="15003" count="5"/>
+    <production id="19615" count="1"/>
+  </item>
+
+  <!-- Evil Separator of Darkness Acumen  -->
+  <item id="42">
+    <ingredient id="15003" count="10"/>
+    <production id="19616" count="1"/>
+  </item>
+
+  <!-- Evil Separator of Darkness Magic Hold  -->
+  <item id="43">
+    <ingredient id="15003" count="10"/>
+    <production id="19617" count="1"/>
+  </item>
+
+  <!-- Evil Separator of Darkness Wild Magic  -->
+  <item id="44">
+    <ingredient id="15003" count="10"/>
+    <production id="19618" count="1"/>
+  </item>
+
+  <!-- Soul Fusion of Lightness  -->
+  <item id="45">
+    <ingredient id="15003" count="5"/>
+    <production id="19619" count="1"/>
+  </item>
+
+  <!-- Soul Fusion of Lightness Acumen  -->
+  <item id="46">
+    <ingredient id="15003" count="10"/>
+    <production id="19620" count="1"/>
+  </item>
+
+  <!-- Soul Fusion of Lightness Magic Hold  -->
+  <item id="47">
+    <ingredient id="15003" count="10"/>
+    <production id="19621" count="1"/>
+  </item>
+
+  <!-- Soul Fusion of Lightness Wild Magic  -->
+  <item id="48">
+    <ingredient id="15003" count="10"/>
+    <production id="19621" count="1"/>
+  </item>
+
+  <!-- Dual Gods Blade Focus  -->
+  <item id="49">
+    <ingredient id="15003" count="20"/>
+    <production id="19555" count="1"/>
+  </item>
+
+  <!-- Dual Gods Blade Crt.Dmage  -->
+  <item id="50">
+    <ingredient id="15003" count="20"/>
+    <production id="19556" count="1"/>
+  </item>
+
+  <!-- Dual Gods Blade Haste  -->
+  <item id="51">
+    <ingredient id="15003" count="20"/>
+    <production id="19557" count="1"/>
+  </item>
+
+  <!-- Cruzarion Dual Dragon Slayer -->
+  <item id="52">
+    <ingredient id="15003" count="10"/>
+    <production id="19100" count="1"/>
+  </item>
+
+  <!-- Cruzarion Dual Gods Blade -->
+  <item id="53">
+    <ingredient id="15003" count="10"/>
+    <production id="19101" count="1"/>
+  </item>
+
+  <!-- Cruzarion Dual Infinity Crushers  -->
+  <item id="54">
+    <ingredient id="15003" count="10"/>
+    <production id="19102" count="1"/>
+  </item>
+
+  <!-- Cruzarion Dual Infinity Scepter  -->
+  <item id="55">
+    <ingredient id="15003" count="20"/>
+    <production id="19103" count="1"/>
+  </item>
+
+  <!-- Cruzarion Dual Heavens Divider  -->
+  <item id="56">
+    <ingredient id="15003" count="10"/>
+    <production id="19104" count="1"/>
+  </item>
+
+    <!-- Cruzarion Dual Infinity Cleavers  -->
+  <item id="57">
+    <ingredient id="15003" count="10"/>
+    <production id="19108" count="1"/>
+  </item>
+
+  <!-- Dual Gods Blade Focus  -->
+  <item id="58">
+    <ingredient id="15003" count="20"/>
+    <production id="19113" count="1"/>
+  </item>
+
+  <!-- Dual Gods Blade Crt.Dmage  -->
+  <item id="59">
+    <ingredient id="15003" count="20"/>
+    <production id="19114" count="1"/>
+  </item>
+
+  <!-- Dual Gods Blade Haste  -->
+  <item id="60">
+    <ingredient id="15003" count="20"/>
+    <production id="19115" count="1"/>
+  </item>
+
+  <!-- Dual sword of Templar  -->
+  <item id="61">
+    <ingredient id="15003" count="10"/>
+    <production id="19153" count="1"/>
+  </item>
+
+</list>
+<!-- CREATED -->
+<!-- BY SMALLZ -->
+<!-- 2013 -->
