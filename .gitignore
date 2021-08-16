@@ -4,3 +4,6 @@ gameserver/build/*
 gameserver/build/*.*
 .svn/*
 .svn/*.*
+datapack/data/scripts/custom/2001_Buffer/__init__$py.class
+datapack/data/scripts/custom/2005_Event_Buffer/__init__$py.class
+datapack/data/scripts/custom/2003_Ranking/__init__$py.class

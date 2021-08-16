@@ -31,7 +31,7 @@ class Quest (JQuest) :
 		htmltext = event
 		count=st.getQuestItemsCount(ADENA_ID)
 		if count < 0  or st.getPlayer().getLevel() < 1 :
-			htmltext = "<html><head><body>Voce nao tem Adena,<br> Ou esta com level muito baixo. Tem que ter level 40 ou mais.</body></html>"
+			htmltext = "<html><head><body>You don't have Adena,<br> Or you are too low level. Must be level 40 or more.</body></html>"
 		else:
 			st.takeItems(ADENA_ID,0)
 			st.getPlayer().setTarget(st.getPlayer())
