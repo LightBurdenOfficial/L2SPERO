@@ -29,6 +29,7 @@ import org.apache.log4j.Logger;
 import com.l2jfrozen.Config;
 import com.l2jfrozen.crypt.nProtect;
 import com.l2jfrozen.crypt.nProtect.RestrictionType;
+import com.l2jfrozen.gameserver.Restart;
 import com.l2jfrozen.gameserver.communitybbs.Manager.RegionBBSManager;
 import com.l2jfrozen.gameserver.controllers.GameTimeController;
 import com.l2jfrozen.gameserver.datatables.CharSchemesTable;
@@ -496,6 +497,11 @@ public class EnterWorld extends L2GameClientPacket
 			}
 		}
 		
+		if(Config.RESTART_BY_TIME_OF_DAY)
+		{
+			ShowNextRestart(activeChar);
+		}
+		
 		// NPCBuffer
 		if (PowerPakConfig.BUFFER_ENABLED)
 			CharSchemesTable.getInstance().onPlayerLogin(activeChar.getObjectId());
@@ -896,6 +902,17 @@ public class EnterWorld extends L2GameClientPacket
 					Announcements.getInstance().announceToAll("Lord " + activeChar.getName() + " Ruler Of " + castle.getName() + " Castle is now Online!");
 			}
 		}
+	}
+	
+	/**
+	* Envia mensagem para o player do proximo restart
+	* NOTE: RESTART_BY_TIME_OF_DAY = TRUE
+	*
+	* @param activeChar
+	*/
+	private void ShowNextRestart(L2PcInstance activeChar)
+	{
+		activeChar.sendMessage("Next Restart: " + Restart.getInstance().getRestartNextTime());
 	}
 	
 	@Override

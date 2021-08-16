@@ -17,7 +17,7 @@
 */
 package com.l2jfrozen.gameserver.model.entity;
 import java.util.concurrent.ScheduledFuture;
-import java.util.logging.Logger;
+import org.apache.log4j.Logger;
 import javolution.util.FastMap;
 import com.l2jfrozen.Config;
 import com.l2jfrozen.gameserver.model.actor.instance.L2PcInstance;
@@ -28,7 +28,7 @@ import com.l2jfrozen.gameserver.model.actor.instance.L2PcInstance;
 	{
 		public static FastMap <L2PcInstance, ScheduledFuture <?>> _players = new FastMap<L2PcInstance, ScheduledFuture <?>> ();
     
-		private static final Logger _log = Logger.getLogger(LeaveBuster.class.getName());
+		private static Logger LOGGER = Logger.getLogger(LeaveBuster.class.getName());
     
 		private L2PcInstance _p = null;
     
@@ -57,7 +57,7 @@ import com.l2jfrozen.gameserver.model.actor.instance.L2PcInstance;
         
 	 if ((System.currentTimeMillis() - _p.getLastActionMillis()) / 1000/60 >= Config.LEAVEBURSTER_TIME_KICK)
 	 {
-		 _log.info("Leave Buster:" + _p.getName() + "was kicked out of game.");
+		 LOGGER.info("Leave Buster:" + _p.getName() + "was kicked out of game.");
 		 _players.get(_p) .cancel(true);
 		 _players.remove(_p);
 		 _p.logout();

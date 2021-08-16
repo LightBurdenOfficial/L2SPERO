@@ -580,6 +580,14 @@ public class GameServer
 		if ((Config.OFFLINE_TRADE_ENABLE || Config.OFFLINE_CRAFT_ENABLE) && Config.RESTORE_OFFLINERS)
 			OfflineTradeTable.restoreOfflineTraders();
 		
+		Util.printSection("Restart Manager");
+		if(Config.RESTART_BY_TIME_OF_DAY)
+			Restart.getInstance().StartCalculationOfNextRestartTime();
+		else
+			LOGGER.info("# Auto Restart System is Disabled #");
+			   
+			System.gc();
+		
 		Util.printSection("Event Manager");
 			if(Config.EVENT_BY_TIME_OF_DAY)
 				InitialBossEvent.getInstance().StartCalculationOfNextEventTime();

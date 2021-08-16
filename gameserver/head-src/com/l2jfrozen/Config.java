@@ -2272,6 +2272,9 @@ public final class Config
 	public static boolean EVENT_BY_TIME_OF_DAY;
 	public static String[] EVENT_INTERVAL_BY_TIME_OF_DAY;
 	public static boolean NEW_PLAYER_EFFECT;
+	public static boolean RESTART_BY_TIME_OF_DAY;
+	public static int RESTART_SECONDS;
+	public static String[] RESTART_INTERVAL_BY_TIME_OF_DAY;
 	
 	// ============================================================
 	public static void loadFrozenConfig()
@@ -2293,6 +2296,9 @@ public final class Config
 			PM_TEXT1 = frozenSettings.getProperty("PMText1", "Have Fun and Nice Stay on");
 			PM_TEXT2 = frozenSettings.getProperty("PMText2", "Vote for us every 24h");
 			NEW_PLAYER_EFFECT = Boolean.parseBoolean(frozenSettings.getProperty("NewPlayerEffect", "True"));
+			RESTART_BY_TIME_OF_DAY = Boolean.parseBoolean(frozenSettings.getProperty("EnableRestartSystem", "false"));
+			RESTART_SECONDS = Integer.parseInt(frozenSettings.getProperty("RestartSeconds", "360"));
+			RESTART_INTERVAL_BY_TIME_OF_DAY = frozenSettings.getProperty("RestartByTimeOfDay", "20:00").split(",");
 			
 			dica1 = frozenSettings.getProperty("Dica1", "BALANCE");
 			dica2 = frozenSettings.getProperty("Dica2", "BALANCE");
