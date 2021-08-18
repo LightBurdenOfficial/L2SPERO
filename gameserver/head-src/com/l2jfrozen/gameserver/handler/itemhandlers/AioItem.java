@@ -61,7 +61,7 @@ public class AioItem implements IItemHandler
 				activeChar.getAppearance().setTitleColor(Config.AIO_TCOLOR);
 				activeChar.getStat().addExp(activeChar.getStat().getExpForLevel(81));
 				activeChar.rewardAioSkills();
-				activeChar.setName("[AIO]-" + activeChar.getName());
+				//activeChar.setName("[AIO]-" + activeChar.getName());
 				if (Config.ALLOW_AIO_ITEM)
 				{
 				StringTokenizer st = new StringTokenizer((Config.AIO_ITEMID), ",");
@@ -110,7 +110,7 @@ public class AioItem implements IItemHandler
 				activeChar.getAppearance().setTitleColor(Config.AIO_TCOLOR);
 				activeChar.getStat().addExp(activeChar.getStat().getExpForLevel(81));
 				activeChar.rewardAioSkills();
-				activeChar.setName("[AIO]-" + activeChar.getName());
+				//activeChar.setName("[AIO]-" + activeChar.getName());
 				if (Config.ALLOW_AIO_ITEM)
 				{
 				StringTokenizer st = new StringTokenizer((Config.AIO_ITEMID), ",");
@@ -159,7 +159,7 @@ public class AioItem implements IItemHandler
 				activeChar.getAppearance().setTitleColor(Config.AIO_TCOLOR);
 				activeChar.getStat().addExp(activeChar.getStat().getExpForLevel(81));
 				activeChar.rewardAioSkills();
-				activeChar.setName("[AIO]-" + activeChar.getName());
+				//activeChar.setName("[AIO]-" + activeChar.getName());
 				if (Config.ALLOW_AIO_ITEM)
 				{
 				StringTokenizer st = new StringTokenizer((Config.AIO_ITEMID), ",");
