@@ -9,7 +9,7 @@
   
   <!-- Scroll: Enchant Weapon (Grade D) -->
   <item id="1">
-  <ingredient id="57" count="500000"/>
+  <ingredient id="57" count="500"/>
   <production id="955" count="1"/>
   </item>
   
@@ -45,7 +45,7 @@
   
   <!-- Scroll: Enchant Armor (Grade D) -->
   <item id="7">
-  <ingredient id="57" count="500000"/>
+  <ingredient id="57" count="500"/>
   <production id="956" count="1"/>
   </item>
   
@@ -152,62 +152,62 @@
   </item>
 
   <item id="25">
-	<ingredient id="6393" count="5000"/>
+	<ingredient id="15003" count="5"/>
 	<production id="957" count="1"/>
   </item>
 
   <item id="26">
-	<ingredient id="6393" count="5000"/>
+	<ingredient id="15003" count="5"/>
 	<production id="953" count="1"/>
   </item>
 
   <item id="27">
-	<ingredient id="6393" count="5000"/>
+	<ingredient id="15003" count="5"/>
 	<production id="949" count="1"/>
   </item>
 
   <item id="28">
-	<ingredient id="6393" count="5000"/>
+	<ingredient id="15003" count="5"/>
 	<production id="731" count="1"/>
   </item>
 
   <item id="29">
-	<ingredient id="6393" count="5000"/>
+	<ingredient id="15003" count="5"/>
 	<production id="961" count="1"/>
   </item>
 
   <item id="30">
-	<ingredient id="6393" count="5000"/>
+	<ingredient id="15003" count="5"/>
 	<production id="1538" count="1"/>
   </item>
 
   <item id="31">
-	<ingredient id="6393" count="5000"/>
+	<ingredient id="15003" count="5"/>
 	<production id="958" count="1"/>
   </item>
 
   <item id="32">
-	<ingredient id="6393" count="5000"/>
+	<ingredient id="15003" count="5"/>
 	<production id="954" count="1"/>
   </item>
 
   <item id="33">
-	<ingredient id="6393" count="5000"/>
+	<ingredient id="15003" count="5"/>
 	<production id="950" count="1"/>
   </item>
 
   <item id="34">
-	<ingredient id="6393" count="5000"/>
+	<ingredient id="15003" count="5"/>
 	<production id="732" count="1"/>
   </item>
 
   <item id="35">
-	<ingredient id="6393" count="5000"/>
+	<ingredient id="15003" count="5"/>
 	<production id="962" count="1"/>
   </item>
 
   <item id="36">
-	<ingredient id="6393" count="5000"/>
+	<ingredient id="15003" count="5"/>
 	<production id="3936" count="1"/>
   </item>
   

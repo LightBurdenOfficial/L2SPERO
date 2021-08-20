@@ -16,9 +16,9 @@ QuestName   = "EnchantItem"
 QuestDesc   = "custom"
 
 ENCHANT_CHECK     = 1
-AMOUNT_OF_ENCHANT     = 6
-ITEM_ID     = 57
-ITEM_AMOUNT     = 50000000
+AMOUNT_OF_ENCHANT     = 15
+ITEM_ID     = 15003
+ITEM_AMOUNT     = 5
 NPC_ID = 2
 
 weapons = ['Sword','Blunt','Dagger','Bow','Pole','Etc','Fist','Dual Sword','Dual Fist','Big Sword','Big Blunt','Ancient','Crossbow','Rapier','Dual Dagger']
