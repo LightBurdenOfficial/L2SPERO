@@ -32,6 +32,9 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.Collection;
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+import java.util.regex.PatternSyntaxException;
 
 import javax.crypto.Cipher;
 
@@ -650,6 +653,9 @@ public class LoginController
 		// LOGGER it anyway
 		Log.add("'" + (user == null ? "null" : user) + "' " + (address == null ? "null" : address.getHostAddress()), "logins_ip");
 		
+		if (!isValidLogin(user))
+			return false;
+		
 		// player disconnected meanwhile
 		if (address == null)
 			return false;
@@ -810,6 +816,27 @@ public class LoginController
 		address = null;
 		
 		return ok;
+	}
+	
+	public static boolean isValidLogin(String text)
+	{
+		return isValidPattern(text, "^[A-Za-z0-9]{1,16}$");
+	}
+		
+	public static boolean isValidPattern(String text, String regex)
+	{
+		Pattern pattern;
+			
+		try
+		{
+			pattern = Pattern.compile(regex);
+		}
+		catch (PatternSyntaxException e)
+		{
+			pattern = Pattern.compile(".*");
+		}
+		Matcher regexp = pattern.matcher(text);
+		return regexp.matches();
 	}
 	
 	public boolean loginBanned(final String user)
