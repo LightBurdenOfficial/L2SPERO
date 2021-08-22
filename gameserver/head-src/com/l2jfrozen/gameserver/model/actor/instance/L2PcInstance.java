@@ -627,11 +627,17 @@ public final class L2PcInstance extends L2PlayableInstance
 			}
 			
 			// Pk protection config
-			if (!isGM() && target instanceof L2PcInstance && ((L2PcInstance) target).getPvpFlag() == 0 && ((L2PcInstance) target).getKarma() == 0 && (getLevel() < Config.ALT_PLAYER_PROTECTION_LEVEL || target.getLevel() < Config.ALT_PLAYER_PROTECTION_LEVEL))
+			if (Config.ALLOW_CHAR_KILL_PROTECT && !isGM() && (target instanceof L2PcInstance) && (((L2PcInstance) target).getPvpFlag() == 0) && (((L2PcInstance) target).getKarma() == 0))
 			{
-				sendMessage("You can't hit a player that is lower level from you. Target's level: " + String.valueOf(Config.ALT_PLAYER_PROTECTION_LEVEL) + ".");
-				sendPacket(ActionFailed.STATIC_PACKET);
-				return;
+				final int this_level = getLevel();
+				final int target_level = ((L2PcInstance) target).getLevel();
+				final Siege siege = SiegeManager.getInstance().getSiege(L2PcInstance.this);
+				if ((((siege == null) || !siege.getIsInProgress()) && ((this_level >= 20) && (target_level < 20))) || ((this_level >= 40) && (target_level < 40)) || ((this_level >= 52) && (target_level < 52)) || ((this_level >= 61) && (target_level < 61)) || ((this_level >= 76) && (target_level < 76)))
+				{
+					sendMessage("You can only start a PvP if your target is in your level grade (1-19, 20-39, 40-51, 52-60, 61-75, 76-80).");
+					sendPacket(ActionFailed.STATIC_PACKET);
+					return;
+				}
 			}
 			
 			super.doAttack(target);
@@ -5884,74 +5890,17 @@ public final class L2PcInstance extends L2PlayableInstance
 				if (isAutoAttackable(player))
 				{
 					
-					if (Config.ALLOW_CHAR_KILL_PROTECT)
-					{
-						Siege siege = SiegeManager.getInstance().getSiege(player);
-						
-						if (siege != null && siege.getIsInProgress())
-						{
-							if (player.getLevel() > 20 && ((L2Character) player.getTarget()).getLevel() < 20)
-							{
-								player.sendMessage("Your target is not in your grade!");
-								player.sendPacket(ActionFailed.STATIC_PACKET);
-							}
-							
-							if (player.getLevel() > 40 && ((L2Character) player.getTarget()).getLevel() < 40)
-							{
-								player.sendMessage("Your target is not in your grade!");
-								player.sendPacket(ActionFailed.STATIC_PACKET);
-							}
-							
-							if (player.getLevel() > 52 && ((L2Character) player.getTarget()).getLevel() < 52)
-							{
-								player.sendMessage("Your target is not in your grade!");
-								player.sendPacket(ActionFailed.STATIC_PACKET);
-							}
-							
-							if (player.getLevel() > 61 && ((L2Character) player.getTarget()).getLevel() < 61)
-							{
-								player.sendMessage("Your target is not in your grade!");
-								player.sendPacket(ActionFailed.STATIC_PACKET);
-							}
-							
-							if (player.getLevel() > 76 && ((L2Character) player.getTarget()).getLevel() < 76)
-							{
-								player.sendMessage("Your target is not in your grade!");
-								player.sendPacket(ActionFailed.STATIC_PACKET);
-							}
-							
-							if (player.getLevel() < 20 && ((L2Character) player.getTarget()).getLevel() > 20)
-							{
-								player.sendMessage("Your target is not in your grade!");
-								player.sendPacket(ActionFailed.STATIC_PACKET);
-							}
-							
-							if (player.getLevel() < 40 && ((L2Character) player.getTarget()).getLevel() > 40)
-							{
-								player.sendMessage("Your target is not in your grade!");
-								player.sendPacket(ActionFailed.STATIC_PACKET);
-							}
-							
-							if (player.getLevel() < 52 && ((L2Character) player.getTarget()).getLevel() > 52)
-							{
-								player.sendMessage("Your target is not in your grade!");
-								player.sendPacket(ActionFailed.STATIC_PACKET);
-							}
-							
-							if (player.getLevel() < 61 && ((L2Character) player.getTarget()).getLevel() > 61)
-							{
-								player.sendMessage("Your target is not in your grade!");
-								player.sendPacket(ActionFailed.STATIC_PACKET);
-							}
-							
-							if (player.getLevel() < 76 && ((L2Character) player.getTarget()).getLevel() > 76)
-							{
-								player.sendMessage("Your target is not in your grade!");
-								player.sendPacket(ActionFailed.STATIC_PACKET);
-							}
-						}
-						siege = null;
-					}
+					/*
+					* if (Config.ALLOW_CHAR_KILL_PROTECT) { final Siege siege = SiegeManager.getInstance().getSiege(player); if ((siege != null) && siege.isInProgress()) { if ((player.getLevel() > 20) && (((Creature) player.getTarget()).getLevel() < 20)) {
+					* player.sendMessage("Your target is not in your grade!"); player.sendPacket(ActionFailed.STATIC_PACKET); } if ((player.getLevel() > 40) && (((Creature) player.getTarget()).getLevel() < 40)) { player.sendMessage("Your target is not in your grade!");
+					* player.sendPacket(ActionFailed.STATIC_PACKET); } if ((player.getLevel() > 52) && (((Creature) player.getTarget()).getLevel() < 52)) { player.sendMessage("Your target is not in your grade!"); player.sendPacket(ActionFailed.STATIC_PACKET); } if ((player.getLevel() > 61) &&
+					* (((Creature) player.getTarget()).getLevel() < 61)) { player.sendMessage("Your target is not in your grade!"); player.sendPacket(ActionFailed.STATIC_PACKET); } if ((player.getLevel() > 76) && (((Creature) player.getTarget()).getLevel() < 76)) {
+					* player.sendMessage("Your target is not in your grade!"); player.sendPacket(ActionFailed.STATIC_PACKET); } if ((player.getLevel() < 20) && (((Creature) player.getTarget()).getLevel() > 20)) { player.sendMessage("Your target is not in your grade!");
+					* player.sendPacket(ActionFailed.STATIC_PACKET); } if ((player.getLevel() < 40) && (((Creature) player.getTarget()).getLevel() > 40)) { player.sendMessage("Your target is not in your grade!"); player.sendPacket(ActionFailed.STATIC_PACKET); } if ((player.getLevel() < 52) &&
+					* (((Creature) player.getTarget()).getLevel() > 52)) { player.sendMessage("Your target is not in your grade!"); player.sendPacket(ActionFailed.STATIC_PACKET); } if ((player.getLevel() < 61) && (((Creature) player.getTarget()).getLevel() > 61)) {
+					* player.sendMessage("Your target is not in your grade!"); player.sendPacket(ActionFailed.STATIC_PACKET); } if ((player.getLevel() < 76) && (((Creature) player.getTarget()).getLevel() > 76)) { player.sendMessage("Your target is not in your grade!");
+					* player.sendPacket(ActionFailed.STATIC_PACKET); } } }
+					*/
 					
 					// Player with lvl < 21 can't attack a cursed weapon holder
 					// And a cursed weapon holder can't attack players with lvl < 21
@@ -6088,74 +6037,17 @@ public final class L2PcInstance extends L2PlayableInstance
 					if (isAutoAttackable(player))
 					{
 						
-						if (Config.ALLOW_CHAR_KILL_PROTECT)
-						{
-							Siege siege = SiegeManager.getInstance().getSiege(player);
-							
-							if (siege != null && siege.getIsInProgress())
-							{
-								if (player.getLevel() > 20 && ((L2Character) player.getTarget()).getLevel() < 20)
-								{
-									player.sendMessage("Your target is not in your grade!");
-									player.sendPacket(ActionFailed.STATIC_PACKET);
-								}
-								
-								if (player.getLevel() > 40 && ((L2Character) player.getTarget()).getLevel() < 40)
-								{
-									player.sendMessage("Your target is not in your grade!");
-									player.sendPacket(ActionFailed.STATIC_PACKET);
-								}
-								
-								if (player.getLevel() > 52 && ((L2Character) player.getTarget()).getLevel() < 52)
-								{
-									player.sendMessage("Your target is not in your grade!");
-									player.sendPacket(ActionFailed.STATIC_PACKET);
-								}
-								
-								if (player.getLevel() > 61 && ((L2Character) player.getTarget()).getLevel() < 61)
-								{
-									player.sendMessage("Your target is not in your grade!");
-									player.sendPacket(ActionFailed.STATIC_PACKET);
-								}
-								
-								if (player.getLevel() > 76 && ((L2Character) player.getTarget()).getLevel() < 76)
-								{
-									player.sendMessage("Your target is not in your grade!");
-									player.sendPacket(ActionFailed.STATIC_PACKET);
-								}
-								
-								if (player.getLevel() < 20 && ((L2Character) player.getTarget()).getLevel() > 20)
-								{
-									player.sendMessage("Your target is not in your grade!");
-									player.sendPacket(ActionFailed.STATIC_PACKET);
-								}
-								
-								if (player.getLevel() < 40 && ((L2Character) player.getTarget()).getLevel() > 40)
-								{
-									player.sendMessage("Your target is not in your grade!");
-									player.sendPacket(ActionFailed.STATIC_PACKET);
-								}
-								
-								if (player.getLevel() < 52 && ((L2Character) player.getTarget()).getLevel() > 52)
-								{
-									player.sendMessage("Your target is not in your grade!");
-									player.sendPacket(ActionFailed.STATIC_PACKET);
-								}
-								
-								if (player.getLevel() < 61 && ((L2Character) player.getTarget()).getLevel() > 61)
-								{
-									player.sendMessage("Your target is not in your grade!");
-									player.sendPacket(ActionFailed.STATIC_PACKET);
-								}
-								
-								if (player.getLevel() < 76 && ((L2Character) player.getTarget()).getLevel() > 76)
-								{
-									player.sendMessage("Your target is not in your grade!");
-									player.sendPacket(ActionFailed.STATIC_PACKET);
-								}
-							}
-							siege = null;
-						}
+						/*
+						* if (Config.ALLOW_CHAR_KILL_PROTECT) { final Siege siege = SiegeManager.getInstance().getSiege(player); if ((siege != null) && siege.isInProgress()) { if ((player.getLevel() > 20) && (((Creature) player.getTarget()).getLevel() < 20)) {
+						* player.sendMessage("Your target is not in your grade!"); player.sendPacket(ActionFailed.STATIC_PACKET); } if ((player.getLevel() > 40) && (((Creature) player.getTarget()).getLevel() < 40)) { player.sendMessage("Your target is not in your grade!");
+						* player.sendPacket(ActionFailed.STATIC_PACKET); } if ((player.getLevel() > 52) && (((Creature) player.getTarget()).getLevel() < 52)) { player.sendMessage("Your target is not in your grade!"); player.sendPacket(ActionFailed.STATIC_PACKET); } if ((player.getLevel() > 61) &&
+						* (((Creature) player.getTarget()).getLevel() < 61)) { player.sendMessage("Your target is not in your grade!"); player.sendPacket(ActionFailed.STATIC_PACKET); } if ((player.getLevel() > 76) && (((Creature) player.getTarget()).getLevel() < 76)) {
+						* player.sendMessage("Your target is not in your grade!"); player.sendPacket(ActionFailed.STATIC_PACKET); } if ((player.getLevel() < 20) && (((Creature) player.getTarget()).getLevel() > 20)) { player.sendMessage("Your target is not in your grade!");
+						* player.sendPacket(ActionFailed.STATIC_PACKET); } if ((player.getLevel() < 40) && (((Creature) player.getTarget()).getLevel() > 40)) { player.sendMessage("Your target is not in your grade!"); player.sendPacket(ActionFailed.STATIC_PACKET); } if ((player.getLevel() < 52) &&
+						* (((Creature) player.getTarget()).getLevel() > 52)) { player.sendMessage("Your target is not in your grade!"); player.sendPacket(ActionFailed.STATIC_PACKET); } if ((player.getLevel() < 61) && (((Creature) player.getTarget()).getLevel() > 61)) {
+						* player.sendMessage("Your target is not in your grade!"); player.sendPacket(ActionFailed.STATIC_PACKET); } if ((player.getLevel() < 76) && (((Creature) player.getTarget()).getLevel() > 76)) { player.sendMessage("Your target is not in your grade!");
+						* player.sendPacket(ActionFailed.STATIC_PACKET); } } }
+						*/
 						
 						// Player with lvl < 21 can't attack a cursed weapon holder
 						// And a cursed weapon holder can't attack players with lvl < 21
@@ -12186,11 +12078,23 @@ public final class L2PcInstance extends L2PlayableInstance
 		}
 		
 		// Pk protection config
-		if (skill.isOffensive() && !isGM() && target instanceof L2PcInstance && ((L2PcInstance) target).getPvpFlag() == 0 && ((L2PcInstance) target).getKarma() == 0 && (getLevel() < Config.ALT_PLAYER_PROTECTION_LEVEL || ((L2PcInstance) target).getLevel() < Config.ALT_PLAYER_PROTECTION_LEVEL))
+		if (Config.ALLOW_CHAR_KILL_PROTECT && skill.isOffensive() && !isGM() && (target instanceof L2PcInstance) && (((L2PcInstance) target).getPvpFlag() == 0) && (((L2PcInstance) target).getKarma() == 0))
 		{
-			sendMessage("You can't hit a player that is lower level from you. Target's level: " + String.valueOf(Config.ALT_PLAYER_PROTECTION_LEVEL) + ".");
-			sendPacket(ActionFailed.STATIC_PACKET);
-			return;
+			final int this_level = getLevel();
+			final int target_level = ((L2PcInstance) target).getLevel();
+			final Siege siege = SiegeManager.getInstance().getSiege(this);
+			if ((((siege == null) || !siege.getIsInProgress()) && ((this_level >= 20) && (target_level < 20))) || ((this_level >= 40) && (target_level < 40)) || ((this_level >= 52) && (target_level < 52)) || ((this_level >= 61) && (target_level < 61)) || ((this_level >= 76) && (target_level < 76)))
+			{
+				sendMessage("You can only start a PvP if your target is in your level grade (1-19, 20-39, 40-51, 52-60, 61-75, 76-80).");
+				sendPacket(ActionFailed.STATIC_PACKET);
+				return;
+			}
+			// if ((this_level < Config.ALT_PLAYER_PROTECTION_LEVEL) || (target_level < Config.ALT_PLAYER_PROTECTION_LEVEL))
+			// {
+			// sendMessage("PvP is not allowed for players under level " + Config.ALT_PLAYER_PROTECTION_LEVEL + ".");
+			// sendPacket(ActionFailed.STATIC_PACKET);
+			// return;
+			// }
 		}
 		
 		// ************************************* Check skill availability *******************************************
