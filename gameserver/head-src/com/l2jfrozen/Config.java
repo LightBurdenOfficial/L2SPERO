@@ -195,6 +195,18 @@ public final class Config
 	public static boolean HIGH_RATE_SERVER_DROPS;
 	
 	public static boolean FORCE_COMPLETE_STATUS_UPDATE;
+	// * Restrict Light System *//
+    public static boolean RESTRICT_USE_HEAVY;
+    public static String NOTALLOWCLASSL;
+    public static List<Integer> NOTALLOWEDUSEHEAVY;
+    // * Restrict Heavy System *//
+    public static boolean RESTRICT_USE_LIGHT;
+    public static String NOTALLOWCLASSH;
+    public static List<Integer> NOTALLOWEDUSELIGHT;
+	// * Restrict Magic System *//
+    public static boolean RESTRICT_USE_MAGIC;
+    public static String NOTALLOWCLASSM;
+    public static List<Integer> NOTALLOWEDUSEMAGIC;
 	
 	// ============================================================
 	public static void loadOptionsConfig()
@@ -305,6 +317,34 @@ public final class Config
 			KNOWNLIST_FORGET_DELAY = Integer.parseInt(optionsSettings.getProperty("KnownListForgetDelay", "10000"));
 			
 			HIGH_RATE_SERVER_DROPS = Boolean.valueOf(optionsSettings.getProperty("HighRateServerDrops", "false"));
+			
+			// RESTRICT LIGHT ARMOR
+			RESTRICT_USE_LIGHT = Boolean.parseBoolean(optionsSettings.getProperty("RestrictUseLight", "False"));
+       	    NOTALLOWCLASSL = optionsSettings.getProperty("NotAllowedUseLight", "");
+       	    NOTALLOWEDUSELIGHT = new FastList<Integer>();
+       	    for(String classId : NOTALLOWCLASSL.split(","))
+       	    {
+       		NOTALLOWEDUSELIGHT.add(Integer.parseInt(classId));
+       	    }
+       	    
+       	    // RESTRICT HEAVY ARMOR
+       	    RESTRICT_USE_HEAVY = Boolean.parseBoolean(optionsSettings.getProperty("RestrictLightUseHeavy", "False"));
+       	    NOTALLOWCLASSH = optionsSettings.getProperty("NotAllowedUseHeavy", "");
+       	    NOTALLOWEDUSEHEAVY = new FastList<Integer>();
+       	    for(String classId : NOTALLOWCLASSH.split(","))
+       	    {
+       		NOTALLOWEDUSEHEAVY.add(Integer.parseInt(classId));
+       	    }
+       	    
+       	    // RESTRICT MAGIC ARMOR
+       	    RESTRICT_USE_MAGIC = Boolean.parseBoolean(optionsSettings.getProperty("RestrictLightUseMagic", "False"));
+    	    NOTALLOWCLASSM = optionsSettings.getProperty("NotAllowedUseMagic", "");
+    	    NOTALLOWEDUSEMAGIC = new FastList<Integer>();
+    	    for(String classId : NOTALLOWCLASSM.split(","))
+    	    {
+    		NOTALLOWEDUSEMAGIC.add(Integer.parseInt(classId));
+    	    }
+       	    
 		}
 		catch (final Exception e)
 		{

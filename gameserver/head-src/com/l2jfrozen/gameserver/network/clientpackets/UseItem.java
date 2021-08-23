@@ -47,7 +47,7 @@ import com.l2jfrozen.gameserver.network.serverpackets.UserInfo;
 import com.l2jfrozen.gameserver.templates.L2Item;
 import com.l2jfrozen.gameserver.templates.L2Weapon;
 import com.l2jfrozen.gameserver.templates.L2WeaponType;
-//import com.l2jfrozen.gameserver.templates.L2ArmorType;
+import com.l2jfrozen.gameserver.templates.L2ArmorType;
 import com.l2jfrozen.gameserver.util.Util;
 
 public final class UseItem extends L2GameClientPacket
@@ -416,7 +416,37 @@ public final class UseItem extends L2GameClientPacket
 			if (activeChar.isCursedWeaponEquiped() && (bodyPart == L2Item.SLOT_LR_HAND || bodyPart == L2Item.SLOT_L_HAND || bodyPart == L2Item.SLOT_R_HAND))
 				return;
 			
-			// Don't allow weapon/shield hero equipment during Olimpia
+			if (!Config.RESTRICT_USE_LIGHT)
+				if (Config.NOTALLOWEDUSELIGHT.contains( activeChar.getClassId().getId()))
+				{
+					if (activeChar.getLevel() >= 40 && item.getItemType() == L2ArmorType.LIGHT)
+					{
+						activeChar.sendMessage("This Class Does Not Use Light Equipment.");
+						return;
+					}
+				}
+				
+				if (!Config.RESTRICT_USE_HEAVY)
+					if (Config.NOTALLOWEDUSEHEAVY.contains( activeChar.getClassId().getId()))
+					{
+						if (activeChar.getLevel() >= 40 && item.getItemType() == L2ArmorType.HEAVY)
+						{
+							activeChar.sendMessage("This Class Does Not Use Heavy Equipment.");
+							return;
+						}
+					}
+				
+				if (!Config.RESTRICT_USE_MAGIC)
+					if (Config.NOTALLOWEDUSEMAGIC.contains( activeChar.getClassId().getId()))
+					{
+						if (activeChar.getLevel() >= 40 && item.getItemType() == L2ArmorType.MAGIC)
+						{
+							activeChar.sendMessage("This Class Does Not Use Magic Equipment.");
+							return;
+						}
+					}
+			
+			// Don't allow weapon/shield hero equipment during Olympiad
 			if (activeChar.isInOlympiadMode() && ((bodyPart == L2Item.SLOT_LR_HAND || bodyPart == L2Item.SLOT_L_HAND || bodyPart == L2Item.SLOT_R_HAND) && (item.getItemId() >= 6611 && item.getItemId() <= 6621 || item.getItemId() == 6842) || Config.LIST_OLY_RESTRICTED_ITEMS.contains(item.getItemId())))
 				return;
 			
