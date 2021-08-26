@@ -18584,7 +18584,8 @@ public final class L2PcInstance extends L2PlayableInstance
 	 * @param process the process
 	 * @param val the val
 	 */
-	/** Vip System Start */
+	/** Vip System Start 
+	 * @return */
 
 	public boolean isVip()
 	{

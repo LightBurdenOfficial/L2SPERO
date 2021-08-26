@@ -10,3 +10,5 @@ datapack/data/scripts/custom/2003_Ranking/__init__$py.class
 gameserver/config/hexid.txt
 datapack/data/scripts/quests/__init__$py.class
 datapack/data/scripts/quests/SagasSuperclass/__init__$py.class
+gameserver/lib/cachedir/*
+gameserver/lib/cachedir/*.*

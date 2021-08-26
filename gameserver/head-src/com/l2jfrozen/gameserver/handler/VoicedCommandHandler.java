@@ -33,6 +33,7 @@ import com.l2jfrozen.gameserver.handler.voicedcommandhandlers.DMCmd;
 import com.l2jfrozen.gameserver.handler.voicedcommandhandlers.FarmPvpCmd;
 import com.l2jfrozen.gameserver.handler.voicedcommandhandlers.OfflineShop;
 import com.l2jfrozen.gameserver.handler.voicedcommandhandlers.Online;
+import com.l2jfrozen.gameserver.handler.voicedcommandhandlers.SperoCoinCommands;
 import com.l2jfrozen.gameserver.handler.voicedcommandhandlers.StatsCmd;
 import com.l2jfrozen.gameserver.handler.voicedcommandhandlers.Top;
 import com.l2jfrozen.gameserver.handler.voicedcommandhandlers.TvTCmd;
@@ -69,6 +70,11 @@ public class VoicedCommandHandler
 		_datatable = new FastMap<>();
 		
 		registerVoicedCommandHandler(new Voting());
+		
+		if (Config.ALLOW_SPEROCOIN_WALLET)
+		{
+			registerVoicedCommandHandler(new SperoCoinCommands());
+		}
 		
 		if (Config.BANKING_SYSTEM_ENABLED)
 		{
@@ -124,7 +130,7 @@ public class VoicedCommandHandler
 		
 		if (Config.ALLOW_TOP_VIEW)
 		{
-		registerVoicedCommandHandler(new Top());
+			registerVoicedCommandHandler(new Top());
 		}
 		
 		LOGGER.info("VoicedCommandHandler: Loaded " + _datatable.size() + " handlers.");

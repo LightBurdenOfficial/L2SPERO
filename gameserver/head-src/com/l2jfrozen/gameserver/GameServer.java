@@ -660,6 +660,19 @@ public class GameServer
 			LOGGER.info("Telnet server is disabled.");
 		}
 		
+		// Load SperoCoin status
+		Util.printSection("SperoCoin Wallet");
+		if (Config.ALLOW_SPEROCOIN_WALLET)
+		{
+			LOGGER.info("SperoCoin Wallet service active on server.");
+			LOGGER.info("IP: " + Config.RPC_IP );
+			LOGGER.info("PORT: " + Config.RPC_PORT );
+		}
+		else
+		{
+			LOGGER.info("SperoCoin Wallet service down on server.");
+		}
+		
 		Util.printSection("Login");
 		_loginThread = LoginServerThread.getInstance();
 		_loginThread.start();

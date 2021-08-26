@@ -72,10 +72,10 @@ public final class Config
 	public static boolean MASTERACCESS_TITLE_COLOR_ENABLED;
 	public static int MASTERACCESS_NAME_COLOR;
 	public static int MASTERACCESS_TITLE_COLOR;
-	public static boolean ALLOW_TOP_VIEW;
 	public static int DAY_TO_SIEGE;
 	
 	// ============================================================
+	
 	public static void loadAccessConfig()
 	{
 		final String ACCESS = FService.ACCESS_CONFIGURATION_FILE;
@@ -402,7 +402,7 @@ public final class Config
 			GAME_SERVER_LOGIN_HOST = serverSettings.getProperty("LoginHost", "127.0.0.1");
 			
 			DATABASE_POOL_TYPE = serverSettings.getProperty("DatabasePoolType", "c3p0");
-			DATABASE_DRIVER = serverSettings.getProperty("Driver", "com.mysql.cb.jdbc.Driver");
+			DATABASE_DRIVER = serverSettings.getProperty("Driver", "com.mysql.cj.jdbc.Driver");
 			
 			GAMESERVER_DB = serverSettings.getProperty("GameserverDB", "gameserver_beta");
 			LOGINSERVER_DB = serverSettings.getProperty("LoginserverDB", "loginserver_beta");
@@ -2663,6 +2663,12 @@ public final class Config
 	public static boolean ONLINE_PLAYERS_AT_STARTUP;
 	public static int PLAYERS_ONLINE_TRICK;
 	public static int ONLINE_PLAYERS_ANNOUNCE_INTERVAL;
+	public static boolean ALLOW_TOP_VIEW;
+	public static boolean ALLOW_SPEROCOIN_WALLET;
+	public static String RPC_IP;
+	public static int RPC_PORT;
+	public static String RPC_USER;
+	public static String RPC_PASS;
 	
 	// ============================================================
 	public static void loadL2JFrozenConfig()
@@ -2684,6 +2690,13 @@ public final class Config
 			
 			ONLINE_PLAYERS_ON_LOGIN = Boolean.valueOf(L2JFrozenSettings.getProperty("OnlineOnLogin", "False"));
 			SHOW_SERVER_VERSION = Boolean.valueOf(L2JFrozenSettings.getProperty("ShowServerVersion", "False"));
+			
+			/** SperoCoin Wallet **/
+			ALLOW_SPEROCOIN_WALLET = Boolean.valueOf(L2JFrozenSettings.getProperty("AllowSperoWallet", "False"));
+			RPC_IP = String.valueOf(L2JFrozenSettings.getProperty("RPC_IP", "127.0.0.1"));
+			RPC_PORT = Integer.valueOf(L2JFrozenSettings.getProperty("RPC_PORT", "55681"));
+			RPC_USER = String.valueOf(L2JFrozenSettings.getProperty("RPC_USER", "username"));
+			RPC_PASS = String.valueOf(L2JFrozenSettings.getProperty("RPC_PASS", "password"));
 			
 			/** Protector **/
 			PROTECTOR_PLAYER_PK = Boolean.parseBoolean(L2JFrozenSettings.getProperty("ProtectorPlayerPK", "false"));
@@ -4583,7 +4596,7 @@ public final class Config
 			EXTERNAL_HOSTNAME = serverSettings.getProperty("ExternalHostname", "localhost");
 			
 			DATABASE_POOL_TYPE = serverSettings.getProperty("DatabasePoolType", "c3p0");
-			DATABASE_DRIVER = serverSettings.getProperty("Driver", "com.mysql.cb.jdbc.Driver");
+			DATABASE_DRIVER = serverSettings.getProperty("Driver", "com.mysql.cj.jdbc.Driver");
 			DATABASE_URL = serverSettings.getProperty("URL", "jdbc:mysql://localhost/l2jdb");
 			DATABASE_LOGIN = serverSettings.getProperty("Login", "root");
 			DATABASE_PASSWORD = serverSettings.getProperty("Password", "");
