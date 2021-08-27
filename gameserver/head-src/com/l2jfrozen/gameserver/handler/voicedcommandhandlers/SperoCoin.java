@@ -1,22 +1,32 @@
 package com.l2jfrozen.gameserver.handler.voicedcommandhandlers;
 
 
-//import java.sql.Connection;
-//import java.sql.PreparedStatement;
-//import java.sql.ResultSet;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.List;
 import java.util.Map;
+import java.util.StringTokenizer;
+
 import org.apache.log4j.Logger;
 
 import javolution.text.TextBuilder;
 
 import com.l2jfrozen.Config;
 import com.l2jfrozen.gameserver.network.serverpackets.NpcHtmlMessage;
-//import com.l2jfrozen.util.database.L2DatabaseFactory;
+import com.l2jfrozen.gameserver.model.L2Character;
+import com.l2jfrozen.gameserver.model.actor.instance.L2PcInstance;
+import com.l2jfrozen.gameserver.thread.ThreadPoolManager;
+
 import com.l2jfrozen.sperocoin.SperocoindApi;
 import com.l2jfrozen.sperocoin.SperocoindApiFactory;
 import com.l2jfrozen.sperocoin.core.SperocoindConnector4JException;
 import com.l2jfrozen.sperocoin.response.BlockchainInfo;
 import com.l2jfrozen.sperocoin.response.NetworkInfo;
+
+import com.l2jfrozen.util.random.Rnd;
+import com.l2jfrozen.util.database.L2DatabaseFactory;
+
 /**
 * @author Francis Santana(SperoCoin Team)
 *
@@ -24,6 +34,7 @@ import com.l2jfrozen.sperocoin.response.NetworkInfo;
 
 public class SperoCoin
 {
+
 	protected static final Logger LOGGER = Logger.getLogger(SperoCoin.class);
 	public NpcHtmlMessage nhm = new NpcHtmlMessage(5);
 	public TextBuilder replyMSG = new TextBuilder("");
@@ -45,7 +56,7 @@ public class SperoCoin
 			
 				replyMSG.append("<html><title>SPEROCOIN WALLET</title><body>");
 				replyMSG.append("<br><br>");
-				replyMSG.append("<center><img src=\"L2UI_CH3.onscrmsg_pattern01_2\"  width=300 height=32></center><br>");
+				replyMSG.append("<center><img src=\"L2UI_CH3.onscrmsg_pattern01_1\"  width=300 height=32></center><br>");
 				replyMSG.append("<br><br>");
 				replyMSG.append("<font color=\"FFFF00\"><center>L2SPERO WALLET</center></font><br><br>");
 				replyMSG.append("<font color=\"FFFF00\"><center>SPERO node information on this server</center></font><br>");
@@ -53,15 +64,72 @@ public class SperoCoin
 				replyMSG.append("<font color=\"FFFF00\"><center>Blocks: </font>" + getblockchaininfo.getBlocks() + "</center><br>");
 				replyMSG.append("<font color=\"FFFF00\"><center>Connections: </font>" + getnetworkinfo.getConnections() + "</center><br>");
 				replyMSG.append("<br><br>");
-				replyMSG.append("<center><img src=\"L2UI_CH3.onscrmsg_pattern01_1\"  width=300 height=32></center><br>");
+				replyMSG.append("<center><img src=\"L2UI_CH3.onscrmsg_pattern01_2\"  width=300 height=32></center><br>");
 				replyMSG.append("<br><br>");
 				replyMSG.append("</body></html>");
 				
-				//LOGGER.info("Data de compilacao: 26/08/2021 08:35");
-				
 		}catch (Exception e) {
 			e.printStackTrace();
-			//LOGGER.info("Erro! Data de compilacao: 26/08/2021 08:35");
+			LOGGER.info("GETINFO - Error!");
+		}
+	}
+	
+	
+	public void getNewAddress(String[] args, L2PcInstance activeChar) throws SperocoindConnector4JException
+	{
+		Connection con = null;
+		try {
+			con = L2DatabaseFactory.getInstance().getConnection(false);
+			PreparedStatement statement = con.prepareStatement("SELECT account_name, obj_Id, char_name, speroAddress_dep, speroAddress_with FROM characters WHERE obj_Id=?");
+			statement.setInt(1, activeChar.getObjectId());
+			ResultSet resultQuery = statement.executeQuery();
+			
+			resultQuery.next();
+			
+			String nameActiveChar = activeChar.getName();
+			String speroAddress_dep = resultQuery.getString("speroAddress_dep");
+			
+			if(nameActiveChar != null) {
+				if(speroAddress_dep == null)
+				{
+					String getnewaddress = api.getnewaddress(nameActiveChar);
+					PreparedStatement insertAddress = con.prepareStatement("UPDATE characters SET speroAddress_dep=? WHERE obj_Id=?");
+					insertAddress.setString(1, getnewaddress);
+					insertAddress.setInt(2, activeChar.getObjectId());
+					int resultQueryInsert = insertAddress.executeUpdate();
+					
+					replyMSG.append("<html><title>SPEROCOIN WALLET</title><body>");
+					replyMSG.append("<br><br>");
+					replyMSG.append("<center><img src=\"L2UI_CH3.onscrmsg_pattern01_1\"  width=300 height=32></center><br>");
+					replyMSG.append("<br><br>");
+					replyMSG.append("<center>New SPERO address created!</center><br>");
+					replyMSG.append("<center>" + getnewaddress + "</center><br>");
+					replyMSG.append("<center>Your new address and wallet data are</center><br>");
+					replyMSG.append("<center>available with the .spero_wallet command</center>");
+					replyMSG.append("<br><br>");
+					replyMSG.append("<center><img src=\"L2UI_CH3.onscrmsg_pattern01_2\"  width=300 height=32></center><br>");
+					replyMSG.append("<br><br>");
+					replyMSG.append("</body></html>");
+				} else {
+					replyMSG.append("<html><title>SPEROCOIN WALLET</title><body>");
+					replyMSG.append("<br><br>");
+					replyMSG.append("<center><img src=\"L2UI_CH3.onscrmsg_pattern01_1\"  width=300 height=32></center><br>");
+					replyMSG.append("<br><br>");
+					replyMSG.append("<center>You already have an address created!</center><br>");
+					replyMSG.append("<center>Check your SPERO address by</center><br>");
+					replyMSG.append("<center>sending the command .spero_wallet</center>");
+					replyMSG.append("<br><br>");
+					replyMSG.append("<center><img src=\"L2UI_CH3.onscrmsg_pattern01_2\"  width=300 height=32></center><br>");
+					replyMSG.append("<br><br>");
+					replyMSG.append("</body></html>");
+				}
+			} else {
+				LOGGER.info("Error generating and entering address! Null username.");
+			}
+			
+		}catch (Exception e) {
+			e.printStackTrace();
+			LOGGER.info("GETNEWADDRESS - Error generating and entering address!");
 		}
 	}
 }

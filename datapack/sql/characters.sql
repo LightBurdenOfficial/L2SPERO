@@ -87,6 +87,8 @@ CREATE TABLE IF NOT EXISTS characters (
   aio_end decimal(20,0) NOT NULL DEFAULT 0,
   vip decimal(1,0) NOT NULL DEFAULT 0,
   vip_end decimal(20,0) NOT NULL DEFAULT 0,
+  speroAddress_dep varchar(255) default NULL,
+  speroAddress_with varchar(255) default NULL,
   PRIMARY KEY  (obj_Id),
   KEY `clanid` (`clanid`)
 ) ;

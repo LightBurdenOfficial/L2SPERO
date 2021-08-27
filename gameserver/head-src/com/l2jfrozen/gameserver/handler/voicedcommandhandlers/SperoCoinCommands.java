@@ -12,13 +12,14 @@ public class SperoCoinCommands implements IVoicedCommandHandler
 {
 	private static String[] _voicedCommands =
 	{
-		"getinfo"
+		"spero_getinfo",
+		"spero_getnewaddress"
 	};
 
 	@Override
 	public boolean useVoicedCommand(String command, L2PcInstance activeChar, String target)
 	{
-		if(command.equalsIgnoreCase("getinfo"))
+		if(command.equalsIgnoreCase("spero_getinfo"))
 		{
 			SperoCoin getinfo = new SperoCoin();
 			getinfo.getInfo(null);
@@ -26,6 +27,16 @@ public class SperoCoinCommands implements IVoicedCommandHandler
 			getinfo.nhm.setHtml(getinfo.replyMSG.toString());
 			activeChar.sendPacket(getinfo.nhm);
 		}
+		
+		if(command.equalsIgnoreCase("spero_getnewaddress"))
+		{
+			SperoCoin getnewaddress = new SperoCoin();
+			getnewaddress.getNewAddress(null, activeChar);
+			
+			getnewaddress.nhm.setHtml(getnewaddress.replyMSG.toString());
+			activeChar.sendPacket(getnewaddress.nhm);
+		}
+		
 		return true;
 	}
 
