@@ -4,6 +4,8 @@ package com.l2jfrozen.gameserver.handler.voicedcommandhandlers;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
 import java.util.List;
 import java.util.Map;
 import java.util.StringTokenizer;
@@ -80,7 +82,7 @@ public class SperoCoin
 		Connection con = null;
 		try {
 			con = L2DatabaseFactory.getInstance().getConnection(false);
-			PreparedStatement statement = con.prepareStatement("SELECT account_name, obj_Id, char_name, speroAddress_dep, speroAddress_with FROM characters WHERE obj_Id=?");
+			PreparedStatement statement = con.prepareStatement("SELECT account_name, obj_Id, char_name, speroAddress_dep, speroAddress_with FROM characters WHERE obj_Id = ?");
 			statement.setInt(1, activeChar.getObjectId());
 			ResultSet resultQuery = statement.executeQuery();
 			
@@ -93,7 +95,7 @@ public class SperoCoin
 				if(speroAddress_dep == null)
 				{
 					String getnewaddress = api.getnewaddress(nameActiveChar);
-					PreparedStatement insertAddress = con.prepareStatement("UPDATE characters SET speroAddress_dep=? WHERE obj_Id=?");
+					PreparedStatement insertAddress = con.prepareStatement("UPDATE characters SET speroAddress_dep=? WHERE obj_Id = ?");
 					insertAddress.setString(1, getnewaddress);
 					insertAddress.setInt(2, activeChar.getObjectId());
 					int resultQueryInsert = insertAddress.executeUpdate();
@@ -132,4 +134,85 @@ public class SperoCoin
 			LOGGER.info("GETNEWADDRESS - Error generating and entering address!");
 		}
 	}
+	
+	public void getWallet(String[] args, L2PcInstance activeChar) throws SperocoindConnector4JException
+	{
+		
+		Connection con = null;
+		
+		try {
+			NumberFormat formatter = new DecimalFormat("#0.00000000");
+			con = L2DatabaseFactory.getInstance().getConnection(false);
+			
+			PreparedStatement statementDB = con.prepareStatement("SELECT *, SUM(tot_amt) AS TOTALBALANCE FROM walletnotify AS w INNER JOIN characters AS c ON w.address = c.speroAddress_dep WHERE c.obj_Id = ? AND w.confirmations >= 10");
+			statementDB.setInt(1, activeChar.getObjectId());
+			ResultSet resultQueryDB = statementDB.executeQuery();
+			
+			PreparedStatement statementwallet = con.prepareStatement("SELECT speroAddress_dep FROM characters WHERE obj_Id = ?");
+			statementwallet.setInt(1, activeChar.getObjectId());
+			ResultSet resultQueryWallet = statementwallet.executeQuery();
+			
+			String nameActiveChar = activeChar.getName();
+
+				if(resultQueryWallet.next()) {
+					String speroAddress_dep = resultQueryWallet.getString("speroAddress_dep");
+					
+					if(speroAddress_dep == null) {
+						replyMSG.append("<html><title>SPEROCOIN WALLET</title><body>");
+						replyMSG.append("<br><br>");
+						replyMSG.append("<center><img src=\"L2UI_CH3.onscrmsg_pattern01_1\"  width=300 height=32></center><br>");
+						replyMSG.append("<font color=\"FFFF00\"><center>You don't have wallet data yet, please generate</font></center><br>");
+						replyMSG.append("<font color=\"FFFF00\"><center>new address with the command .spero_getnewaddress</font></center><br>");
+						replyMSG.append("<br><br>");
+						replyMSG.append("<center><img src=\"L2UI_CH3.onscrmsg_pattern01_2\"  width=300 height=32></center><br>");
+						replyMSG.append("<br><br>");
+						replyMSG.append("</body></html>");
+					} else {
+						if(resultQueryDB.next()) {
+							Double speroBalance = resultQueryDB.getDouble("TOTALBALANCE");
+							String speroWalletAddress = resultQueryDB.getString("address");
+							
+							if(speroWalletAddress != null) {
+								replyMSG.append("<html><title>SPEROCOIN WALLET</title><body>");
+								replyMSG.append("<br><br>");
+								replyMSG.append("<center><img src=\"L2UI_CH3.onscrmsg_pattern01_1\"  width=300 height=32></center><br>");
+								replyMSG.append("<br><br>");
+								replyMSG.append("<font color=\"FFFF00\"><center>L2SPERO WALLET</center></font><br><br>");
+								replyMSG.append("<font color=\"FFFF00\"><center>WALLET INFORMATION</center></font><br>");
+								replyMSG.append("<font color=\"FFFF00\"><center>Name: </font>" + nameActiveChar + "</center><br>");
+								replyMSG.append("<font color=\"FFFF00\"><center>Deposit Address: </font>" + speroAddress_dep + "</center><br>");
+								replyMSG.append("<font color=\"FFFF00\"><center>Balance: </font>" + formatter.format(speroBalance) + "</center><br>");
+								replyMSG.append("<br><br>");
+								replyMSG.append("<center><img src=\"L2UI_CH3.onscrmsg_pattern01_2\"  width=300 height=32></center><br>");
+								replyMSG.append("<br><br>");
+								replyMSG.append("</body></html>");
+							} else {
+								replyMSG.append("<html><title>SPEROCOIN WALLET</title><body>");
+								replyMSG.append("<br><br>");
+								replyMSG.append("<center><img src=\"L2UI_CH3.onscrmsg_pattern01_1\"  width=300 height=32></center><br>");
+								replyMSG.append("<br><br>");
+								replyMSG.append("<font color=\"FFFF00\"><center>L2SPERO WALLET</center></font><br><br>");
+								replyMSG.append("<font color=\"FFFF00\"><center>WALLET INFORMATION</center></font><br>");
+								replyMSG.append("<font color=\"FFFF00\"><center>Name: </font>" + nameActiveChar + "</center><br>");
+								replyMSG.append("<font color=\"FFFF00\"><center>Deposit Address: </font>" + speroAddress_dep + "</center><br>");
+								replyMSG.append("<font color=\"FFFF00\"><center>Balance: </font>No Balance</center><br>");
+								replyMSG.append("<br><br>");
+								replyMSG.append("<center><img src=\"L2UI_CH3.onscrmsg_pattern01_2\"  width=300 height=32></center><br>");
+								replyMSG.append("<br><br>");
+								replyMSG.append("</body></html>");
+							}
+						}else {
+							LOGGER.info("NO RESULTS IN QUERY resultQueryDB");
+						}
+					}
+				} else {
+					LOGGER.info("NO RESULTS IN QUERY resultQueryWallet");
+				}
+
+		}catch (Exception e) {
+			e.printStackTrace();
+			LOGGER.info("GETWALLET - Error!");
+		}
+	}
+	
 }
