@@ -14,7 +14,8 @@ public class SperoCoinCommands implements IVoicedCommandHandler
 	{
 		"spero_getinfo",
 		"spero_getnewaddress",
-		"spero_wallet"
+		"spero_wallet",
+		"spero_deposits"
 	};
 
 	@Override
@@ -45,6 +46,15 @@ public class SperoCoinCommands implements IVoicedCommandHandler
 			
 			getwallet.nhm.setHtml(getwallet.replyMSG.toString());
 			activeChar.sendPacket(getwallet.nhm);
+		}
+		
+		if(command.equalsIgnoreCase("spero_deposits"))
+		{
+			SperoCoin getdeposits = new SperoCoin();
+			getdeposits.getDeposits(null, activeChar, 0);
+			
+			getdeposits.nhm.setHtml(getdeposits.replyMSG.toString());
+			activeChar.sendPacket(getdeposits.nhm);
 		}
 		
 		return true;

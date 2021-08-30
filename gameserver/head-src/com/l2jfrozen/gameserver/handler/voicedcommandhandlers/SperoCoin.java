@@ -1,11 +1,12 @@
 package com.l2jfrozen.gameserver.handler.voicedcommandhandlers;
 
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.StringTokenizer;
@@ -213,6 +214,77 @@ public class SperoCoin
 			e.printStackTrace();
 			LOGGER.info("GETWALLET - Error!");
 		}
+	}
+	
+	public class Deposits {
+	    private String txId;
+	    private Double tot_amt;
+	    public Deposits(String txId, Double tot_amt){
+	        this.txId = txId;
+	        this.tot_amt = tot_amt;
+	    }
+	    public String txId() {
+	        return txId;
+	    }
+	    public void setTxId(String txId) {
+	        this.txId = txId;
+	    }
+	    
+	    public double getTotAmt() {
+	        return tot_amt;
+	    }
+	    public void setTotAmt(Double tot_amt) {
+	        this.tot_amt = tot_amt;
+	    }
+ 	}
+	
+	public ArrayList<Deposits> getDeposits(Connection connection, L2PcInstance activeChar, int orderId) throws SperocoindConnector4JException
+	{
+	    ArrayList<Deposits> depositsList = new ArrayList<Deposits>();
+	    Connection con = null;
+	    try
+	    {
+	    	NumberFormat formatter = new DecimalFormat("#0.00000000");
+	    	con = L2DatabaseFactory.getInstance().getConnection(false);
+	    	PreparedStatement statementListDeposits = con.prepareStatement("SELECT txid,tot_amt FROM walletnotify AS w INNER JOIN characters AS c ON w.address = c.speroAddress_dep WHERE c.obj_Id = ? LIMIT 5");
+	    	statementListDeposits.setInt(1, activeChar.getObjectId());
+			ResultSet resultQueryListDeposits = statementListDeposits.executeQuery();
+		
+		            replyMSG.append("<html><title>SPEROCOIN WALLET</title><body>");
+					replyMSG.append("<br><br>");
+					replyMSG.append("<center><img src=\"L2UI_CH3.onscrmsg_pattern01_1\"  width=300 height=32></center><br>");
+					replyMSG.append("<br><br>");
+					replyMSG.append("<font color=\"FFFF00\"><center>L2SPERO WALLET</center></font><br><br>");
+					replyMSG.append("<font color=\"FFFF00\"><center>TRANSACTIONS LIST</center></font><br>");
+					replyMSG.append("<font color=\"FFFF00\"><center>Deposits</font></center><br>");
+					replyMSG.append("<center>"
+						+ "<table width=300>"
+						+ "<tbody>"
+						+ "<tr>"
+						+ "<font color=\"FF33FF\"><td>TXID</td><td>AMOUNT</td></font>"
+						+ "</tr>");
+					while(resultQueryListDeposits.next()) {
+						String txId = resultQueryListDeposits.getString(1);
+					    Double tot_amt = resultQueryListDeposits.getDouble(2);
+					    String substringTxID = txId.substring(0, 25);
+					            
+						replyMSG.append("<tr><td>" + substringTxID + "</td>"
+						+ "<td>" + formatter.format(tot_amt) + "</td>"
+						+"</tr>");
+					}
+						replyMSG.append("</tbody>"
+						+ "</table>"
+						+ "</center>");
+					replyMSG.append("<br><br>");
+					replyMSG.append("<center><img src=\"L2UI_CH3.onscrmsg_pattern01_2\"  width=300 height=32></center><br>");
+					replyMSG.append("<br><br>");
+					replyMSG.append("</body></html>");
+	    }
+	    catch(Exception e)
+	    {
+	        e.printStackTrace();
+	    }
+	    return depositsList;
 	}
 	
 }
