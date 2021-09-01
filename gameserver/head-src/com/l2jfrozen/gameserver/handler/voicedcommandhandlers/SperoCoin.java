@@ -279,9 +279,7 @@ public class SperoCoin
 					replyMSG.append("<center><img src=\"L2UI_CH3.onscrmsg_pattern01_2\"  width=300 height=32></center><br>");
 					replyMSG.append("<br><br>");
 					replyMSG.append("</body></html>");
-	    }
-	    catch(Exception e)
-	    {
+	    } catch(Exception e) {
 	        e.printStackTrace();
 	    }
 	    return depositsList;
