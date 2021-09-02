@@ -1244,6 +1244,7 @@ public final class Config
 	public static boolean ALT_MOBS_STATS_BONUS;
 	public static boolean ALT_PETS_STATS_BONUS;
 	
+	
 	// ============================================================
 	public static void loadAltConfig()
 	{
@@ -3755,6 +3756,8 @@ public final class Config
 	public static int BACKSTAB_ATTACK_SIDE;
 	public static int BACKSTAB_ATTACK_BEHIND;
 	
+	public static int MAX_PATK;
+	public static int MAX_MATK;
 	public static int MAX_PATK_SPEED;
 	public static int MAX_MATK_SPEED;
 	
@@ -3835,9 +3838,22 @@ public final class Config
 			BACKSTAB_ATTACK_SIDE = TypeFormat.parseInt(PHYSICSSetting.getProperty("BackstabAttackSide", "0"));
 			BACKSTAB_ATTACK_BEHIND = TypeFormat.parseInt(PHYSICSSetting.getProperty("BackstabAttackBehind", "70"));
 			
-			// Max patk speed and matk speed
+			// Max Status
+			MAX_PATK = Integer.parseInt(PHYSICSSetting.getProperty("MaxPAtk", "999999"));
+			MAX_MATK = Integer.parseInt(PHYSICSSetting.getProperty("MaxMAtk", "999999"));
 			MAX_PATK_SPEED = Integer.parseInt(PHYSICSSetting.getProperty("MaxPAtkSpeed", "1500"));
 			MAX_MATK_SPEED = Integer.parseInt(PHYSICSSetting.getProperty("MaxMAtkSpeed", "1999"));
+			
+			
+			if (MAX_PATK < 1)
+			{
+				MAX_PATK = Integer.MAX_VALUE;
+			}
+			
+			if (MAX_MATK < 1)
+			{
+				MAX_MATK = Integer.MAX_VALUE;
+			}
 			
 			if (MAX_PATK_SPEED < 1)
 			{
@@ -5647,6 +5663,14 @@ public final class Config
 		else if (pName.equalsIgnoreCase("AllowVersionCommand"))
 		{
 			ALLOW_VERSION_COMMAND = Boolean.valueOf(pValue);
+		}
+		else if (pName.equalsIgnoreCase("MaxPAtk"))
+		{
+			MAX_PATK = Integer.parseInt(pValue);
+		}
+		else if (pName.equalsIgnoreCase("MaxMAtk"))
+		{
+			MAX_MATK = Integer.parseInt(pValue);
 		}
 		else if (pName.equalsIgnoreCase("MaxPAtkSpeed"))
 		{

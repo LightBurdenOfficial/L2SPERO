@@ -432,7 +432,14 @@ public class CharStat
 		stat = null;
 		
 		// Calculate modifiers Magic Attack
-		return (int) calcStat(Stats.MAGIC_ATTACK, attack, target, skill);
+		double val = calcStat(Stats.MAGIC_ATTACK, _activeChar.getTemplate().baseMAtk * bonusAtk, target, skill);
+		
+		if(val > Config.MAX_MATK && _activeChar instanceof L2PcInstance)
+		{
+			val = Config.MAX_MATK;
+		}
+		
+		return (int) val;
 	}
 	
 	/**
@@ -594,7 +601,14 @@ public class CharStat
 			bonusAtk = Config.L2JMOD_CHAMPION_ATK;
 		}
 		
-		return (int) calcStat(Stats.POWER_ATTACK, _activeChar.getTemplate().basePAtk * bonusAtk, target, null);
+		double val = calcStat(Stats.POWER_ATTACK, _activeChar.getTemplate().basePAtk * bonusAtk, target, null);
+		
+		if(val > Config.MAX_PATK && _activeChar instanceof L2PcInstance)
+		{
+			val = Config.MAX_PATK;
+		}
+		
+		return (int) val;
 	}
 	
 	/**
