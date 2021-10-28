@@ -145,7 +145,7 @@ public class SperoCoin
 			NumberFormat formatter = new DecimalFormat("#0.00000000");
 			con = L2DatabaseFactory.getInstance().getConnection(false);
 			
-			PreparedStatement statementDB = con.prepareStatement("SELECT *, SUM(tot_amt) AS TOTALBALANCE FROM walletnotify AS w INNER JOIN characters AS c ON w.address = c.speroAddress_dep WHERE c.obj_Id = ? AND w.confirmations >= 10");
+			PreparedStatement statementDB = con.prepareStatement("SELECT *, SUM(amount) AS TOTALBALANCE FROM walletnotify AS w INNER JOIN characters AS c ON w.address = c.speroAddress_dep WHERE c.obj_Id = ? AND w.confirmations >= 10");
 			statementDB.setInt(1, activeChar.getObjectId());
 			ResultSet resultQueryDB = statementDB.executeQuery();
 			
@@ -218,10 +218,10 @@ public class SperoCoin
 	
 	public class Deposits {
 	    private String txId;
-	    private Double tot_amt;
-	    public Deposits(String txId, Double tot_amt){
+	    private Double amount;
+	    public Deposits(String txId, Double amount){
 	        this.txId = txId;
-	        this.tot_amt = tot_amt;
+	        this.amount = amount;
 	    }
 	    public String txId() {
 	        return txId;
@@ -231,10 +231,10 @@ public class SperoCoin
 	    }
 	    
 	    public double getTotAmt() {
-	        return tot_amt;
+	        return amount;
 	    }
-	    public void setTotAmt(Double tot_amt) {
-	        this.tot_amt = tot_amt;
+	    public void setTotAmt(Double amount) {
+	        this.amount = amount;
 	    }
  	}
 	
@@ -246,7 +246,7 @@ public class SperoCoin
 	    {
 	    	NumberFormat formatter = new DecimalFormat("#0.00000000");
 	    	con = L2DatabaseFactory.getInstance().getConnection(false);
-	    	PreparedStatement statementListDeposits = con.prepareStatement("SELECT txid,tot_amt FROM walletnotify AS w INNER JOIN characters AS c ON w.address = c.speroAddress_dep WHERE c.obj_Id = ? LIMIT 5");
+	    	PreparedStatement statementListDeposits = con.prepareStatement("SELECT txid,amount FROM walletnotify AS w INNER JOIN characters AS c ON w.address = c.speroAddress_dep WHERE c.obj_Id = ? LIMIT 5");
 	    	statementListDeposits.setInt(1, activeChar.getObjectId());
 			ResultSet resultQueryListDeposits = statementListDeposits.executeQuery();
 		
@@ -265,11 +265,11 @@ public class SperoCoin
 						+ "</tr>");
 					while(resultQueryListDeposits.next()) {
 						String txId = resultQueryListDeposits.getString(1);
-					    Double tot_amt = resultQueryListDeposits.getDouble(2);
+					    Double amount = resultQueryListDeposits.getDouble(2);
 					    String substringTxID = txId.substring(0, 25);
 					            
 						replyMSG.append("<tr><td>" + substringTxID + "</td>"
-						+ "<td>" + formatter.format(tot_amt) + "</td>"
+						+ "<td>" + formatter.format(amount) + "</td>"
 						+"</tr>");
 					}
 						replyMSG.append("</tbody>"
